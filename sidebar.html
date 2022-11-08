@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Sidebar Menu</title>
+  <script src="https://kit.fontawesome.com/519591b792.js" crossorigin="anonymous"></script>
+
+  <style>
+  *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+  }
+  
+  body {
+      font-family: 10%, "Georgia", sans-serif;
+  }
+  
+  nav {
+      width: 100%;
+      height: 80px;
+      display: flex;
+      justify-content: space-between;
+      padding-top: 10px; 
+  }
+  
+  nav ul {
+      list-style: none; /*removes bullets*/
+  }
+  
+  nav ul li {
+      padding: 25px 20px; 
+  }
+  
+  nav ul li:hover
+  {
+      background:gray;
+  }
+  
+  @media screen and (max-width: 600px) {
+      nav .sidebarBtn{
+          display: flex;
+      }
+      nav .navLinks{
+          display: none;
+      }
+  }
+  
+  /*Sidebar Menu*/
+  .sidebar {
+      height: 60%;
+      position: fixed;
+      top: 0;
+      right: 0;
+      background-color: #FCEAEA;
+      overflow-x: hidden;
+      transition: 0.3 ease-in;
+      padding-top: 20px;
+      border-radius: 30px;
+  }
+  
+  .sidebar a {
+      padding: 8px 8px 10px 15px;
+      display: block;
+      font-size: 25px;
+      color: black;
+      text-decoration: none;
+      text-align: right;
+  }
+  
+  .closeBtn {
+      position: absolute;
+      top: 0px;
+      right: 9px;
+  }
+  
+  .openBtn {
+      position: absolute;
+      top: 0px;
+      right: 10px;
+      font-size: 30px; 
+      cursor: pointer;
+  }
+  
+  /*Login Button*/
+  button {
+      position: absolute;
+      top: 12px;
+      color: white;
+      font-size: 15px;
+      margin-left: 100px;
+      display: block;
+      cursor: pointer;
+      border-radius: 5px;
+      background-color: black;
+  }
+  
+  /*Solid Line Divider*/
+  hr.solid {
+      border-top: 1px solid lightgray;
+  }
+
+ /*Happy Hour Logo Placeholder*/ 
+  .logo {
+      font-size: 15px;
+      font-weight: 100;
+      position: absolute;
+      top: 13px;
+      left: 10px;
+  }
+
+</style>
+</head>
+<body>
+  <nav>
+    <span class="openBtn" onclick="openSidebar()">&#9776;</span>
+    <ul>
+    <div id="mySidebar" class="sidebar">
+        <div class="logo">LOGO</div>
+        <!--include account settings?-->
+        <a href="login.html"><button class="loginBtn"><i class="fa-solid fa-right-to-bracket"></i> LOGIN</button></a>        
+        <a href="javascript:void(0)" class="closeBtn" onclick="closeSidebar()">&#215;</a>
+        <hr class="solid">
+        <li><a href="favorites.html"><i class="fa-solid fa-heart"></i>  Favorites  <i class="fa-solid fa-chevron-right"></i></a></li>
+        <li><a href="recents.html"><i class="fa-solid fa-clock"></i> Recents  <i class="fa-solid fa-chevron-right"></i></a></li>
+        <li><a href="categories.html"><i class="fa-solid fa-utensils"></i> Categories  <i class="fa-solid fa-chevron-right"></i></a></li>
+        <li><a href="calendar.html"><i class="fa-solid fa-calendar-days"></i> HH Calendar  <i class="fa-solid fa-chevron-right"></i></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--closes and opens sidebar menu-->
+  <script>
+    function openSidebar() {
+      document.getElementById("mySidebar").style.width = "250px";
+    }
+    
+    function closeSidebar() {
+      document.getElementById("mySidebar").style.width = "0px";
+    }
+  </script>
+
+  </body>
+  </html> 
+  
