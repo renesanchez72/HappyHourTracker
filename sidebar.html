@@ -50,7 +50,7 @@
   
   /*Sidebar Menu*/
   .sidebar {
-      height: 60%;
+      height: 54%;
       position: fixed;
       top: 0;
       right: 0;
@@ -90,7 +90,7 @@
       top: 12px;
       color: white;
       font-size: 15px;
-      margin-left: 100px;
+      margin-left: 92px;
       display: block;
       cursor: pointer;
       border-radius: 5px;
@@ -111,6 +111,18 @@
       left: 10px;
   }
 
+  .settings {
+    position: absolute;
+    top: 0px;
+    right: 34px;
+  }
+
+/*Icon*/
+  .fas
+  {
+    color: #AFA398;
+  }
+
 </style>
 </head>
 <body>
@@ -119,8 +131,10 @@
     <ul>
     <div id="mySidebar" class="sidebar">
         <div class="logo">LOGO</div>
-        <!--include account settings?-->
-        <a href="login.html"><button class="loginBtn"><i class="fa-solid fa-right-to-bracket"></i> LOGIN</button></a>        
+        <a href="login.html"><button class="loginBtn"><i class="fa-solid fa-right-to-bracket"></i> LOGIN</button></a> 
+        <div class="settings">
+        <a href="accountSettings.html" title="acct settings"><i class="fas fa-smile"></i></a> 
+        </div>      
         <a href="javascript:void(0)" class="closeBtn" onclick="closeSidebar()">&#215;</a>
         <hr class="solid">
         <li><a href="favorites.html"><i class="fa-solid fa-heart"></i>  Favorites  <i class="fa-solid fa-chevron-right"></i></a></li>
