@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Poppins&display=swap');
+
+body {
+  background-image: linear-gradient(to bottom, #30cfd0 0%, #330867 100%);
+  font-family: 'Poppins', sans-serif;
+  background-attachment: fixed;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  height: 100vmax;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+label {
+  text-align: left;
+  float: left;
+}
+
+.btnImg {
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.happyHourForm {
+  display: flex;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 0.25em 0.25em 1.5em rgba(255, 166, 0, 0.9);
+  border: transparent;
+  max-width: 80vw;
+  display: flex;
+  align-items: stretch;
+}
+
+.happyHourFormInputs {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 4fr;
+  border: transparent;
+  max-width: 80vw;
+  align-items: center;
+}
+
+.happyHourFormInputs input {
+  margin: 0.5em 0;
+}
+
+.timeInputContainer {
+  display: flex;
+  grid-template-columns: 3fr 3fr;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.timeInputBox {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.updateBtn {
+  box-shadow: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+.cardButtons {
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 1em 1em 0 0;
+}
+
+.dealButtons {
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 1em 1em 0 0;
+}
+
+.dealFormButtonsContainer {
+  justify-self: center;
+}
+
+#hhUpdateBtn {
+  background-color: transparent;
+  border: transparent;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+}
+
+.daysOfWeek-Box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.dealInfo {
+  display: grid;
+  grid-auto-flow: column;
+  position: relative;
+  padding: 0.75em;
+  align-items: center;
+}
+
+.dealDesc {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+}
+
+#dealRemoveBtn {
+  align-self: auto;
+}
+
+.daysDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.daysDiv h4 {
+  padding: 0.2em;
+}
+
+.rightRoundBtn {
+  right: 0;
+  padding: 0 0 0.35em 0;
+  margin: 0;
+  justify-self: flex-end;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+#big {
+  align-items: center;
+}
+
+.dealsList .dealForm {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  color: black;
+}
+
+.dealsList .dealForm button {
+  background-image: linear-gradient(to bottom, #30cfd0 -100%, #330867 100%);
+  color: mintcream;
+  box-shadow: none;
+}
+
+.dealForm {
+  background-image: linear-gradient(to bottom, #30cfd0 -100%, #330867 100%);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  /* align-content: center; */
+  margin: 0;
+  color: mintcream;
+  box-shadow: 0.01em 0.01em 0.2em black;
+}
+.dealsList {
+  background-image: linear-gradient(to bottom, #30cfd0 -100%, #330867 100%);
+  border: black;
+  border-radius: 20px;
+  color: mintcream;
+  margin: 0.5em auto;
+  box-shadow: 0.01em 0.01em 0.2em black;
+  border: transparent;
+}
+
+.dealSubmitBtn {
+  margin: 0.5em 0.5em 0 0.5em;
+}
+
+.timeInputs {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  justify-self: right;
+}
+
+.allHappyHours {
+  margin: 0 auto;
+}
+
+.addDealBtn {
+  margin: 0.5em 0 1.5em 0;
+}
+
+.allHappyHoursDisplayCard {
+  border-radius: 20px;
+  max-width: 80vw;
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  margin: 1em auto;
+  position: relative;
+  padding: 1em;
+  box-shadow: 0.25em 0.25em 1.3em rgba(255, 166, 0, 0.9);
+}
+
+h3 {
+  font-size: 2em;
+}
+
+.allHappyHoursDisplayCard img {
+  max-width: -moz-available;
+  max-width: -webkit-fill-available;
+  max-width: fill-available;
+}
+
+.cardButtons img {
+  height: auto;
+  max-width: 2rem;
+}
+
+.dealButtons img {
+  max-width: 1rem;
+  height: auto;
+}
+
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(to bottom, #30cfd0 -100%, #330867 100%);
+
+  padding: 1em;
+  min-height: 2em;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0.25em 0.25em 1.5em rgba(255, 166, 0, 0.9);
+}
+
+.navbar a {
+  text-decoration: none;
+  color: mintcream;
+  font-weight: bold;
+  margin-left: 0.5em;
+}
+
+.myCard {
+  max-width: 90vw;
+}
+
+form {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  padding: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1em auto;
+  border-radius: 2em;
+  border: transparent;
+}
+
+form input {
+  display: block;
+  padding: 0.5em;
+  margin: 0em;
+  font-family: 'Poppins', sans-serif;
+}
+
+.happyHourForm input {
+  margin: 0.5em 0;
+}
+
+form h4 {
+  padding: 0.5em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+h5 {
+  font-size: 0.9em;
+  margin: 0;
+  font-weight: lighter;
+}
+
+#root {
+  height: 100vh;
+}
+
+.navlinks {
+  color: black;
+  display: flex;
+  justify-content: space-around;
+}
+
+.submitBtn {
+  border: transparent;
+  background-color: mintcream;
+  box-shadow: 0.25em 0.25em 1.5em rgba(255, 166, 0, 0.9);
+}
+
+.homepageString {
+  max-width: 60vw;
+  margin: 0 auto;
+}
+
+.myImg {
+  max-width: 70%;
+  margin: 0;
+  box-shadow: none;
+}
+
+img {
+  margin: 1em 0 0.5em 0;
+  border-radius: 1em;
+  box-shadow: 0.25em 0.25em 1.5em #330867;
+}
+div {
+  background-size: cover;
+}
+
+.allHappyHours {
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1em;
+}
+
+input {
+  outline: none;
+  border: 2px solid black;
+  border-radius: 1em;
+}
+
+h2 {
+  text-align: left;
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Euphoria Script', cursive;
+  color: mintcream;
+  font-size: calc(3em + 1vmin);
+  margin: 0.2em 0 0 0;
+}
+
+.checkbox-Box {
+  display: flex;
+  justify-content: space-around;
+}
+
+.daysOfWeek-Box h4 {
+  padding: 0.1em 0;
+}
+
+button {
+  padding: 0.5em 1em;
+  background-color: mintcream;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 1em auto;
+  outline: none;
+  border: transparent;
+  border-radius: 1em;
+  box-shadow: 0.25em 0.25em 1.5em rgba(255, 166, 0, 0.9);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+header {
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
