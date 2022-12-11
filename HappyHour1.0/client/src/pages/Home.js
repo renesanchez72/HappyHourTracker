@@ -14,7 +14,7 @@ export default class Home extends Component {
         </div>
 
         <div className="homepageString">
-          <h1>Welcome back to the Happy Hour App!!!</h1>
+          <h1>Welcome back to our app</h1>
         </div>
       </div>
     )
