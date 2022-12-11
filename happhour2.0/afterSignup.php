@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1>Signup</h1>
-    <p>signup successful. Login in <a href="login.php">here</a></p>
+    <p>signup successful. Login in <a href="HH_LoginSignUp.html">here</a></p>
 
 </body>
 </html>

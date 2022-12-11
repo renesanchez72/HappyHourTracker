@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         if (password_verify($saltedPassword, $user["password_hash"])) {
             session_start();
             $_SESSION["userid"] = $user["id"];
-            header("Location: mailsendtodb.php");
+            header("Location: home.php");
             exit;
         }else {
             print_r("login failed");
@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 ?>
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -52,4 +52,4 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <button type="submit">Login</button>
     </form>
 </body>
-</html>
+</html> -->
