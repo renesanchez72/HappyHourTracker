@@ -96,7 +96,7 @@
                          echo "<p>$value</p>";
                      }
                  }
-                 echo "<button   onclick='fav($restaurantID,$userid);'>Favorite</button>";
+                //  echo "<button   onclick='fav($restaurantID,$userid);'>Favorite</button>";
                  echo "</div>";
              }
          } else {
