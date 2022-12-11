@@ -24,17 +24,44 @@
         }
 
     </style>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script >
+        function fav(restaurantid,userid){
+            console.log('adding fav');
+            console.log(restaurantid);
+            console.log(userid);
+            var request = $.ajax({
+                type: 'POST',
+                url: 'favorite.php',
+                dataType: 'json',
+                data: 'restaurantid='+restaurantid+'&userid='+userid,
+                success: function (response) {
+                    console.log(response);
+                    if (response.favoriteAdded) {
+                        console.log("added to favorites");
+                        alert('Restaurant added to favorites');
+                    }else{
+                        alert(response.text);
+                    }
+                }
+
+                
+            });
+            //some code
+        }
+    </script>
 </head>
 <body>
 <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">login</a>
+        <a href="./home.php">Home</a>
+        <a href="./favoritesPage.php">Favorites</a>
+        <a href="./logout.php">logOut</a>
     </nav>
     <main>
         <!-- PHP code that retrieves data from the database and displays it in a table -->
         <?php
         session_start();
+        $userid = $_SESSION["userid"];
         // Connect to the database
         $mysqli = require __DIR__ . "/database.php";
        // Select all columns from the table
@@ -56,12 +83,13 @@
                 if ($col == "image") {
                     echo "<img src='$value' width='200px' height='200px' alt='image'/>";
                 }elseif ($col == "id") {
-                    # code...
+                    $restaurantID = $value;
                 }
                 else{
                     echo "<p>$value</p>";
                 }
             }
+            echo "<button   onclick='fav($restaurantID,$userid);'>Favorite</button>";
             echo "</div>";
         }
     } else {
