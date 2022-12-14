@@ -37,101 +37,59 @@
             margin: 0;
         }
 
+        
         /*picture carousel*/ 
-        .slider{
-            width: 800px;
-            height: 500px;
-            border-radius: 10px;
-            overflow: hidden;
+        * {box-sizing: border-box}
+        .pics 
+        {display: none}
+        img 
+        {vertical-align: middle;}
+
+        /* container */
+        .container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
         }
 
-        .picture{
-            width: 500%;
-            height: 500px;
-            display: flex;
-        }
-        
-        .picture input{
-            display: none;
-        }
-
-        .pics{
-            width: 20px;
-            transition: 2s;
+        /* next button */
+        .previous, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 10px;
+        color: white;
+        transition: 0.6s ease;
+        user-select: none;
         }
 
-        .pics img{
-            width: 800px;
-            height: 500px;
+        /* next button only */
+        .next {
+        right: 0;
         }
 
-        .manualNavigation{
-            position: absolute;
-            width: 800px;
-            margin-top: -40px;
-            display: flex;
-            justify-content: center;
-        }
-        
-        .manualBtn{
-            border: 1px solid black;
-            padding: 5px;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: 1s;
-        }       
-
-        .manualBtn:not(:last-child){
-            margin-right: 40px;
+        /* dots */
+        .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: gray;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
         }
 
-        .manualBtn:hover{
-            background: black;
+        .currentDot, .dot:hover {
+        background-color: #D3D3D3;
         }
 
-        #r1:checked ~ .one{
-            margin-left: 0;
+        /* carousel fades */
+        .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
         }
-
-        #r2:checked ~ .one{
-            margin-left: -20%;
-        }
-
-        #r3:checked ~ .one{
-            margin-left: -40%;
-        }
-        
-        .autoNavigation{
-            position: absolute;
-            display: flex;
-            width: 800px;
-            justify-content: center;
-            margin-top: 460px;
-        }
-
-        .autoNavigation div{
-            border: 1px solid black;
-            padding 5px;
-            border-radius: 10px;
-            transition 1s;
-        }
-
-        .autoNavigation div:not(:last-child){
-            margin-right: 40px;
-        }
-
-        #r1:checked ~ .autoNavigation .autoBtn1{
-            background: black;
-        }
-
-        #r2:checked ~ .autoNavigation .autoBtn2{
-            background: black;
-        }
-
-        #r3:checked ~ .autoNavigation .autoBtn3{
-            background: black;
-        }
-        
     </style>
 
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
@@ -159,15 +117,39 @@
             });
             //some code
         }
-        
-        var counter = 1;
-        setInterval(function(){
-        document.getElementById('radio' + counter).checked = true;
-        counter++;
-        if(counter > 4){
-            counter = 1;
+
+        //PICTURE CAROUSEL jw
+        let index = 1;
+        show(index);
+
+        function increase(n) {
+        show(index += n);
         }
-        }, 5000);
+
+        function current(n) {
+        show(index = n);
+        }
+
+        function show(n) {
+        let i;
+        let picture = document.getElementsByClassName("pics");
+        let dots = document.getElementsByClassName("dot");
+        if (n > picture.length) 
+        {
+            index = 1
+        }    
+        if (n < 1) {
+            index = picture.length
+        }
+        for (i = 0; i < picture.length; i++) {
+        picture[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" currentDot", "");
+        }
+        picture[index-1].style.display = "block";  
+        dots[index-1].className += " currentDot";
+        }
 
     </script>
 </head>
@@ -183,34 +165,27 @@
     </nav>
 
     <!--PICTURE CAROUSEL jw-->
-    <div class="slider">
-        <div class="picture">
-            <input type="radio" name = "radio-btn" id="r1">
-            <input type="radio" name = "radio-btn" id="r2">
-            <input type="radio" name = "radio-btn" id="r3">
-        </div>
-    <div>
-    <div class="pics one">
-        <img src="./hamburger.jpg" style="width:100%">
-    </div>
-    <div class="pics">
-        <img src="./pizza.jpg" style="width:100%">
-    </div>
-    <div class="pics">
-        <img src="./wine.jpg" style="width:100%">
-    </div>
-    
-    <div class="autoNavigation">
-        <div class="autoBtn1">
-        <div class="autoBtn2">
-        <div class="autoBtn3">
+    <div class="container">
+
+    <div class="pics fade">
+    <img src="./hamburger.jpg" style="width:100%">
     </div>
 
-    <div class="manualNavigation">
-        <label for="r1" class=manualBtn></label>
-        <label for="r2" class=manualBtn></label>
-        <label for="r3" class=manualBtn></label>
+    <div class="pics fade">
+    <img src="./pizza.jpg" style="width:100%">
     </div>
+
+    <div class="pics fade">
+    <img src="./wine.jpg" style="width:100%">
+    </div>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+    <span class="dot" onclick="current(1)"></span> 
+    <span class="dot" onclick="current(2)"></span> 
+    <span class="dot" onclick="current(3)"></span> 
     </div>
 
     <main>
