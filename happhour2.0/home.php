@@ -19,14 +19,14 @@
             padding: 0.5em 1em;
         }
         nav a {
-            margin-top: 40px;
+            margin-top: 30px;
             margin-bottom: 30px;
             font-family: 'Palanquin Dark', sans-serif;
             color: #fff;
             text-decoration: none;
         }
         nav a:hover {
-            text-decoration: underline;
+            text-color: gray;
         }
         body {
             font-family: sans-serif;
@@ -71,14 +71,14 @@
         height: 15px;
         width: 15px;
         margin: 0 2px;
-        background-color: #D3D3D3;
+        background-color: gray;
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
         }
 
         .active, .dot:hover {
-        background-color: #gray;
+        background-color: #D3D3D3;
         }
 
         /* carousel fades */
@@ -173,8 +173,6 @@
     <img src="./wine.jpg" style="width:100%">
     </div>
 
-    <a class="previous" onclick="increase(-1)">❮</a>
-    <a class="next" onclick="increase(1)">❯</a>
     </div>
     <br>
 
