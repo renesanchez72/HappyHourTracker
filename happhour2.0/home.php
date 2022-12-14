@@ -28,7 +28,11 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            border-color: black;
+            background-color: #fff;
+            box-shadow:
+            0 0 60px 30px #fff,  /* inner white */
+            0 0 100px 60px #f0f, /* middle magenta */
+            0 0 140px 90px #0ff; /* outer cyan */
             margin: .8px;
         }
 
