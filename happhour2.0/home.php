@@ -28,12 +28,11 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: #fff;
-            box-shadow:
-            0 0 60px 30px #fff,  /* inner white */
-            0 0 100px 60px #f0f, /* middle magenta */
-            0 0 140px 90px #0ff; /* outer cyan */
-            margin: .8px;
+            color: #111; 
+            background: greenyellow; 
+            box-shadow: 0 0 100px greenyellow;
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
 
     </style>
