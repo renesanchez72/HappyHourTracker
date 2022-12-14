@@ -183,19 +183,51 @@
         <img src="./wine.jpg">
     </div>
     
-    <div class="autoNavigation">
-        <div class="autoBtn1">
-        <div class="autoBtn2">
-        <div class="autoBtn3">
     </div>
-    </div>
-        <div class="manualNavigation">
-        <label for="r1" class=manualBtn></label>
-        <label for="r2" class=manualBtn></label>
-        <label for="r3" class=manualBtn></label>
     </div>
 
+    <main>
+        <!-- PHP code that retrieves data from the database and displays it in a table -->
+        <?php
+        // Connect to the database
+        $mysqli = require __DIR__ . "/database.php";
+       // Select all columns from the table
+       $table_name = "restaurants";
+       $query = "SELECT * FROM $table_name";
+       $result = mysqli_query($mysqli, $query);
 
+       if (mysqli_num_rows($result) > 0) {
+        // Store the data in an array
+        $data = [];
+        while ($row = mysqli_fetch_assoc($result)) {
+            $data[] = $row;
+        }
+
+        // Generate HTML code for each row of data
+        foreach ($data as $row) {
+            echo "<div id='restaurant'>";
+            foreach ($row as $col => $value) {
+                if ($col == "image") {
+                    echo "<img src='$value' width='400px' height='400px' alt='image'/>";
+                }elseif ($col == "id") {
+                    $restaurantID = $value;
+                }
+                else{
+                    echo "<p>$value</p>";
+                }
+            }
+            echo "<button   onclick='fav($restaurantID,$userid);'>Favorite</button>";
+            echo "</div>";
+        }
+    } else {
+        // Print a message if there are no rows in the result
+        echo "<p>No data found in the table.</p>";
+    }
+
+       // Close the database connection
+       mysqli_close($mysqli);
+       ?>
+   </main>
 </body>
 </html>
 
