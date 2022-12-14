@@ -24,7 +24,7 @@
         }
 
         /*centers images jw*/ 
-        .logo{
+        .logo {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -68,7 +68,9 @@
     </nav>
 
     <!--HAPPY HOUR LOGO jw-->
-    <img src="./happyhourlogo.png" width='100px' height='100px' alt='image' class="logo">
+    <div class="logo">
+    <img src="./happyhourlogo.png" width='300px' height='300px' alt='image'>
+    </div>
 
     <main>
         <!-- PHP code that retrieves data from the database and displays it in a table -->
