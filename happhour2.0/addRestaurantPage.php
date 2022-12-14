@@ -34,7 +34,7 @@
         body {
             font-family: sans-serif;
             margin: 0;
-            background-color: #811331;
+            background-color: #58181F;
         }
 
 
@@ -61,7 +61,7 @@
         margin-right: 500px;
         margin-top: 30px;
         margin-bottom: 30px;
-        background-color: #F0EAD6;
+        background-color: #FAF9F6;
         }
  
         input {
