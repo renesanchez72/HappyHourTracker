@@ -176,23 +176,23 @@
     </div>
 
     <div class="pics">
-        <img src="./pizza.jpg">
+        <img src="./pizza.jpg" width="500vh" height="500vh">
     </div>
 
     <div class="pics">
-        <img src="./wine.jpg" width=500vh height=500vh>
+        <img src="./wine.jpg" >
     </div>
     
     <div class="autoNavigation">
-        <div class="autoBtn1">
-        <div class="autoBtn2">
-        <div class="autoBtn3">
+      <div class="autoBtn1"></div>
+        <div class="autoBtn2"></div>
+        <div class="autoBtn3"></div>
     </div>
     </div>
         <div class="manualNavigation">
-        <label for="r1" class=manualBtn></label>
-        <label for="r2" class=manualBtn></label>
-        <label for="r3" class=manualBtn></label>
+        <label for="r1" class="manualBtn"></label>
+        <label for="r2" class="manualBtn"></label>
+        <label for="r3" class="manualBtn"></label>
     </div>
     </div>
 
