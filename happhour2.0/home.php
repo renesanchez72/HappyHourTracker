@@ -81,7 +81,7 @@
             echo "<div id='restaurant'>";
             foreach ($row as $col => $value) {
                 if ($col == "image") {
-                    echo "<img src='$value' width='200px' height='200px' alt='image'/>";
+                    echo "<img src='$value' width='400px' height='400px' alt='image'/>";
                 }elseif ($col == "id") {
                     $restaurantID = $value;
                 }
