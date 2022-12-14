@@ -159,6 +159,15 @@
             });
             //some code
         }
+        
+        var counter = 1;
+        setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 4){
+            counter = 1;
+        }
+        }, 5000);
 
     </script>
 </head>
@@ -203,17 +212,6 @@
         <label for="r3" class=manualBtn></label>
     </div>
     </div>
-
-    <script type="text/javascript">
-    var counter = 1;
-    setInterval(function(){
-        document.getElementById('radio' + counter).checked = true;
-        counter++;
-        if(counter > 4){
-            counter = 1;
-        }
-        }, 5000);
-    </script>
 
     <main>
         <!-- PHP code that retrieves data from the database and displays it in a table -->
