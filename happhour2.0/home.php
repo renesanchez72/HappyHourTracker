@@ -86,22 +86,19 @@
         }
     }
 
-    figure {
-        height: 60%;
-    }
-
     .container {
         position: relative;
     }
 
     .textbox {
         position: absolute;
-        bottom: 100px;
-        right: 100px;
+        bottom: 200px;
+        right: 200px;
         background-color: black;
         color: white;
         padding-left: 20px;
         padding-right: 20px;
+        font-size: 30px;
     }
 
     </style>
@@ -143,20 +140,21 @@
         <a href="./logout.php">LOGOUT</a>
         
     </nav>
+    
+    <div class = "container">
+    <div class = "textbox">
+        <h2>Welcome back to the Happy Hour App!<h2>
+    </div>
+    </div>
 
     <!--PICTURE CAROUSEL jw-->
     <div id="slider">
         <figure>
-            <div class = "container">
-            <img src="./hamburger.jpg">
-            <div class = "textbox">
-            <h2>Welcome back to the Happy Hour App!<h2>
-            </div>
-            </div>
-            <img src="./pizza.jpg">
-            <img src="./wine.jpg">
-            <img src="./burrito.jpg">
-            <img src="./hamburger.jpg">
+            <img src="./hamburger.jpg" height="400">
+            <img src="./pizza.jpg" height="400">
+            <img src="./wine.jpg" height="400">
+            <img src="./burrito.jpg" height="400">
+            <img src="./hamburger.jpg" height="400">
         </figure>
     </div>    
 
