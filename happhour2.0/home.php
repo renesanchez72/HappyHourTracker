@@ -2,24 +2,18 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@700&display=swap" rel="stylesheet">
-
     <title>My PHP page</title>
     <style>
         /* Basic styles for the page */
-        @import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@700&display=swap');
-        
         nav {
             background-color: #333;
             color: #fff;
             display: flex;
-            justify-content: left;
+            justify-content: space-between;
             padding: 0.5em 1em;
         }
         nav a {
-            font-family: 'Palanquin Dark', sans-serif;
+            
             color: #fff;
             text-decoration: none;
         }
@@ -46,7 +40,7 @@
         }
 
         /* circles */
-        .circles {
+        .dot {
         cursor: pointer;
         height: 15px;
         width: 15px;
@@ -109,7 +103,7 @@
         function show(n) {
         let i;
         let slides = document.getElementsByClassName("slides");
-        let circles = document.getElementsByClassName("circles");
+        let dots = document.getElementsByClassName("dot");
         if (n > slides.length) 
         {
             index = 1;
@@ -120,11 +114,11 @@
         for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";  
         }
-        for (i = 0; i < circles.length; i++) {
-        circles[i].className = circles[i].className.replace(" active", "");
+        for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
         }
         slides[index-1].style.display = "block";  
-        circles[index-1].className += " active";
+        dots[index-1].className += " active";
         }
 
     </script>
