@@ -131,11 +131,11 @@
     <!--PICTURE CAROUSEL jw-->
     <div id="slider">
         <figure>
-            <img src="./hamburger.jpg" style="width:auto; height:250px">
-            <img src="./pizza.jpg" style="width:auto; height:250px">
-            <img src="./wine.jpg" style="width:auto; height:250px">
-            <img src="./burrito.jpg" style="width:auto; height:250px">
-            <img src="./hamburger.jpg" style="width:auto; height:250px">
+            <img src="./hamburger.jpg" height= "600px">
+            <img src="./pizza.jpg" height="600px">
+            <img src="./wine.jpg" height="600px">
+            <img src="./burrito.jpg" height="600px">
+            <img src="./hamburger.jpg" height="600px">
         </figure>
     </div>    
 
