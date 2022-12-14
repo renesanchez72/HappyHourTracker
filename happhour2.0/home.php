@@ -36,13 +36,13 @@
         
         /*picture carousel*/ 
         * {box-sizing: border-box}
-        .slides 
+        .pics 
         {display: none}
         img 
         {vertical-align: middle;}
 
         /* container */
-        .slideContainer {
+        .container {
         max-width: 1000px;
         position: relative;
         margin: auto;
@@ -77,7 +77,7 @@
         transition: background-color 0.6s ease;
         }
 
-        .active, .dot:hover {
+        .currentDot, .dot:hover {
         background-color: #D3D3D3;
         }
 
@@ -115,36 +115,36 @@
         }
 
         //PICTURE CAROUSEL jw
-        let slideIndex = 1;
-        show(slideIndex);
+        let index = 1;
+        show(index);
 
         function increase(n) {
-        show(slideIndex += n);
+        show(index += n);
         }
 
         function current(n) {
-        show(slideIndex = n);
+        show(index = n);
         }
 
         function show(n) {
         let i;
-        let slides = document.getElementsByClassName("slides");
+        let picture = document.getElementsByClassName("pics");
         let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) 
+        if (n > picture.length) 
         {
-            slideIndex = 1
+            index = 1
         }    
         if (n < 1) {
-            slideIndex = slides.length
+            index = picture.length
         }
-        for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
+        for (i = 0; i < picture.length; i++) {
+        picture[i].style.display = "none";  
         }
         for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
+        dots[i].className = dots[i].className.replace(" currentDot", "");
         }
-        slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " active";
+        picture[index-1].style.display = "block";  
+        dots[index-1].className += " currentDot";
         }
 
     </script>
@@ -159,17 +159,17 @@
     </nav>
 
     <!--PICTURE CAROUSEL jw-->
-    <div class="slideContainer">
+    <div class="container">
 
-    <div class="slides fade">
+    <div class="pics fade">
     <img src="./hamburger.jpg" style="width:100%">
     </div>
 
-    <div class="slides fade">
+    <div class="pics fade">
     <img src="./pizza.jpg" style="width:100%">
     </div>
 
-    <div class="slides fade">
+    <div class="pics fade">
     <img src="./wine.jpg" style="width:100%">
     </div>
 
