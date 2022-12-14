@@ -14,6 +14,8 @@
         nav a {
             color: #fff;
             text-decoration: none;
+            margin-top: 40px;
+            margin-bottom: 50px;
         }
         nav a:hover {
             text-decoration: underline;
@@ -27,6 +29,7 @@
 </head>
 <body>
 <nav>
+        <img src="./happyhourlogo.png" width='100px' height='100px' alt='image'>
         <a href="./home.php">Home</a>
         <a href="./favoritesPage.php">Favorites</a>
         <a href="./logout.php">logOut</a>
