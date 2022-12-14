@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@700&display=swap" rel="stylesheet">
@@ -172,15 +172,15 @@
             <input type="radio" name = "radio-btn" id="r3">
         
     <div class="pics one">
-        <img src="./hamburger.jpg" style="width:100%">
+        <img src="./hamburger.jpg">
     </div>
 
     <div class="pics">
-        <img src="./pizza.jpg" style="width:100%">
+        <img src="./pizza.jpg">
     </div>
 
     <div class="pics">
-        <img src="./wine.jpg" style="width:100%">
+        <img src="./wine.jpg">
     </div>
     
     <div class="autoNavigation">
