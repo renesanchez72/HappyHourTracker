@@ -5,10 +5,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One&display=swap" rel="stylesheet">
 
     <title>Add Restaurant</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
 
         /* Basic styles for the page */
         nav {
@@ -34,7 +36,7 @@
         body {
             font-family: sans-serif;
             margin: 0;
-            color:
+            color: #770737;
         }
 
 
@@ -46,24 +48,20 @@
 
         input checkbox {
             display: inline;
-            margin bottom: 10px;
-        }
-
-        input:focus {
-        outline: none;
-        border-color: #26bf47;
-        box-shadow: 0 0 10px #26bf47;
+            margin bottom: 5px;
         }
         
         form {
 	    margin-top: 10px;
         color: black;
-        font-size: 30px;
+        font-size: 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        font-family: 'Passion One', cursive;
         align-items: center;
         font-weight: bold;
+        background-color: 
         }
  
         input {
@@ -75,15 +73,13 @@
         margin-left: 100px;
         margin-right: 100px;
         margin-top: 30px;
+        border: 2px solid;
         }
 
         input button {
         display: flex;
         justify-content: center;
         align-items: center;  
-        margin-bottom: 20px; 
-        background-color: black;
-        color: white; 
         }
 
     </style>

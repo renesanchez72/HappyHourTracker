@@ -100,7 +100,7 @@
     font-family: 'Passion One', cursive;
     align-items: center;
     top: 300px;
-    left: 474px;
+    left: 500px;
     }
 
     </style>
@@ -147,7 +147,7 @@
     <div id="slider">
         <figure>
             <div class= textbox> Welcome to the Happy Hour App!
-                <img src= "./happyhourlogo.png">
+                <img src= "./happyhourlogo.png" style= height:300px;width:300px;>
             </div>
             <img src="./hamburger.jpg" height= "800px">
             <img src="./pizza.jpg" height="800px">
