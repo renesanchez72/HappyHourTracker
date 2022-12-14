@@ -24,6 +24,7 @@
             font-family: sans-serif;
             margin: 0;
         }
+
         
         /*picture carousel*/ 
         * {box-sizing: border-box}
@@ -39,7 +40,24 @@
         margin: auto;
         }
 
-        /* circles */
+        /* next button */
+        .previous, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 10px;
+        color: white;
+        transition: 0.6s ease;
+        user-select: none;
+        }
+
+        /* next button only */
+        .next {
+        right: 0;
+        }
+
+        /* dots */
         .dot {
         cursor: pointer;
         height: 15px;
@@ -52,7 +70,7 @@
         }
 
         .active, .dot:hover {
-        background-color: gray;
+        background-color: #gray;
         }
 
         /* carousel fades */
@@ -106,10 +124,10 @@
         let dots = document.getElementsByClassName("dot");
         if (n > slides.length) 
         {
-            index = 1;
+            slideIndex = 1
         }    
         if (n < 1) {
-            index = slides.length;
+            slideIndex = slides.length
         }
         for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";  
@@ -117,8 +135,8 @@
         for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
         }
-        slides[index-1].style.display = "block";  
-        dots[index-1].className += " active";
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
         }
 
     </script>
@@ -146,6 +164,11 @@
     <div class="slides fade">
     <img src="./wine.jpg" style="width:100%">
     </div>
+
+    <a class="previous" onclick="increase(-1)">❮</a>
+    <a class="next" onclick="increase(1)">❯</a>
+    </div>
+    <br>
 
     <div style="text-align:center">
     <span class="dot" onclick="current(1)"></span> 
