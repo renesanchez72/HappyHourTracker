@@ -173,15 +173,15 @@
     <div class="slideContainer">
 
     <div class="slides fade">
-    <img src="./hamburger.jpg">
+    <img src="./hamburger.jpg" style="width:100%">
     </div>
 
     <div class="slides fade">
-    <img src="./pizza.jpg">
+    <img src="./pizza.jpg" style="width:100%">
     </div>
 
     <div class="slides fade">
-    <img src="./wine.jpg">
+    <img src="./wine.jpg" style="width:100%">
     </div>
 
     <a class="previous" onclick="increase(-1)">❮</a>
