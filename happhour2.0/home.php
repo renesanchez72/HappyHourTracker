@@ -15,6 +15,8 @@
         /* Basic styles for the page */
         @import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@700&display=swap');
 
+
+
         nav {
             background-color: #333;
             color: #fff;
@@ -30,7 +32,7 @@
             text-decoration: none;
         }
         nav a:hover {
-            color: gray;
+            color: #D3D3D3;
         }
         body {
             font-family: sans-serif;
@@ -86,21 +88,6 @@
         }
     }
 
-    .container {
-        position: relative;
-    }
-
-    .textbox {
-        position: absolute;
-        bottom: 200px;
-        right: 200px;
-        background-color: black;
-        color: white;
-        padding-left: 20px;
-        padding-right: 20px;
-        font-size: 30px;
-    }
-
     </style>
 
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
@@ -140,21 +127,15 @@
         <a href="./logout.php">LOGOUT</a>
         
     </nav>
-    
-    <div class = "container">
-    <div class = "textbox">
-        <h2>Welcome back to the Happy Hour App!<h2>
-    </div>
-    </div>
 
     <!--PICTURE CAROUSEL jw-->
     <div id="slider">
         <figure>
-            <img src="./hamburger.jpg" height="400">
-            <img src="./pizza.jpg" height="400">
-            <img src="./wine.jpg" height="400">
-            <img src="./burrito.jpg" height="400">
-            <img src="./hamburger.jpg" height="400">
+            <img src="./hamburger.jpg" style="width:auto; height:250px">
+            <img src="./pizza.jpg" style="width:auto; height:250px">
+            <img src="./wine.jpg" style="width:auto; height:250px">
+            <img src="./burrito.jpg" style="width:auto; height:250px">
+            <img src="./hamburger.jpg" style="width:auto; height:250px">
         </figure>
     </div>    
 
@@ -180,7 +161,7 @@
             echo "<div id='restaurant'>";
             foreach ($row as $col => $value) {
                 if ($col == "image") {
-                    echo "<img src='$value' width='400px' height='400px' alt='image'/>";
+                    echo "<img src='$value' width='400px' height='400px' border-radius='30px' alt='image'/>";
                 }elseif ($col == "id") {
                     $restaurantID = $value;
                 }

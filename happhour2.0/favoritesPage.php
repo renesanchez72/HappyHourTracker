@@ -32,7 +32,7 @@ $userid = $_SESSION["userid"];
         }
 
         nav a:hover {
-            color: gray;
+            color: #D3D3D3;
         }
 
         body {

@@ -28,7 +28,7 @@
         }
 
         nav a:hover {
-            text-decoration: underline;
+            color: #D3D3D3;
         }
 
         body {
@@ -40,11 +40,28 @@
         label,
         input {
             display: block;
+            border-radius: 10px;
         }
 
         input checkbox {
             display: inline;
         }
+
+        
+        form {
+        color: black;
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+ 
+        .container {
+	    border: 1px solid black;
+        margin-left: 50px;
+        margin-right: 50px; 
+        }
+
     </style>
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <script>
@@ -123,7 +140,7 @@
 
 
 
-
+    <div class = "container">
     <form name="addRestaurant">
         <label for="restaurantName">Name of Restaurant</label>
         <input type="text" name="restaurantName" id="restaurantName">
@@ -143,7 +160,7 @@
         <input type="checkbox" name="days" value="SUN">Sunday<br>
         <input type="button" value="Submit" id="addRestaurantButton">
     </form>
-
+    </div>
 </body>
 
 </html>
