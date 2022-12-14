@@ -85,6 +85,25 @@
             left: -400%;
         }
     }
+
+    figure {
+        height: 60%;
+    }
+
+    .container {
+        position: relative;
+    }
+
+    .textbox {
+        position: absolute;
+        bottom: 100px;
+        right: 100px;
+        background-color: black;
+        color: white;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     </style>
 
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
@@ -128,9 +147,15 @@
     <!--PICTURE CAROUSEL jw-->
     <div id="slider">
         <figure>
+            <div class = "container">
             <img src="./hamburger.jpg">
+            <div class = "textbox">
+            <h2>Welcome back to the Happy Hour App!<h2>
+            </div>
+            </div>
             <img src="./pizza.jpg">
             <img src="./wine.jpg">
+            <img src="./burrito.jpg">
             <img src="./hamburger.jpg">
         </figure>
     </div>    
