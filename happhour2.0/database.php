@@ -3,8 +3,8 @@
 $host = "localhost";
 $db = "happyhour";
 $username = "root";
-// $password = "Happy1";
-$password = "mysql";
+$password = "Happy1";
+// $password = "mysql";
 
 $mysqli = new mysqli($host,$username,$password,$db);
 
