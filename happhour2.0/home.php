@@ -23,6 +23,15 @@
             margin: 0;
         }
 
+        /*centers images jw*/ 
+        .logo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-color: black;
+            margin: .8px;
+        }
+
     </style>
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <script >
@@ -58,7 +67,8 @@
         <a href="./logout.php">logOut</a>
     </nav>
 
-    <img src="./happyhourlogo.png" width='300px' height='300px' alt='image'/>
+    <!--HAPPY HOUR LOGO jw-->
+    <img src="./happyhourlogo.png" width='100px' height='100px' alt='image' class="logo">
 
     <main>
         <!-- PHP code that retrieves data from the database and displays it in a table -->
