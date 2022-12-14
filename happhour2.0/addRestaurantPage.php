@@ -36,7 +36,7 @@
         body {
             font-family: sans-serif;
             margin: 0;
-            background-color: #770737;
+            background-color: #811331;
         }
 
 
@@ -60,11 +60,11 @@
         align-items: center;
         font-weight: bold;
         border-radius: 10px;
-        margin-left: 300px;
-        margin-right: 300px;
+        margin-left: 500px;
+        margin-right: 500px;
         margin-top: 30px;
         border: 2px solid;
-        background-color: #811331;
+        background-color: #FAF9F6;
         }
  
         input {
