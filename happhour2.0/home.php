@@ -159,7 +159,7 @@
         <img src="./happyhourlogo.png" width='100px' height='100px' alt='image'>
         <a href="./home.php">HOME</a>
         <a href="./favoritesPage.php">FAVORITES</a>
-        <a href="./addRestaurant.html">ADD DEAL</a>
+        <a href="./addRestaurantPage.php">ADD DEAL</a>
         <a href="./logout.php">LOGOUT</a>
         
     </nav>
