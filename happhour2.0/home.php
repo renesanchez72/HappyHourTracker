@@ -9,11 +9,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Passion+One&display=swap" rel="stylesheet">
 
     <title>My PHP page</title>
     <style>
         /* Basic styles for the page */
         @import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
 
 
 
@@ -88,6 +90,19 @@
         }
     }
 
+    /*add textbox on carousel*/
+    .textbox{
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    display:flex;
+    flex-direction:column-reverse;
+    font-family: 'Passion One', cursive;
+    align-items: center;
+    top: 300px;
+    left: 474px;
+    }
+
     </style>
 
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
@@ -131,6 +146,9 @@
     <!--PICTURE CAROUSEL jw-->
     <div id="slider">
         <figure>
+            <div class= textbox> Welcome to the Happy Hour App!
+                <img src= "./happyhourlogo.png">
+            </div>
             <img src="./hamburger.jpg" height= "800px">
             <img src="./pizza.jpg" height="800px">
             <img src="./wine.jpg" height="800px">

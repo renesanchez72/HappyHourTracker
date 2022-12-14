@@ -34,6 +34,7 @@
         body {
             font-family: sans-serif;
             margin: 0;
+            color:
         }
 
 
@@ -45,17 +46,24 @@
 
         input checkbox {
             display: inline;
+            margin bottom: 10px;
         }
 
+        input:focus {
+        outline: none;
+        border-color: #26bf47;
+        box-shadow: 0 0 10px #26bf47;
+        }
         
         form {
 	    margin-top: 10px;
-        color: blue;
-        font-size: 10px;
+        color: black;
+        font-size: 30px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        font-weight: bold;
         }
  
         input {
@@ -64,16 +72,18 @@
 
         .container {
 	    border-radius: 10px;
-	    border: 1px solid black;
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-top: 300px;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 30px;
         }
 
         input button {
         display: flex;
         justify-content: center;
-        align-items: center;    
+        align-items: center;  
+        margin-bottom: 20px; 
+        background-color: black;
+        color: white; 
         }
 
     </style>
@@ -156,14 +166,15 @@
 
     <div class = "container">
     <form name="addRestaurant">
+        <img src = "./happyhourlogo2.PNG">
         <label for="restaurantName">Name of Restaurant</label>
-        <input type="text" name="restaurantName" id="restaurantName">
+        <input type="text" name="restaurantName" id="restaurantName" placeholder="name"> 
         <label for="restaurantImage">Image Link</label>
-        <input type="text" name="restaurantImage" id="restaurantImage">
+        <input type="text" name="restaurantImage" id="restaurantImage" placeholder="image">
         <label for="address">Address of Restaurant</label>
-        <input type="text" name="address" id="address">
+        <input type="text" name="address" id="address" placeholder="address">
         <label for="deal">Deal or Promotion</label>
-        <input type="text" name="deal" id="deal">
+        <input type="text" name="deal" id="deal" placeholder="-">
         <label for="days">Select the days of the week promo is active:</label><br>
         <input type="checkbox" name="days" value="MON">Monday<br>
         <input type="checkbox" name="days" value="TUES">Tuesday<br>
