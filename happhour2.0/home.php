@@ -39,57 +39,52 @@
 
         
         /*picture carousel*/ 
-        * {box-sizing: border-box}
-        .pics 
-        {display: none}
-        img 
-        {vertical-align: middle;}
+    #slider {
+        overflow: hidden;
+    }
 
-        /* container */
-        .container {
-        max-width: 1000px;
+    #slider figure {
         position: relative;
-        margin: auto;
-        }
+        width: 500%;
+        margin: 0;
+        left: 0;
+        animation: 20s slider infinite;
+    }    
 
-        /* next button */
-        .previous, .next {
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        width: auto;
-        padding: 10px;
-        color: white;
-        transition: 0.6s ease;
-        user-select: none;
-        }
+    #slider figure img {
+        float: left;
+        width: 20%;
+    }
 
-        /* next button only */
-        .next {
-        right: 0;
+    @keyframes slider {
+        0% {
+            left: 0;
         }
-
-        /* dots */
-        .dot {
-        cursor: pointer;
-        height: 15px;
-        width: 15px;
-        margin: 0 2px;
-        background-color: gray;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
+        20% {
+            left: 0;
         }
-
-        .currentDot, .dot:hover {
-        background-color: #D3D3D3;
+        25% {
+            left: -100%;
         }
-
-        /* carousel fades */
-        .fade {
-        animation-name: fade;
-        animation-duration: 1.5s;
+        45% {
+            left: -100%;
         }
+        50% {
+            left: -200%;
+        }
+        70% {
+            left: -200%;
+        }
+        75% {
+            left: -300%;
+        }
+        95%{
+            left: -300%;
+        }
+        100%{
+            left: -400%;
+        }
+    }
     </style>
 
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
@@ -117,40 +112,6 @@
             });
             //some code
         }
-
-        //PICTURE CAROUSEL jw
-        let index = 1;
-        show(index);
-
-        function increase(n) {
-        show(index += n);
-        }
-
-        function current(n) {
-        show(index = n);
-        }
-
-        function show(n) {
-        let i;
-        let picture = document.getElementsByClassName("pics");
-        let dots = document.getElementsByClassName("dot");
-        if (n > picture.length) 
-        {
-            index = 1
-        }    
-        if (n < 1) {
-            index = picture.length
-        }
-        for (i = 0; i < picture.length; i++) {
-        picture[i].style.display = "none";  
-        }
-        for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" currentDot", "");
-        }
-        picture[index-1].style.display = "block";  
-        dots[index-1].className += " currentDot";
-        }
-
     </script>
 </head>
 <body>
@@ -165,37 +126,14 @@
     </nav>
 
     <!--PICTURE CAROUSEL jw-->
-    <div class="slider">
-        <div class="picture">
-            <input type="radio" name = "radio-btn" id="r1">
-            <input type="radio" name = "radio-btn" id="r2">
-            <input type="radio" name = "radio-btn" id="r3">
-        
-    <div class="pics one">
-    <img src="https://www.tutorialspoint.com/assets/questions/media/426142-1668760872.png" style="width:50px;height:50px;">
-    </div>
-
-    <div class="pics">
-        <img src="../pizza.jpg">
-    </div>
-
-    <div class="pics">
-        <img src="../wine.jpg" >
-    </div>
-    
-    <div class="autoNavigation">
-      <div class="autoBtn1"></div>
-        <div class="autoBtn2"></div>
-        <div class="autoBtn3"></div>
-    </div>
-    </div>
-        <div class="manualNavigation">
-        <label for="r1" class="manualBtn"></label>
-        <label for="r2" class="manualBtn"></label>
-        <label for="r3" class="manualBtn"></label>
-    </div>
-    </div>
-
+    <div id="slider">
+        <figure>
+            <img src="./hamburger.jpg">
+            <img src="./pizza.jpg">
+            <img src="./wine.jpg">
+            <img src="./hamburger.jpg">
+        </figure>
+    </div>    
 
     <main>
         <!-- PHP code that retrieves data from the database and displays it in a table -->
