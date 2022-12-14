@@ -51,9 +51,6 @@
         }
         
         form {
-	    margin-top: 10px;
-        margin-left:100px;
-        margin-right:100px;
         color: black;
         font-size: 20px;
         display: flex;
@@ -62,19 +59,16 @@
         font-family: 'Passion One', cursive;
         align-items: center;
         font-weight: bold;
-        background-color: #FAF9F6;
+        border-radius: 10px;
+        margin-left: 300px;
+        margin-right: 300px;
+        margin-top: 30px;
+        border: 2px solid;
+        background-color: #811331;
         }
  
         input {
 	    border-radius: 10px;
-        }
-
-        .container {
-	    border-radius: 10px;
-        margin-left: 100px;
-        margin-right: 100px;
-        margin-top: 30px;
-        border: 2px solid;
         }
 
         input button {
@@ -161,7 +155,6 @@
 
 
 
-    <div class = "container">
     <form name="addRestaurant">
         <img src = "./happyhourlogo2.PNG">
         <label for="restaurantName">Name of Restaurant</label>
@@ -182,7 +175,6 @@
         <input type="checkbox" name="days" value="SUN">Sunday<br>
         <input type="button" value="Submit" id="addRestaurantButton">
     </form>
-    </div>
 </body>
 
 </html>

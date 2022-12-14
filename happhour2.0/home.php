@@ -100,7 +100,7 @@
     font-family: 'Passion One', cursive;
     align-items: center;
     top: 200px;
-    left: 700px;
+    left: 750px;
     }
 
     </style>
