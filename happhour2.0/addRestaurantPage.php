@@ -2,8 +2,14 @@
 <html>
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@700&display=swap" rel="stylesheet">
+
     <title>Add Restaurant</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@700&display=swap');
+
         /* Basic styles for the page */
         nav {
             background-color: #333;
@@ -16,6 +22,9 @@
         nav a {
             color: #fff;
             text-decoration: none;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-family: 'Palanquin Dark', sans-serif;
         }
 
         nav a:hover {
