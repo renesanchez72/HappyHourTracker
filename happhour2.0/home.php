@@ -172,15 +172,15 @@
             <input type="radio" name = "radio-btn" id="r3">
         
     <div class="pics one">
-        <img src="hamburger.jpg">
+        <img src="./hamburger.jpg">
     </div>
 
     <div class="pics">
-        <img src="pizza.jpg">
+        <img src="./pizza.jpg">
     </div>
 
     <div class="pics">
-        <img src="wine.jpg">
+        <img src="./wine.jpg" width=500vh height=500vh>
     </div>
     
     <div class="autoNavigation">
