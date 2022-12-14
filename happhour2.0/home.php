@@ -6,9 +6,15 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@700&display=swap" rel="stylesheet">
+
     <title>My PHP page</title>
     <style>
         /* Basic styles for the page */
+        @import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@700&display=swap');
+
         nav {
             background-color: #333;
             color: #fff;
@@ -17,61 +23,50 @@
             padding: 0.5em 1em;
         }
         nav a {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-family: 'Palanquin Dark', sans-serif;
             color: #fff;
             text-decoration: none;
         }
         nav a:hover {
-            text-decoration: underline;
+            color: gray;
         }
         body {
             font-family: sans-serif;
             margin: 0;
         }
 
-        /*centers images jw 
-        .logo {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-        */
-
+        
         /*picture carousel*/ 
         * {box-sizing: border-box}
-        .slides 
+        .pics 
         {display: none}
         img 
         {vertical-align: middle;}
 
         /* container */
-        .slideContainer {
+        .container {
         max-width: 1000px;
         position: relative;
         margin: auto;
         }
 
-        /* next */
+        /* next button */
         .previous, .next {
         cursor: pointer;
         position: absolute;
         top: 50%;
         width: auto;
-        padding: 16px;
-        margin-top: -22px;
+        padding: 10px;
         color: white;
-        font-weight: bold;
-        font-size: 18px;
         transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
         user-select: none;
         }
 
-        /* next button */
+        /* next button only */
         .next {
         right: 0;
-        border-radius: 3px 0 0 3px;
         }
 
         /* dots */
@@ -80,14 +75,14 @@
         height: 15px;
         width: 15px;
         margin: 0 2px;
-        background-color: #bbb;
+        background-color: gray;
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
         }
 
-        .active, .dot:hover {
-        background-color: #717171;
+        .currentDot, .dot:hover {
+        background-color: #D3D3D3;
         }
 
         /* carousel fades */
@@ -95,17 +90,6 @@
         animation-name: fade;
         animation-duration: 1.5s;
         }
-
-        @keyframes fade {
-        from {opacity: .4} 
-        to {opacity: 1}
-        }
-
-        /* On smaller screens, decrease text size */
-        @media only screen and (max-width: 300px) {
-        .prev, .next,.text {font-size: 11px}
-        }
-
     </style>
 
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
@@ -135,31 +119,36 @@
         }
 
         //PICTURE CAROUSEL jw
-        let slideIndex = 1;
-        show(slideIndex);
+        let index = 1;
+        show(index);
 
         function increase(n) {
-        show(slideIndex += n);
+        show(index += n);
         }
 
         function current(n) {
-        show(slideIndex = n);
+        show(index = n);
         }
 
         function show(n) {
         let i;
-        let slides = document.getElementsByClassName("slides");
+        let picture = document.getElementsByClassName("pics");
         let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}    
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
+        if (n > picture.length) 
+        {
+            index = 1
+        }    
+        if (n < 1) {
+            index = picture.length
+        }
+        for (i = 0; i < picture.length; i++) {
+        picture[i].style.display = "none";  
         }
         for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
+        dots[i].className = dots[i].className.replace(" currentDot", "");
         }
-        slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " active";
+        picture[index-1].style.display = "block";  
+        dots[index-1].className += " currentDot";
         }
 
     </script>
@@ -176,22 +165,20 @@
     </nav>
 
     <!--PICTURE CAROUSEL jw-->
-    <div class="slideContainer">
+    <div class="container">
 
-    <div class="slides fade">
+    <div class="pics fade">
     <img src="./hamburger.jpg" style="width:100%">
     </div>
 
-    <div class="slides fade">
+    <div class="pics fade">
     <img src="./pizza.jpg" style="width:100%">
     </div>
 
-    <div class="slides fade">
+    <div class="pics fade">
     <img src="./wine.jpg" style="width:100%">
     </div>
 
-    <a class="previous" onclick="increase(-1)">❮</a>
-    <a class="next" onclick="increase(1)">❯</a>
     </div>
     <br>
 

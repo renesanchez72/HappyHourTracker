@@ -5,9 +5,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@700&display=swap" rel="stylesheet">
+
     <title>My PHP page</title>
     <style>
         /* Basic styles for the page */
+        @import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@700&display=swap');
+
         nav {
             background-color: #333;
             color: #fff;
@@ -16,11 +22,14 @@
             padding: 0.5em 1em;
         }
         nav a {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-family: 'Palanquin Dark', sans-serif;
             color: #fff;
             text-decoration: none;
         }
         nav a:hover {
-            text-decoration: underline;
+            color:gray;
         }
         body {
             font-family: sans-serif;
@@ -31,13 +40,10 @@
 </head>
 <body>
 <nav>
-        <!--HAPPY HOUR LOGO jw-->
         <img src="./happyhourlogo.png" width='100px' height='100px' alt='image'>
         <a href="./home.php">HOME</a>
         <a href="./favoritesPage.php">FAVORITES</a>
-        <a href="./addRestaurant.html">ADD DEAL</a>
         <a href="./logout.php">LOGOUT</a>
-
     </nav>
     <main>
         <!-- PHP code that retrieves data from the database and displays it in a table -->
