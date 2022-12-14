@@ -40,6 +40,33 @@ $userid = $_SESSION["userid"];
             margin: 0;
         }
     </style>
+    
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script>
+        function unFav(restaurantid, userid) {
+            console.log('removing fav');
+            console.log(restaurantid);
+            console.log(userid);
+            var request = $.ajax({
+                type: 'POST',
+                url: 'removeFavorite.php',
+                dataType: 'json',
+                data: 'restaurantid=' + restaurantid + '&userid=' + userid,
+                success: function (response) {
+                    console.log(response);
+                    if (response.favoriteRemoved) {
+                        console.log("Removed from favorites");
+                        alert(response.text);
+                    } else {
+                        alert(response.text);
+                    }
+                }
+
+
+            });
+            //some code
+        }
+    </script>
 </head>
 
 <body>
@@ -123,7 +150,7 @@ $userid = $_SESSION["userid"];
                             echo "<p>$value</p>";
                         }
                     }
-                    //  echo "<button   onclick='fav($restaurantID,$userid);'>Favorite</button>";
+                    echo "<button   onclick='unFav($restaurantID,$userid);'>Remove</button>";
                     echo "</div>";
                 }
             } else {
