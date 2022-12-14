@@ -172,7 +172,7 @@
             <input type="radio" name = "radio-btn" id="r3">
         
     <div class="pics one">
-        <img src="../hamburger.jpg">
+    <img src="https://www.tutorialspoint.com/assets/questions/media/426142-1668760872.png" style="width:50px;height:50px;">
     </div>
 
     <div class="pics">
@@ -195,6 +195,7 @@
         <label for="r3" class="manualBtn"></label>
     </div>
     </div>
+
 
     <main>
         <!-- PHP code that retrieves data from the database and displays it in a table -->
