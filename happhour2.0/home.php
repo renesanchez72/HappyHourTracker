@@ -26,7 +26,7 @@
             text-decoration: none;
         }
         nav a:hover {
-            text-color: gray;
+            color: gray;
         }
         body {
             font-family: sans-serif;

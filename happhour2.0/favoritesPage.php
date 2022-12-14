@@ -37,9 +37,9 @@
 <body>
 <nav>
         <img src="./happyhourlogo.png" width='100px' height='100px' alt='image'>
-        <a href="./home.php">Home</a>
-        <a href="./favoritesPage.php">Favorites</a>
-        <a href="./logout.php">logOut</a>
+        <a href="./home.php">HOME</a>
+        <a href="./favoritesPage.php">FAVORITES</a>
+        <a href="./logout.php">LOGOUT</a>
     </nav>
     <main>
         <!-- PHP code that retrieves data from the database and displays it in a table -->
