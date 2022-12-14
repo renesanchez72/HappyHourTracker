@@ -57,6 +57,9 @@
         <a href="./favoritesPage.php">Favorites</a>
         <a href="./logout.php">logOut</a>
     </nav>
+
+    <img src="./happyhourlogo.png" width='300px' height='300px' alt='image'/>
+
     <main>
         <!-- PHP code that retrieves data from the database and displays it in a table -->
         <?php
