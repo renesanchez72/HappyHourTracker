@@ -36,7 +36,7 @@
         body {
             font-family: sans-serif;
             margin: 0;
-            color: #770737;
+            background-color: #770737;
         }
 
 
@@ -48,11 +48,12 @@
 
         input checkbox {
             display: inline;
-            margin bottom: 5px;
         }
         
         form {
 	    margin-top: 10px;
+        margin-left:100px;
+        margin-right:100px;
         color: black;
         font-size: 20px;
         display: flex;
@@ -61,7 +62,7 @@
         font-family: 'Passion One', cursive;
         align-items: center;
         font-weight: bold;
-        background-color: 
+        background-color: #FAF9F6;
         }
  
         input {

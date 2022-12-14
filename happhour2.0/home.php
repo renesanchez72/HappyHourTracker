@@ -99,8 +99,8 @@
     flex-direction:column-reverse;
     font-family: 'Passion One', cursive;
     align-items: center;
-    top: 300px;
-    left: 500px;
+    top: 200px;
+    left: 700px;
     }
 
     </style>
