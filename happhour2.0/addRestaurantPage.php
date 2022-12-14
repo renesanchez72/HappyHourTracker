@@ -49,17 +49,31 @@
 
         
         form {
-        color: black;
+	    margin-top: 10px;
+        color: blue;
         font-size: 10px;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
         }
  
+        input {
+	    border-radius: 10px;
+        }
+
         .container {
+	    border-radius: 10px;
 	    border: 1px solid black;
-        margin-left: 50px;
-        margin-right: 50px; 
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 300px;
+        }
+
+        input button {
+        display: flex;
+        justify-content: center;
+        align-items: center;    
         }
 
     </style>
