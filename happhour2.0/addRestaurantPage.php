@@ -5,12 +5,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Passion+One&display=swap" rel="stylesheet">
 
     <title>Add Restaurant</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@700&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
 
         /* Basic styles for the page */
         nav {
@@ -56,15 +54,14 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        font-family: 'Passion One', cursive;
         align-items: center;
         font-weight: bold;
         border-radius: 10px;
         margin-left: 500px;
         margin-right: 500px;
         margin-top: 30px;
-        border: 2px solid;
-        background-color: #FAF9F6;
+        margin-bottom: 30px;
+        background-color: #F0EAD6;
         }
  
         input {
@@ -158,13 +155,13 @@
     <form name="addRestaurant">
         <img src = "./happyhourlogo2.PNG">
         <label for="restaurantName">Name of Restaurant</label>
-        <input type="text" name="restaurantName" id="restaurantName" placeholder="name"> 
+        <input type="text" name="restaurantName" id="restaurantName"> 
         <label for="restaurantImage">Image Link</label>
-        <input type="text" name="restaurantImage" id="restaurantImage" placeholder="image">
+        <input type="text" name="restaurantImage" id="restaurantImage">
         <label for="address">Address of Restaurant</label>
-        <input type="text" name="address" id="address" placeholder="address">
+        <input type="text" name="address" id="address">
         <label for="deal">Deal or Promotion</label>
-        <input type="text" name="deal" id="deal" placeholder="-">
+        <input type="text" name="deal" id="deal">
         <label for="days">Select the days of the week promo is active:</label><br>
         <input type="checkbox" name="days" value="MON">Monday<br>
         <input type="checkbox" name="days" value="TUES">Tuesday<br>
