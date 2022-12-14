@@ -34,20 +34,22 @@
         }
         */
 
+        /*picture carousel*/ 
         * {box-sizing: border-box}
-        body {font-family: Verdana, sans-serif; margin:0}
-        .mySlides {display: none}
-        img {vertical-align: middle;}
+        .slides 
+        {display: none}
+        img 
+        {vertical-align: middle;}
 
-        /* Slideshow container */
-        .slideshow-container {
+        /* container */
+        .slideContainer {
         max-width: 1000px;
         position: relative;
         margin: auto;
         }
 
-        /* Next & previous buttons */
-        .prev, .next {
+        /* next */
+        .previous, .next {
         cursor: pointer;
         position: absolute;
         top: 50%;
@@ -62,38 +64,13 @@
         user-select: none;
         }
 
-        /* Position the "next button" to the right */
+        /* next button */
         .next {
         right: 0;
         border-radius: 3px 0 0 3px;
         }
 
-        /* On hover, add a black background color with a little bit see-through */
-        .prev:hover, .next:hover {
-        background-color: rgba(0,0,0,0.8);
-        }
-
-        /* Caption text */
-        .text {
-        color: #f2f2f2;
-        font-size: 15px;
-        padding: 8px 12px;
-        position: absolute;
-        bottom: 8px;
-        width: 100%;
-        text-align: center;
-        }
-
-        /* Number text (1/3 etc) */
-        .numbertext {
-        color: #f2f2f2;
-        font-size: 12px;
-        padding: 8px 12px;
-        position: absolute;
-        top: 0;
-        }
-
-        /* The dots/bullets/indicators */
+        /* dots */
         .dot {
         cursor: pointer;
         height: 15px;
@@ -109,7 +86,7 @@
         background-color: #717171;
         }
 
-        /* Fading animation */
+        /* carousel fades */
         .fade {
         animation-name: fade;
         animation-duration: 1.5s;
@@ -155,19 +132,19 @@
 
         //PICTURE CAROUSEL jw
         let slideIndex = 1;
-        showSlides(slideIndex);
+        show(slideIndex);
 
-        function plusSlides(n) {
-        showSlides(slideIndex += n);
+        function increase(n) {
+        show(slideIndex += n);
         }
 
-        function currentSlide(n) {
-        showSlides(slideIndex = n);
+        function current(n) {
+        show(slideIndex = n);
         }
 
-        function showSlides(n) {
+        function show(n) {
         let i;
-        let slides = document.getElementsByClassName("mySlides");
+        let slides = document.getElementsByClassName("slides");
         let dots = document.getElementsByClassName("dot");
         if (n > slides.length) {slideIndex = 1}    
         if (n < 1) {slideIndex = slides.length}
@@ -193,39 +170,30 @@
     </nav>
 
     <!--PICTURE CAROUSEL jw-->
-    <div class="slideshow-container">
+    <div class="slideContainer">
 
-    <div class="mySlides fade">
-    <div class="numbertext">1 / 3</div>
-    <img src="./hamburger.jpg" style="width:100%">
-    <div class="text">Caption Text</div>
+    <div class="slides fade">
+    <img src="./hamburger.jpg">
     </div>
 
-    <div class="mySlides fade">
-    <div class="numbertext">2 / 3</div>
-    <img src="./pizza.jpg" style="width:100%">
-    <div class="text">Caption Two</div>
+    <div class="slides fade">
+    <img src="./pizza.jpg">
     </div>
 
-    <div class="mySlides fade">
-    <div class="numbertext">3 / 3</div>
-    <img src="./wine.jpg" style="width:100%">
-    <div class="text">Caption Three</div>
+    <div class="slides fade">
+    <img src="./wine.jpg">
     </div>
 
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
-
+    <a class="previous" onclick="increase(-1)">❮</a>
+    <a class="next" onclick="increase(1)">❯</a>
     </div>
     <br>
 
     <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span> 
-    <span class="dot" onclick="currentSlide(2)"></span> 
-    <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="current(1)"></span> 
+    <span class="dot" onclick="current(2)"></span> 
+    <span class="dot" onclick="current(3)"></span> 
     </div>
-
-
 
     <main>
         <!-- PHP code that retrieves data from the database and displays it in a table -->
