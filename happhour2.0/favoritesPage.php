@@ -1,3 +1,7 @@
+<?php
+        session_start();
+        $userid = $_SESSION["userid"];
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -27,15 +31,17 @@
 </head>
 <body>
 <nav>
-        <a href="./home.php">Home</a>
-        <a href="./favoritesPage.php">Favorites</a>
-        <a href="./logout.php">logOut</a>
+        <!--HAPPY HOUR LOGO jw-->
+        <img src="./happyhourlogo.png" width='100px' height='100px' alt='image'>
+        <a href="./home.php">HOME</a>
+        <a href="./favoritesPage.php">FAVORITES</a>
+        <a href="./addRestaurant.html">ADD DEAL</a>
+        <a href="./logout.php">LOGOUT</a>
+
     </nav>
     <main>
         <!-- PHP code that retrieves data from the database and displays it in a table -->
         <?php
-        session_start();
-        $userid = $_SESSION["userid"];
         // Connect to the database
         $mysqli = require __DIR__ . "/database.php";
 
