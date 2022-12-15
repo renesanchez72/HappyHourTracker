@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Passion+One&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/519591b792.js" crossorigin="anonymous"></script>
 
     <title>My PHP page</title>
     <style>
@@ -103,6 +104,7 @@
     left: 500px;
     }
 
+    /*sidebar menu*/
     @media screen and (max-width: 600px) {
       nav .sidebarBtn{
           display: flex;
@@ -112,7 +114,6 @@
       }
   }
   
-  /*Sidebar Menu*/
   .sidebar {
       height: 54%;
       position: fixed;
@@ -149,8 +150,8 @@
       cursor: pointer;
   }
   
-  /*Logout Button*/
-  button .logoutBtn{
+  /*logout button*/
+  button[class=.logoutBtn]{
       position: absolute;
       top: 15px;
       color: white;
@@ -162,14 +163,12 @@
       background-color: black;
   }
   
-  /*Solid Line Divider*/
+  /*solid line divider*/
   hr.solid {
       border-top: 1px solid lightgray;
   }
 
- 
-
-/*Icon*/
+  /*icon*/
   .fas
   {
     color: #AFA398;
@@ -201,6 +200,15 @@
                 
             });
             //some code
+        }
+
+        //open and closes sidebar
+        function openSidebar() {
+            document.getElementById("mySidebar").style.width = "250px";
+        }
+    
+        function closeSidebar() {
+            document.getElementById("mySidebar").style.width = "0px";
         }
     </script>
 </head>
