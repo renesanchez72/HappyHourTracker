@@ -108,7 +108,7 @@
 /*sidebar menu*/
 nav ul li:hover
   {
-      background: black;
+      background: #FAF9F6;
   }
 
 @media screen and (max-width: 600px) {
@@ -125,12 +125,11 @@ nav ul li:hover
       position: fixed;
       top: 0;
       right: 0;
-      background-color: #FAF9F6;
+      background-color: #333;
       overflow-x: hidden;
       transition: 0.3 ease-in;
       padding-top: 20px;
       border-radius: 30px;
-      border: 2.5px solid;
       z-index: 2;
   }
   
@@ -138,7 +137,7 @@ nav ul li:hover
       padding: 8px 8px 3px 15px;
       display: block;
       font-size: 25px;
-      color: white;
+      color: black;
       text-decoration: none;
       text-align: right;
   }
@@ -168,6 +167,11 @@ nav ul li:hover
       cursor: pointer;
       border-radius: 5px;
       background-color: black;
+  }
+
+  /*solid line divider*/
+   hr.solid {
+      border-top: 1px solid lightgray;
   }
 
   /*icon*/
@@ -225,10 +229,10 @@ nav ul li:hover
 
         <!--sidebar-->
         <span class="openBtn" onclick="openSidebar()">&#9776;</span>
-        <img src="./happyhourlogo.png" width='100px' height='100px' alt='image'>
         <ul>
         <div id="mySidebar" class="sidebar">
             <a href="javascript:void(0)" class="closeBtn" onclick="closeSidebar()">&#215;</a>
+            <hr class="solid">
             <li><a href="./home.php"><i class="fa-solid fa-house"></i>  Home  <i class="fa-solid fa-chevron-right"></i></a></li>
             <li><a href="./favoritesPage.php"><i class="fa-solid fa-heart"></i> Favorites  <i class="fa-solid fa-chevron-right"></i></a></li>
             <li><a href="./addRestaurantPage.php"><i class="fa-solid fa-utensils"></i> Add Deal <i class="fa-solid fa-chevron-right"></i></a></li>
