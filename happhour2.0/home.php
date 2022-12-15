@@ -106,11 +106,6 @@
     }
 
 /*sidebar menu*/
-nav ul li:hover
-  {
-      background: #FAF9F6;
-  }
-
 @media screen and (max-width: 600px) {
       nav .sidebarBtn{
           display: flex;
@@ -125,7 +120,7 @@ nav ul li:hover
       position: fixed;
       top: 0;
       right: 0;
-      background-color: #333;
+      background-color: #FAF9F6;
       overflow-x: hidden;
       transition: 0.3 ease-in;
       padding-top: 20px;
