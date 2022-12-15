@@ -42,7 +42,7 @@
         }
 
         
-        /*picture carousel*/ 
+    /*picture carousel*/ 
     #slider {
         overflow: hidden;
     }
@@ -103,6 +103,76 @@
     left: 500px;
     }
 
+    /*sidebar menu*/
+    @media screen and (max-width: 600px) {
+      nav .sidebarBtn{
+          display: flex;
+      }
+      nav .navLinks{
+          display: none;
+      }
+    }
+  
+    .sidebar {
+      height: 54%;
+      position: fixed;
+      top: 0;
+      right: 0;
+      background-color: #FAF9F6;
+      overflow-x: hidden;
+      transition: 0.3 ease-in;
+      padding-top: 20px;
+      border-radius: 30px;
+    }
+  
+    .sidebar a {
+      padding: 8px 8px 10px 15px;
+      display: block;
+      font-size: 25px;
+      color: black;
+      text-decoration: none;
+      text-align: right;
+    }
+  
+    .closeBtn {
+      position: absolute;
+      top: 0px;
+      right: 9px;
+    }
+  
+    .openBtn {
+      position: absolute;
+      top: 0px;
+      right: 10px;
+      font-size: 30px; 
+      cursor: pointer;
+    }
+  
+    /*sidebar logout button*/
+    button {
+      position: absolute;
+      top: 15px;
+      color: white;
+      font-size: 15px;
+      margin-right: 0px;
+      display: block;
+      cursor: pointer;
+      border-radius: 5px;
+      background-color: black;
+    }
+  
+    /*solid line divider*/
+    hr.solid {
+      border-top: 1px solid lightgray;
+    } 
+
+    /*icon*/
+    .fas
+    {
+    color: #AFA398;
+    }
+
+
     </style>
 
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
@@ -130,17 +200,40 @@
             });
             //some code
         }
+
+    //opens and closes sidebar    
+    function openSidebar() {
+      document.getElementById("mySidebar").style.width = "250px";
+    }
+    
+    function closeSidebar() {
+      document.getElementById("mySidebar").style.width = "0px";
+    }
+
     </script>
 </head>
 <body>
     <nav>
-        <!--HAPPY HOUR LOGO-->
-        <img src="./happyhourlogo.png" width='100px' height='100px' alt='image'>
+        <img src="./happyhourlogo.png" width='100px' height='100px' alt='image'> <!--HAPPY HOUR LOGO-->
+
         <a href="./home.php">HOME</a>
         <a href="./favoritesPage.php">FAVORITES</a>
         <a href="./addRestaurantPage.php">ADD DEAL</a>
         <a href="./logout.php">LOGOUT</a>
         
+        <!--SIDEBAR stuff-->
+        <span class="openBtn" onclick="openSidebar()">&#9776;</span>
+        <ul>
+        <div id="mySidebar" class="sidebar">
+            <a href="./logout.php"><button class="logoutBtn"><i class="fa-solid fa-right-to-bracket"></i> LOGOUT</button></a> 
+        <div class="settings"></div>      
+        <a href="javascript:void(0)" class="closeBtn" onclick="closeSidebar()">&#215;</a>
+        <hr class="solid">
+        <li><a href="./home.php"><i class="fa-solid fa-house"></i></i> Home <i class="fa-solid fa-chevron-right"></i></a></li>
+        <li><a href="./favoritesPage.php"><i class="fa-solid fa-heart"></i>  Favorites  <i class="fa-solid fa-chevron-right"></i></a></li>
+        <li><a href="./addRestaurantPage.php"><i class="fa-solid fa-clock"></i> Add Deal <i class="fa-solid fa-chevron-right"></i></a></li>
+        </ul>
+        </div>
     </nav>
 
     <!--PICTURE CAROUSEL-->
