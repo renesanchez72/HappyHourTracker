@@ -84,6 +84,8 @@
         background-color:black;
         color:white;
         margin-top: 30px;
+        margin-bottom: 30px;
+        border-radius: 0px;
         width:120px;
         display: flex;
         justify-content: center;
