@@ -106,6 +106,11 @@
     }
 
 /*sidebar menu*/
+nav ul li:hover
+  {
+      background: black;
+  }
+
 @media screen and (max-width: 600px) {
       nav .sidebarBtn{
           display: flex;
@@ -120,19 +125,20 @@
       position: fixed;
       top: 0;
       right: 0;
-      background-color: #FCEAEA;
+      background-color: #FAF9F6;
       overflow-x: hidden;
       transition: 0.3 ease-in;
       padding-top: 20px;
       border-radius: 30px;
+      border: 2.5px solid;
       z-index: 2;
   }
   
   .sidebar a {
-      padding: 8px 8px 10px 15px;
+      padding: 8px 8px 3px 15px;
       display: block;
       font-size: 25px;
-      color: black;
+      color: white;
       text-decoration: none;
       text-align: right;
   }
@@ -162,11 +168,6 @@
       cursor: pointer;
       border-radius: 5px;
       background-color: black;
-  }
-  
-  /*solid line divider*/
-  hr.solid {
-      border-top: 1px solid lightgray;
   }
 
   /*icon*/
@@ -221,17 +222,16 @@
         <a href="./home.php">HOME</a>
         <a href="./favoritesPage.php">FAVORITES</a>
         <a href="./addRestaurantPage.php">ADD DEAL</a>
-        <a href="./logout.php">LOGOUT</a>
 
         <!--sidebar-->
         <span class="openBtn" onclick="openSidebar()">&#9776;</span>
+        <img src="./happyhourlogo.png" width='100px' height='100px' alt='image'>
         <ul>
         <div id="mySidebar" class="sidebar">
             <a href="javascript:void(0)" class="closeBtn" onclick="closeSidebar()">&#215;</a>
-            <hr class="solid">
             <li><a href="./home.php"><i class="fa-solid fa-house"></i>  Home  <i class="fa-solid fa-chevron-right"></i></a></li>
             <li><a href="./favoritesPage.php"><i class="fa-solid fa-heart"></i> Favorites  <i class="fa-solid fa-chevron-right"></i></a></li>
-            <li><a href="./addRestaurantPage.php"><i class="fa-solid fa-utensils"></i> New Deals  <i class="fa-solid fa-chevron-right"></i></a></li>
+            <li><a href="./addRestaurantPage.php"><i class="fa-solid fa-utensils"></i> Add Deal <i class="fa-solid fa-chevron-right"></i></a></li>
             <a href="./logout.php"><button class="logoutBtn"><i class="fa-solid fa-right-to-bracket"></i> LOGOUT</button></a> 
         </ul>
         </div>
