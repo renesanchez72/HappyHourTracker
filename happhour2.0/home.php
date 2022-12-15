@@ -116,15 +116,15 @@
   
   .sidebar {
       height: 54%;
-      position: fixed;
+      position: absolute;
       top: 0;
       right: 0;
-      background-color: #FAF9F6
-;
+      background-color: #FAF9F6;
       overflow-x: hidden;
       transition: 0.3 ease-in;
       padding-top: 20px;
       border-radius: 30px;
+      border: 1px solid;
   }
   
   .sidebar a {
