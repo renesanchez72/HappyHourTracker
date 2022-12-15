@@ -150,7 +150,7 @@
   }
   
   /*Logout Button*/
-  button {
+  button .logoutBtn{
       position: absolute;
       top: 15px;
       color: white;
