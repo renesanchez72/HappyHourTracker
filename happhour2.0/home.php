@@ -103,6 +103,78 @@
     left: 500px;
     }
 
+    @media screen and (max-width: 600px) {
+      nav .sidebarBtn{
+          display: flex;
+      }
+      nav .navLinks{
+          display: none;
+      }
+  }
+  
+  /*Sidebar Menu*/
+  .sidebar {
+      height: 54%;
+      position: fixed;
+      top: 0;
+      right: 0;
+      background-color: #FAF9F6
+;
+      overflow-x: hidden;
+      transition: 0.3 ease-in;
+      padding-top: 20px;
+      border-radius: 30px;
+  }
+  
+  .sidebar a {
+      padding: 8px 8px 10px 15px;
+      display: block;
+      font-size: 25px;
+      color: black;
+      text-decoration: none;
+      text-align: right;
+  }
+  
+  .closeBtn {
+      position: absolute;
+      top: 0px;
+      right: 9px;
+  }
+  
+  .openBtn {
+      position: absolute;
+      top: 0px;
+      right: 10px;
+      font-size: 30px; 
+      cursor: pointer;
+  }
+  
+  /*Logout Button*/
+  button {
+      position: absolute;
+      top: 15px;
+      color: white;
+      font-size: 15px;
+      margin-right: 0px;
+      display: block;
+      cursor: pointer;
+      border-radius: 5px;
+      background-color: black;
+  }
+  
+  /*Solid Line Divider*/
+  hr.solid {
+      border-top: 1px solid lightgray;
+  }
+
+ 
+
+/*Icon*/
+  .fas
+  {
+    color: #AFA398;
+  }
+
     </style>
 
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
@@ -141,6 +213,20 @@
         <a href="./addRestaurantPage.php">ADD DEAL</a>
         <a href="./logout.php">LOGOUT</a>
         
+        <!--SIDEBAR stuff-->
+              <span class="openBtn" onclick="openSidebar()">&#9776;</span>
+        <ul>
+        <div id="mySidebar" class="sidebar">
+            <a href="./logout.php"><button class="logoutBtn"><i class="fa-solid fa-right-to-bracket"></i> LOGOUT</button></a> 
+        <div class="settings"></div>      
+        <a href="javascript:void(0)" class="closeBtn" onclick="closeSidebar()">&#215;</a>
+        <hr class="solid">
+        <li><a href="./home.php"><i class="fa-solid fa-house"></i></i> Home <i class="fa-solid fa-chevron-right"></i></a></li>
+        <li><a href="./favoritesPage.php"><i class="fa-solid fa-heart"></i>  Favorites  <i class="fa-solid fa-chevron-right"></i></a></li>
+        <li><a href="./addRestaurantPage.php"><i class="fa-solid fa-clock"></i> Add Deal <i class="fa-solid fa-chevron-right"></i></a></li>
+        </ul>
+        </div>
+
     </nav>
 
     <!--PICTURE CAROUSEL-->
