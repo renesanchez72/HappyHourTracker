@@ -10,7 +10,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Passion+One&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/519591b792.js" crossorigin="anonymous"></script>
 
     <title>My PHP page</title>
     <style>
@@ -104,76 +103,6 @@
     left: 500px;
     }
 
-    /*sidebar menu*/
-    @media screen and (max-width: 600px) {
-      nav .sidebarBtn{
-          display: flex;
-      }
-      nav .navLinks{
-          display: none;
-      }
-  }
-  
-  .sidebar {
-      height: 54%;
-      position: absolute;
-      top: 0;
-      right: 0;
-      background-color: #FAF9F6;
-      overflow-x: hidden;
-      transition: 0.3 ease-in;
-      padding-top: 20px;
-      border-radius: 30px;
-      border: 1px solid;
-  }
-  
-  .sidebar a {
-      padding: 8px 8px 10px 15px;
-      display: block;
-      font-size: 25px;
-      color: black;
-      text-decoration: none;
-      text-align: right;
-  }
-  
-  .closeBtn {
-      position: absolute;
-      top: 0px;
-      right: 9px;
-  }
-  
-  .openBtn {
-      position: absolute;
-      top: 0px;
-      right: 10px;
-      font-size: 30px; 
-      cursor: pointer;
-  }
-  
-  /*logout button*/
-  button[class=.logoutBtn]{
-      position: absolute;
-      top: 15px;
-      color: white;
-      font-size: 15px;
-      margin-right: 0px;
-      display: block;
-      cursor: pointer;
-      border-radius: 5px;
-      background-color: black;
-  }
-  
-  /*solid line divider*/
-  hr.solid {
-      border-top: 1px solid lightgray;
-  }
-
-  /*icon*/
-  .fas
-  {
-    color: #AFA398;
-  }
-
     </style>
 
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
@@ -201,15 +130,6 @@
             });
             //some code
         }
-
-        //open and closes sidebar
-        function openSidebar() {
-            document.getElementById("mySidebar").style.width = "250px";
-        }
-    
-        function closeSidebar() {
-            document.getElementById("mySidebar").style.width = "0px";
-        }
     </script>
 </head>
 <body>
@@ -220,21 +140,6 @@
         <a href="./favoritesPage.php">FAVORITES</a>
         <a href="./addRestaurantPage.php">ADD DEAL</a>
         <a href="./logout.php">LOGOUT</a>
-        
-        <!--SIDEBAR stuff-->
-              <span class="openBtn" onclick="openSidebar()">&#9776;</span>
-        <ul>
-        <div id="mySidebar" class="sidebar">
-            <a href="./logout.php"><button class="logoutBtn"><i class="fa-solid fa-right-to-bracket"></i> LOGOUT</button></a> 
-        <div class="settings"></div>      
-        <a href="javascript:void(0)" class="closeBtn" onclick="closeSidebar()">&#215;</a>
-        <hr class="solid">
-        <li><a href="./home.php"><i class="fa-solid fa-house"></i></i> Home <i class="fa-solid fa-chevron-right"></i></a></li>
-        <li><a href="./favoritesPage.php"><i class="fa-solid fa-heart"></i>  Favorites  <i class="fa-solid fa-chevron-right"></i></a></li>
-        <li><a href="./addRestaurantPage.php"><i class="fa-solid fa-clock"></i> Add Deal <i class="fa-solid fa-chevron-right"></i></a></li>
-        </ul>
-        </div>
-
     </nav>
 
     <!--PICTURE CAROUSEL-->
