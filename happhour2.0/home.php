@@ -134,7 +134,7 @@
 </head>
 <body>
     <nav>
-        <!--HAPPY HOUR LOGO jw-->
+        <!--HAPPY HOUR LOGO-->
         <img src="./happyhourlogo.png" width='100px' height='100px' alt='image'>
         <a href="./home.php">HOME</a>
         <a href="./favoritesPage.php">FAVORITES</a>
@@ -143,7 +143,7 @@
         
     </nav>
 
-    <!--PICTURE CAROUSEL jw-->
+    <!--PICTURE CAROUSEL-->
     <div id="slider">
         <figure>
             <div class= textbox> Welcome to the Happy Hour App!

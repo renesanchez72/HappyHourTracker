@@ -5,10 +5,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
     <title>Add Restaurant</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
         /* Basic styles for the page */
         nav {
@@ -41,7 +43,8 @@
         label,
         input {
             display: block;
-            border-radius: 10px;
+            width: 400px;
+            height: 30px;
         }
 
         input checkbox {
@@ -62,6 +65,8 @@
         margin-top: 30px;
         margin-bottom: 30px;
         background-color: #FAF9F6;
+        border: 5px solid;
+        font-family: 'Roboto', sans-serif;
         }
  
         input {
@@ -72,6 +77,22 @@
         display: flex;
         justify-content: center;
         align-items: center;  
+        }
+
+        input[type=button] {
+        font-family: monospace;
+        background-color:black;
+        color:white;
+        margin-top: 30px;
+        width:120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Roboto', sans-serif;
+        }
+
+        input[type=checkbox] {
+        margin-top: 10px;
         }
 
     </style>
@@ -141,7 +162,7 @@
 
 <body>
     <nav>
-        <!--HAPPY HOUR LOGO jw-->
+        <!--HAPPY HOUR LOGO-->
         <img src="./happyhourlogo.png" width='100px' height='100px' alt='image'>
         <a href="./home.php">HOME</a>
         <a href="./favoritesPage.php">FAVORITES</a>
