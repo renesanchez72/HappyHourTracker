@@ -115,7 +115,7 @@
   
     .sidebar {
       height: 54%;
-      position: fixed;
+      position: absolute;
       top: 0;
       right: 0;
       background-color: #FAF9F6;
@@ -221,19 +221,7 @@
         <a href="./addRestaurantPage.php">ADD DEAL</a>
         <a href="./logout.php">LOGOUT</a>
         
-        <!--SIDEBAR stuff-->
-        <span class="openBtn" onclick="openSidebar()">&#9776;</span>
-        <ul>
-        <div id="mySidebar" class="sidebar">
-            <a href="./logout.php"><button class="logoutBtn"><i class="fa-solid fa-right-to-bracket"></i> LOGOUT</button></a> 
-        <div class="settings"></div>      
-        <a href="javascript:void(0)" class="closeBtn" onclick="closeSidebar()">&#215;</a>
-        <hr class="solid">
-        <li><a href="./home.php"><i class="fa-solid fa-house"></i></i> Home <i class="fa-solid fa-chevron-right"></i></a></li>
-        <li><a href="./favoritesPage.php"><i class="fa-solid fa-heart"></i>  Favorites  <i class="fa-solid fa-chevron-right"></i></a></li>
-        <li><a href="./addRestaurantPage.php"><i class="fa-solid fa-clock"></i> Add Deal <i class="fa-solid fa-chevron-right"></i></a></li>
-        </ul>
-        </div>
+  
     </nav>
 
     <!--PICTURE CAROUSEL-->
