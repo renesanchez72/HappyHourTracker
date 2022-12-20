@@ -173,8 +173,6 @@
 
     </nav>
 
-
-
     <form name="addRestaurant">
         <img src = "./happyhourlogo2.PNG">
         <label for="restaurantName">Name of Restaurant</label>
