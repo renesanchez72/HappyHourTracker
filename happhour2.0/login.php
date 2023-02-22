@@ -21,6 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         if (password_verify($saltedPassword, $user["password_hash"])) {
             session_start();
             $_SESSION["userid"] = $user["id"];
+            $_SESSION["username"] = $user["username"];
             header("Location: home.php");
             exit;
         }else {

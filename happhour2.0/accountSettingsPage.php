@@ -1,6 +1,7 @@
 <?php
         session_start();
         $userid = $_SESSION["userid"];
+        $currentuser = $_SESSION["username"];
 ?>
 <!DOCTYPE html>
 <html>
@@ -12,7 +13,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Passion+One&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/519591b792.js" crossorigin="anonymous"></script>
 
-    <title>My PHP page</title>
+    <title>Account Settings</title>
     <style>
         /* Basic styles for the page */
         @import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@700&display=swap');
@@ -174,25 +175,48 @@
   {
     color: #AFA398;
   }
+  
 
     </style>
 
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <script >
-        function fav(restaurantid,userid){
-            console.log('adding fav');
-            console.log(restaurantid);
-            console.log(userid);
+        function resetUsername(userid){
+            console.log('Resetting username');
+            const userField = document.getElementById('newUsername').value
             var request = $.ajax({
                 type: 'POST',
-                url: 'favorite.php',
+                url: 'resetUsername.php',
                 dataType: 'json',
-                data: 'restaurantid='+restaurantid+'&userid='+userid,
+                data: 'userid='+userid+'&newUsername='+userField,
                 success: function (response) {
                     console.log(response);
-                    if (response.favoriteAdded) {
-                        console.log("added to favorites");
-                        alert('Restaurant added to favorites');
+                    if (response.usernameReset) {
+                        console.log("username reset");
+                        alert(response.text);
+                    }else{
+                        alert(response.text);
+                    }
+                }
+
+                
+            });
+            //some code
+        }
+        function resetPassword(userid){
+            console.log('Resetting password');
+            const currentPassword = document.getElementById('currentPassword').value
+            const newPassword = document.getElementById('password').value
+            var request = $.ajax({
+                type: 'POST',
+                url: 'resetPassword.php',
+                dataType: 'json',
+                data: 'userid='+userid+'&currentPassword='+currentPassword+'&newPassword='+newPassword,
+                success: function (response) {
+                    console.log(response);
+                    if (response.usernameReset) {
+                        console.log("password reset");
+                        alert(response.text);
                     }else{
                         alert(response.text);
                     }
@@ -212,7 +236,6 @@
       document.getElementById("mySidebar").style.width = "0px";
     }
     </script>
-
 </head>
 <body>
     <nav>
@@ -237,65 +260,55 @@
         </div>
     </nav>
 
-    <!--PICTURE CAROUSEL-->
-    <div id="slider">
-        <figure>
-            <div class= textbox> Welcome to the Happy Hour App!
-                <img src= "./happyhourlogo.png" style= height:300px;width:300px;>
-            </div>
-            <img src="./hamburger.jpg" height= "800px">
-            <img src="./pizza.jpg" height="800px">
-            <img src="./wine.jpg" height="800px">
-            <img src="./burrito.jpg" height="800px">
-            <img src="./hamburger.jpg" height="800px">
-        </figure>
-    </div> 
+    <div class="settings-page">
+  <div class="settings-container">
+    <h1 class="page-title">Account</h1>
+    <div class="settings-section">
+  </div>
+<div class="settings-section">
+  <h2 class="settings-title">My profile</h2>
+  <div class="form my-form">
+    <?php
+        echo "<p>Current Username: $currentuser</p>";
+    ?>
+        <input id="newUsername" name="newUsername" placeholder="new username" type="text" class="form-control" autocomplete="new username"  value="">
 
-    <main>
-        <!-- PHP code that retrieves data from the database and displays it in a table -->
-        <?php
-        // Connect to the database
-        $mysqli = require __DIR__ . "/database.php";
-       // Select all columns from the table
-       $table_name = "restaurants";
-       $query = "SELECT * FROM $table_name";
-       $result = mysqli_query($mysqli, $query);
+    <!-- <div class="img-upload-container">
+      <label class="img-upload btn btn-bwm" style="background-image: url(&quot;/profile-placeholder.jpg&quot;);">
+        <input type="file" accept=".jpg, .png, .jpeg, .gif" value="">
+      </label>
+      <h4>Change Your Profile Picture</h4>
+      <div class="img-preview-container">
+        <div class="img-preview" style="background-image: url('http://www.personalbrandingblog.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png');">
+        </div>
+      </div> -->
+    </div>
+    <div class="form-submit">
+      <button class="btn button full" <?php echo "onclick='resetUsername($userid);'"; ?> >Save New Username</button>
+    </div>
+</div>
+</div>
+<div class="settings-section">
+  <h2 class="settings-title">Password</h2>
+  <div class="form my-form">
+    <div class="form-group">
+      <div class="input-group">
+        <input id="currentPassword" name="currentPassword" placeholder="Old Password" type="password" class="form-control" autocomplete="Old Password" value="">
+        <span class="focus-input"></span>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="input-group">
+        <input id="password" name="password" placeholder="New Password" type="password" class="form-control" autocomplete="New Password" value="">
+        <span class="focus-input"></span>
+      </div>
+    </div>
+   <div class="form-submit right">
+     <button class="btn button full" <?php echo "onclick='resetPassword($userid);'"; ?> >Change Password</button>
+    </div>
+</div>
+</div>
+</div>
+</div>
 
-       if (mysqli_num_rows($result) > 0) {
-        // Store the data in an array
-        $data = [];
-        while ($row = mysqli_fetch_assoc($result)) {
-            $data[] = $row;
-        }
-
-        // Generate HTML code for each row of data
-        foreach ($data as $row) {
-            echo "<div id='restaurant'>";
-            foreach ($row as $col => $value) {
-                if ($col == "image") {
-                    echo "<img src='$value' width='400px' height='400px' border-radius='30px' alt='image'/>";
-                }elseif ($col == "id") {
-                    $restaurantID = $value;
-                }
-                else{
-                    echo "<p>$value</p>";
-                }
-            }
-            echo "<button   onclick='fav($restaurantID,$userid);'>Favorite</button>";
-            echo "</div>";
-        }
-    } else {
-        // Print a message if there are no rows in the result
-        echo "<p>No data found in the table.</p>";
-    }
-
-       // Close the database connection
-       mysqli_close($mysqli);
-       ?>
-   </main>
 </body>
-</html>
-
-
-
-
