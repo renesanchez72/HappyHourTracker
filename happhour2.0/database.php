@@ -1,9 +1,9 @@
 <?php
 
-$host = "localhost";
+$host = "hhdatabase.cp0qkxfdo1rp.us-west-1.rds.amazonaws.com";
 $db = "happyhour";
-$username = "root";
-$password = "Happy1";
+$username = "admin";
+$password = "Happyhour1";
 // $password = "mysql";
 
 $mysqli = new mysqli($host,$username,$password,$db);
