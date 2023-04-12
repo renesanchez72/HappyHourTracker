@@ -14,6 +14,7 @@ display_tab_pages(active);
 
 function display_tab_pages(currBtn){
   active = currBtn;
+  console.log(active);
   foodBox.forEach((foodItem) => {
       if(foodItem.classList.contains(active)){
           foodItem.style.display = "grid";
