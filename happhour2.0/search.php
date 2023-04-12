@@ -18,6 +18,7 @@
         <div class="tabs">
           <button type="button" class="tabBtn activeBtn" id="categories">CATEGORIES</button>
           <button type="button" class="tabBtn" id="todaysDeal">SPECIAL DEALS</button>
+          <button type="button" class="tabBtn" href='./addRestaurantPage.php' target='_blank'>ADD DEAL</button>
         </div>
         
         <div class="specials">
