@@ -89,7 +89,7 @@
        // Close the database connection
        mysqli_close($mysqli);
        ?>
-          <!--specials #1-->
+          <!--specials #1 EXAMPLE-->
           <!-- <div class="food todaysDeal">
             <div class="picture">
             <img src="cocktail.PNG" alt="Bar Louie">
@@ -109,153 +109,7 @@
             </div>     
           </div> -->
           <!--end of specials #1-->
-
-          <!--specials #2--> 
-          <!-- <div class="food todaysDeal">
-          <div class="picture">
-          <img src="yhpizzas.PNG" alt="Yard House">
-          </div>
-            <div class="info">
-            <a href="https://www.yelp.com/biz/yard-house-northridge-4" target="_blank"><p>Yard House</p></a>
-            <div class="line"></div>
-            <p>1/2 off select appetizer & all pizzas.</p>     
-              <ul class="stars">
-                <li><i class="fas fa-star"></i></li>
-                <li><i class="fas fa-star"></i></li>
-                <li><i class="fas fa-star"></i></li>
-                <li><i class="fa fa-star-half-o"></i></li>
-                <li><i class="far fa-star"></i></li>
-              </ul>
-              <p>Mon-Fri 3pm-6pm</p>       
-            </div>  
-          </div> -->
-          <!--end of specials #2-->
-
-          <!--specials #3--> 
-          <!-- <div class="food todaysDeal">
-          <div class="picture">
-          <img src="tacos.PNG" alt="Sharky's">
-          </div>
-            <div class="info">
-            <a href="https://www.yelp.com/biz/sharky-s-los-angeles-los-angeles" target="_blank"><p>Sharky's Wooodfired Mexican Grill</p></a>
-            <div class="line"></div>
-            <p>$7.50 for 2 grilled shrimp tacos.</p>     
-            <ul class="stars">
-              <li><i class="fas fa-star"></i></li>
-              <li><i class="fas fa-star"></i></li>
-              <li><i class="fas fa-star"></i></li>
-              <li><i class="fas fa-star"></i></li>
-              <li><i class="far fa-star"></i></li>
-            </ul>
-            <p>Everyday 3pm-5pm</p>
-           </div>      
-          </div> -->
-          <!--end of specials #3-->
-
-          <!--specials #4--> 
-          <!-- <div class="food todaysDeal">
-          <div class="picture">
-          <img src="dhbeer.PNG" alt="Dog Haus">
-          </div>
-            <div class="info">
-            <a href="https://www.yelp.com/biz/dog-haus-northridge?osq=dog+haus" target="_blank"><p>Dog Haus</p></a>
-            <div class="line"></div>
-            <p>$2 off draft beer & wine, $3.99 burger, $2.99 sliced sausage, $1.49 tots or fries, $3 PBR 16oz cans.</p>
-            <ul class="stars">
-              <li><i class="fas fa-star"></i></li>
-              <li><i class="fas fa-star"></i></li>
-              <li><i class="fas fa-star"></i></li>
-              <li><i class="fas fa-star"></i></li>
-              <li><i class="far fa-star"></i></li>
-            </ul>
-            <p>Mon-Thurs 3pm-6pm & Sun 3pm-11pm</p>   
-           </div>   
-          </div> -->
-          <!--end of specials #4-->
-
-          <!--specials #5--> 
-          <!-- <div class="food todaysDeal">
-            <div class="picture">
-            <img src="beer.PNG" alt="Brent's Deli">
-            </div>
-              <div class="info">
-              <a href="https://www.yelp.com/biz/brents-deli-northridge-northridge" target="_blank"><p>Brent's Deli</p></a>
-              <div class="line"></div>
-              <p>$10 signature cocktails, $7 well drinks, $1 off wine, $1 off draft beers.</p>
-              <ul class="stars">
-                <li><i class="fas fa-star"></i></li>
-                <li><i class="fas fa-star"></i></li>
-                <li><i class="fas fa-star"></i></li>
-                <li><i class="fas fa-star"></i></li>
-                <li><i class="fa fa-star-half-o"></i></li>
-              </ul>
-              <p>Everyday 3pm-6pm</p>
-             </div>      
-            </div> -->
-            <!--end of specials #5-->
-
-          <!--specials #6--> 
-          <!-- <div class="food todaysDeal">
-          <div class="picture">
-          <img src="wings.PNG" alt="Wood Ranch">
-          </div>
-            <div class="info">
-            <a href="https://www.yelp.com/biz/wood-ranch-northridge-northridge" target="_blank"><p>Wood Ranch</p></a>
-            <div class="line"></div>
-            <p>$2 off small plates: killer buffalo wings, spinach-artichoke dip (1/2), guacamole & chips (1/2), BBQ chicken potato skins (2), baby back ribs (5).</p>    
-            <ul class="stars">
-              <li><i class="fas fa-star"></i></li>
-              <li><i class="fas fa-star"></i></li>
-              <li><i class="fas fa-star"></i></li>
-              <li><i class="fas fa-star"></i></li>
-              <li><i class="far fa-star"></i></li>
-            </ul>
-            <p>Mon-Fri 3pm-6pm</p>   
-           </div>      
-          </div> -->
-          <!--end of specials #6-->
-          
-          <!--specials #7--> 
-          <!-- <div class="food todaysDeal">
-            <div class="picture">
-            <img src="dbdrinks.PNG" alt="Dave Buster">
-            </div>
-              <div class="info">
-              <a href="https://www.yelp.com/biz/dave-and-busters-northridge-2" target="_blank"><p>Dave & Buster's</p></a>
-              <div class="line"></div>
-              <p>1/2 price cocktails, $2.50 domestic pints, $1 off drafts, $1 off wines by the glass, $3 off bottles of wine.</p>    
-              <ul class="stars">
-                <li><i class="fas fa-star"></i></li>
-                <li><i class="fas fa-star"></i></li>
-                <li><i class="fa fa-star-half-o"></i></li>
-                <li><i class="far fa-star"></i></li>
-                <li><i class="far fa-star"></i></li>
-              </ul>
-              <p>Mon-Fri 4pm-7pm</p>   
-             </div>      
-            </div> -->
-            <!--end of specials #7-->
-
-            <!--specials #8--> 
-            <!-- <div class="food todaysDeal">
-              <div class="picture">
-              <img src="sushi.PNG" alt="Aikan Sushi">
-              </div>
-                <div class="info">
-                <a href="https://www.yelp.com/biz/aikan-sushi-northridge" target="_blank"><p>Aikan Sushi</p></a>
-                <div class="line"></div>
-                <p>$1 sushi and beer.</p>
-                <ul class="stars">
-                  <li><i class="fas fa-star"></i></li>
-                  <li><i class="fas fa-star"></i></li>
-                  <li><i class="fas fa-star"></i></li>
-                  <li><i class="fas fa-star"></i></li>
-                  <li><i class="fas fa-star"></i></li>
-                </ul>
-                <p>Mon-Thurs 3pm-5pm 8pm-closing</p>   
-              </div>      
-              </div>
-              end of specials #8 -->
+              <!-- end of specials #8 --> 
             </div> <!--end of specials-->
 
             <!-- add deal -->
@@ -343,7 +197,10 @@
     </div>
     <div id = "text"></div>
     <script src="https://kit.fontawesome.com/519591b792.js" crossorigin="anonymous"></script>
-    <script src="autocompletesearchlist.js"></script> 
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="autocompletesearchlist.js"></script>
+    <script src="addRestaurantPage.js"></script>
+     
      <script src="search.js"></script> 
   </body>
 </html>
