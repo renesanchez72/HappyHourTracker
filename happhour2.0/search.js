@@ -33,7 +33,7 @@ function display_tab_pages(currBtn){
 
   addBox.forEach((foodItem) => {
     if(foodItem.classList.contains(active)){
-        // foodItem.style.display = "flex"; 
+        foodItem.style.display = "flex"; 
     } else{
         foodItem.style.display = "none";
     }
