@@ -21,8 +21,75 @@
         </div>
         
         <div class="specials">
+                  <!-- PHP code that retrieves data from the database and displays it in a table -->
+        <?php
+        // Connect to the database
+        $mysqli = require __DIR__ . "/database.php";
+       // Select all columns from the table
+       $table_name = "restaurants";
+       $query = "SELECT * FROM $table_name";
+       $result = mysqli_query($mysqli, $query);
+
+       if (mysqli_num_rows($result) > 0) {
+        // Store the data in an array
+        $data = [];
+        while ($row = mysqli_fetch_assoc($result)) {
+            $data[] = $row;
+        }
+
+        // Generate HTML code for each row of data
+        foreach ($data as $row) {
+              
+            foreach ($row as $col => $value) {
+                if ($col == "image") {
+                  $image = $value;
+                }elseif ($col == "id") {
+                    $restaurantID = $value;
+                }elseif ($col == "name"){
+                    // echo "<p>$value</p>";
+                    $rest_name = $value;
+                }elseif ($col == "address") {
+                  # code...
+                  $address = $value;
+                }elseif ($col == "deal") {
+                  # code...
+                  $deal = $value;
+                }elseif ($col == "daysofweek") {
+                  # code...
+                  $daysofweek = $value;
+                }
+            }
+
+            echo "<div class='food todaysDeal'>";
+              echo "<div class='picture'>";
+              echo "<img src='$image' alt='Restraunt Image'>";
+              echo "</div>";
+              echo "<div class='info'>";
+              echo "<a href='https://www.yelp.com/biz/bar-louie-northridge-fashion-center-northridge-2' target='_blank'><p>$rest_name</p></a>";
+              echo "<div class='line'></div>";
+              echo "<p>$deal</p>";
+              echo "<ul class='stars'>";
+              echo "<li><i class='fas fa-star'></i></li>";
+              echo "<li><i class='fas fa-star'></i></li>";
+              echo "<li><i class='fas fa-star'></i></li>";
+              echo "<li><i class='fas fa-star'></i></li>";
+              echo "<li><i class='fas fa-star'></i></li>";
+              echo "</ul>";
+              echo "<p>$daysofweek</p>";
+            echo "</div>";
+            // echo "<button   onclick='fav($restaurantID,$userid);'>Favorite</button>";
+            echo "</div>";
+        }
+    } else {
+        // Print a message if there are no rows in the result
+        echo "<p>No data found in the table.</p>";
+    }
+
+       // Close the database connection
+       mysqli_close($mysqli);
+       ?>
           <!--specials #1-->
-          <div class="food todaysDeal">
+          <!-- <div class="food todaysDeal">
             <div class="picture">
             <img src="cocktail.PNG" alt="Bar Louie">
             </div>
@@ -39,11 +106,11 @@
               </ul>
               <p>Mon-Fri 4pm-7pm</p>
             </div>     
-          </div>
+          </div> -->
           <!--end of specials #1-->
 
           <!--specials #2--> 
-          <div class="food todaysDeal">
+          <!-- <div class="food todaysDeal">
           <div class="picture">
           <img src="yhpizzas.PNG" alt="Yard House">
           </div>
@@ -60,11 +127,11 @@
               </ul>
               <p>Mon-Fri 3pm-6pm</p>       
             </div>  
-          </div>
+          </div> -->
           <!--end of specials #2-->
 
           <!--specials #3--> 
-          <div class="food todaysDeal">
+          <!-- <div class="food todaysDeal">
           <div class="picture">
           <img src="tacos.PNG" alt="Sharky's">
           </div>
@@ -81,11 +148,11 @@
             </ul>
             <p>Everyday 3pm-5pm</p>
            </div>      
-          </div>
+          </div> -->
           <!--end of specials #3-->
 
           <!--specials #4--> 
-          <div class="food todaysDeal">
+          <!-- <div class="food todaysDeal">
           <div class="picture">
           <img src="dhbeer.PNG" alt="Dog Haus">
           </div>
@@ -102,11 +169,11 @@
             </ul>
             <p>Mon-Thurs 3pm-6pm & Sun 3pm-11pm</p>   
            </div>   
-          </div>
+          </div> -->
           <!--end of specials #4-->
 
           <!--specials #5--> 
-          <div class="food todaysDeal">
+          <!-- <div class="food todaysDeal">
             <div class="picture">
             <img src="beer.PNG" alt="Brent's Deli">
             </div>
@@ -123,11 +190,11 @@
               </ul>
               <p>Everyday 3pm-6pm</p>
              </div>      
-            </div>
+            </div> -->
             <!--end of specials #5-->
 
           <!--specials #6--> 
-          <div class="food todaysDeal">
+          <!-- <div class="food todaysDeal">
           <div class="picture">
           <img src="wings.PNG" alt="Wood Ranch">
           </div>
@@ -144,11 +211,11 @@
             </ul>
             <p>Mon-Fri 3pm-6pm</p>   
            </div>      
-          </div>
+          </div> -->
           <!--end of specials #6-->
           
           <!--specials #7--> 
-          <div class="food todaysDeal">
+          <!-- <div class="food todaysDeal">
             <div class="picture">
             <img src="dbdrinks.PNG" alt="Dave Buster">
             </div>
@@ -165,11 +232,11 @@
               </ul>
               <p>Mon-Fri 4pm-7pm</p>   
              </div>      
-            </div>
+            </div> -->
             <!--end of specials #7-->
 
             <!--specials #8--> 
-            <div class="food todaysDeal">
+            <!-- <div class="food todaysDeal">
               <div class="picture">
               <img src="sushi.PNG" alt="Aikan Sushi">
               </div>
@@ -187,7 +254,7 @@
                 <p>Mon-Thurs 3pm-5pm 8pm-closing</p>   
               </div>      
               </div>
-              <!--end of specials #8-->
+              end of specials #8 -->
             </div> <!--end of specials-->
 
            <!--category--> 
