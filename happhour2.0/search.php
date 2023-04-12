@@ -18,7 +18,7 @@
         <div class="tabs">
           <button type="button" class="tabBtn activeBtn" id="categories">CATEGORIES</button>
           <button type="button" class="tabBtn" id="todaysDeal">SPECIAL DEALS</button>
-          <button type="button" class="tabBtn" onclick="location.href = './addRestaurantPage.php';">ADD DEAL</button>
+          <button type="button" class="tabBtn" id="addDeal">ADD DEAL</button>
         </div>
         
         <div class="specials">
@@ -258,6 +258,29 @@
               end of specials #8 -->
             </div> <!--end of specials-->
 
+            <!-- add deal -->
+            <div class="addDeal">
+              <form name="addRestaurant" class="addDeal">
+                <img src = "./happyhourlogo2.PNG" class="addDeal">
+                <label class="addDeal" for="restaurantName">Name of Restaurant</label>
+                <input class="addDeal" type="text" name="restaurantName" id="restaurantName"> 
+                <label class="addDeal" for="restaurantImage">Image Link</label>
+                <input class="addDeal" type="text" name="restaurantImage" id="restaurantImage">
+                <label class="addDeal" for="address">Address of Restaurant</label>
+                <input class="addDeal" type="text" name="address" id="address">
+                <label class="addDeal" for="deal">Deal or Promotion</label>
+                <input class="addDeal" type="text" name="deal" id="deal">
+                <label class="addDeal" for="days">Select the days of the week promo is active:</label><br>
+                <input class="addDeal" type="checkbox" name="days" value="MON">Monday<br>
+                <input class="addDeal" type="checkbox" name="days" value="TUES">Tuesday<br>
+                <input class="addDeal" type="checkbox" name="days" value="WED">Wednesday<br>
+                <input class="addDeal" type="checkbox" name="days" value="THUR">Thursday<br>
+                <input class="addDeal" type="checkbox" name="days" value="FRI">Friday<br>
+                <input class="addDeal" type="checkbox" name="days" value="SAT">Saturday<br>
+                <input class="addDeal" type="checkbox" name="days" value="SUN">Sunday<br>
+                <input class="addDeal" type="button" value="Submit" id="addRestaurantButton">
+              </form>
+            </div>
            <!--category--> 
            <div class="categories">
             <!--category #1-->

@@ -6,6 +6,7 @@ var text = document.getElementById('text');
 const tabBtn = document.querySelectorAll('.tabBtn');
 const foodBox = document.querySelectorAll('.food');
 const catBox = document.querySelectorAll('.foodCat');
+const addBox = document.querySelectorAll('.addDeal');
 
 //tab switchover & shows current tab
 let active = "categories";
@@ -28,6 +29,15 @@ function display_tab_pages(currBtn){
           foodItem.style.display = "none";
       }
   });
+
+  addBox.forEach((foodItem) => {
+    if(foodItem.classList.contains(active)){
+        // foodItem.style.display = "flex"; 
+    } else{
+        foodItem.style.display = "none";
+    }
+});
+
 }
 
 tabBtn.forEach((btn) => {
