@@ -16,5 +16,4 @@ let suggestions = [
     "Applebee's Grill + Bar",
     "Buffalo Wild Wings",
     "TGI Fridays",
-
 ];
