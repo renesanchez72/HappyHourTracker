@@ -15,5 +15,5 @@ let suggestions = [
     "Gen Korean BBQ House",
     "Applebee's Grill + Bar",
     "Buffalo Wild Wings",
-    "TGI Fridays",
+    "TGI Fridays"
 ];
