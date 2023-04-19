@@ -135,53 +135,84 @@
                 <input class="addDeal addRest" type="button" value="Submit" id="addRestaurantButton">
               </form>
             </div>
-           <!--category--> 
-           <div class="categories">
-            <!--category #1-->
-            <div class="foodCat categories" >
-             <div class="picture2"><img src="tacotuesday.PNG" alt="taco"></div>
-              <div class="overlay">
-                <div class="overlayText">View Restaurants</div>
+
+            <!--category--> 
+            <div class="categories">
+              <!--category #1-->
+              <div class="foodCat categories" >
+                <div class="picture2"><img src="tacotuesday.PNG" alt="taco"></div>
+                  <div class="overlay">
+                    <a href="#popupbox">View Restaurants</a>
+                  </div>
               </div>
-            </div>     
-            <!--end of category #1-->
-
-            <!--category #2-->
-            <div class="foodCat categories" >
-              <div class="picture2"><img src="steakhouse.PNG" alt="steak"></div>
-                <div class="overlay">
-                  <div class="overlayText">View Restaurants</div>
+              <div id="popupbox" class="popup">
+                <div class="popupContent">
+                  <p>bla bla bla</p>
+                  <a href="#" class="popupClose">&times;</a>
                 </div>
-            </div> 
-            <!--end of category #2-->
+              </div>     
+              <!--end of category #1-->
 
-            <!--category #3-->
-            <div class="foodCat categories" >
-              <div class="picture2"><img src="fastfood.PNG" alt="fast food"></div>
-                <div class="overlay">
-                  <div class="overlayText">View Restaurants</div>
+              <!--category #2-->
+              <div class="foodCat categories" >
+                <div class="picture2"><img src="steakhouse.PNG" alt="steak"></div>
+                  <div class="overlay">
+                    <a href="#popupbox">View Restaurants</a>
+                  </div>
+              </div>
+              <div id="popupbox" class="popup">
+                <div class="popupContent">
+                  <p>bla bla bla</p>
+                  <a href="#" class="popupClose">&times;</a>
                 </div>
-            </div>
-            <!--end of category #3-->
+              </div> 
+              <!--end of category #2-->
 
-            <!--category #4-->
-            <div class="foodCat categories" >
-              <div class="picture2"><img src="asian.PNG" alt="asian"></div>
-                <div class="overlay">
-                  <div class="overlayText">View Restaurants</div>
+              <!--category #3-->
+              <div class="foodCat categories" >
+                <div class="picture2"><img src="fastfood.PNG" alt="fast food"></div>
+                  <div class="overlay">
+                    <a href="#popupbox">View Restaurants</a>
+                  </div>
+              </div>
+              <div id="popupbox" class="popup">
+                <div class="popupContent">
+                  <p>bla bla bla</p>
+                  <a href="#" class="popupClose">&times;</a>
                 </div>
-            </div> 
-            <!--end of category #4-->
+              </div> 
+              <!--end of category #3-->
 
-            <!--category #5-->
-            <div class="foodCat categories" >
-              <div class="picture2"><img src="bar.PNG" alt="bar"></div>
-                <div class="overlay">
-                  <div class="overlayText">View Restaurants</div>
+              <!--category #4-->
+              <div class="foodCat categories" >
+                <div class="picture2"><img src="asian.PNG" alt="asian"></div>
+                  <div class="overlay">
+                    <a href="#popupbox">View Restaurants</a>
+                  </div>
+              </div>
+              <div id="popupbox" class="popup">
+                <div class="popupContent">
+                  <p>bla bla bla</p>
+                  <a href="#" class="popupClose">&times;</a>
                 </div>
-            </div>
-            <!--end of category #5-->
-           </div><!--end of category-->
+              </div> 
+              <!--end of category #4-->
+
+              <!--category #5-->
+              <div class="foodCat categories" >
+                <div class="picture2"><img src="bar.PNG" alt="bar"></div>
+                  <div class="overlay">
+                    <a href="#popupbox">View Restaurants</a>
+                  </div>
+              </div>
+              <div id="popupbox" class="popup">
+                <div class="popupContent">
+                  <p>bla bla bla</p>
+                  <a href="#" class="popupClose">&times;</a>
+                </div>
+              </div> 
+              <!--end of category #5-->
+            </div><!--end of category-->
       </section> 
 
     <!-- restaurant autocomplete search bar-->

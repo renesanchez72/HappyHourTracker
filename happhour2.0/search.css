@@ -14,10 +14,6 @@ body{
   line-height: 1.5;
 }
 
-.searchPage{
-  margin: 2rem 0;
-}
-
 .container{
   max-width: 1280px;
   margin: 0 auto;
@@ -142,7 +138,7 @@ body{
   transition: .5s ease;
 }
 
-.overlayText {
+.overlay a{
   font-family: 'Knewave', cursive;
   color: white;
   font-size: 18px;
@@ -153,7 +149,47 @@ body{
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
 
+.popup {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(255,255,255,0.5);
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+}
+
+.popup:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popupContent {
+  background: white;
+  width: 500px;
+  height: 500px;
+  max-width: 90%;
+  padding: 1em 2em;
+  border-style: solid;
+  border-color: rgb(212, 212, 212);
+  border-radius: 5px;
+  border-width: 0.5em;
+}
+
+.popupClose{
+  position: absolute;
+  top: 0;
+  right: 15px;
+  color: black;
+  font-size: 36px;
+  text-decoration: none;
 }
 
 .line{
