@@ -66,7 +66,7 @@
               echo "<img src='$image' alt='Restraunt Image'>";
               echo "</div>";
               echo "<div class='info'>";
-              echo "<a href='https://www.yelp.com/biz/bar-louie-northridge-fashion-center-northridge-2' target='_blank'><p>$rest_name</p></a>";
+              echo "<p>$rest_name</p>";
               echo "<div class='line'></div>";
               echo "<p>$deal</p>";
               echo "<ul class='stars'>";
