@@ -134,7 +134,7 @@ function select(element){
         text.innerHTML = '<a href="https://www.yelp.com/biz/hikari-sushi-chatsworth-2" title="Hikari Sushi" target=_blank>Hikari Sushi</a>' + table;
       }
       
-      if (clicksOn == "McDonald's"){
+      if (clicksOn == "McDonalds"){
         var user = ['<u>Conor B.', '<u>Mike D.', '<u>Jen M.']
         var date = ['3/29/2023', '4/16/2023', '1/29/2023']
         var rating = ['3', '1', '1']
@@ -146,7 +146,7 @@ function select(element){
         table += '<tr><td>' + user[i] + '</td><td>' + date[i] + '</td><td>' + rating[i] + '</td><td>' + comment[i] + '</td></tr>';
         }
         table+='</tbody></table>';
-        text.innerHTML = '<a href="https://www.yelp.com/biz/mcdonalds-northridge-3" title="McDonald&#8217s" target=_blank>McDonald&#8217s</a>' + table;
+        text.innerHTML = '<a href="https://www.yelp.com/biz/mcdonalds-northridge-3" title="McDonalds" target=_blank>McDonalds</a>' + table;
     } else {
       clear();
     }
