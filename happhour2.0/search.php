@@ -66,7 +66,7 @@
               echo "<img src='$image' alt='Restraunt Image'>";
               echo "</div>";
               echo "<div class='info'>";
-              echo "<p>$rest_name</p>";
+              echo "<a><p>$rest_name</p></a>";
               echo "<div class='line'></div>";
               echo "<p>$deal</p>";
               echo "<ul class='stars'>";
