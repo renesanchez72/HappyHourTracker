@@ -41,5 +41,5 @@ let suggestions = [
     "Red Robin Gourmet Burgers and Brews",
     "Dave & Buster's",
     "Wing Stop",
-    "Dave's Hot Chicken",
+    "Dave's Hot Chicken"
 ];

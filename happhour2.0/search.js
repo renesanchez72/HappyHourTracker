@@ -92,11 +92,7 @@ inputBox.onkeyup = (e)=>{
       }
       table+='</tbody></table>';
       text.innerHTML = '<a href="https://www.yelp.com/biz/hikari-sushi-chatsworth-2" title="Hikari Sushi" target=_blank>Hikari Sushi</a>' + table;
-    } else {
-      clear();
-    }
-
-    if (typesIn == "McDonalds"){
+    } else if (typesIn == "McDonalds"){
         var user = ['<u>Conor B.', '<u>Mike D.', '<u>Jen M.']
         var date = ['3/29/2023', '4/16/2023', '1/29/2023']
         var rating = ['3', '1', '1']
@@ -109,6 +105,540 @@ inputBox.onkeyup = (e)=>{
         }
         table+='</tbody></table>';
         text.innerHTML = '<a href="https://www.yelp.com/biz/mcdonalds-northridge-3" title="McDonalds" target=_blank>McDonalds</a>' + table;
+    } else if (typesIn == "Jack in the Box"){
+        var user = ['<u>Dyann C.', '<u>Bryan M.', '<u>Arelisa D.']
+        var date = ['5/2/2022', '11/21/2019', '2/9/2015']
+        var rating = ['5', '4', '5']
+        var comment = ['<i>"Oreo milkshake is delicious. They always have free or cheap items in the app. Close & convenient location."</i>', '<i>"Love the fast food here I really love it especially the munchie deals and such. I love their Mocha Iced Coffee as well it&#8217s my favorite drink"</i>', '<i>"They always have really great customer service and get my order right.on Oe employee went out of his way to change my order, thanks!!!"</i>']
+      
+        var table =
+        '<table><thead><tr><th>User</th><th>Date</th><th>Stars</th><th>Comment</th></tr></thead><tbody>';
+        for(var i=0; i<user.length; i++){
+        table += '<tr><td>' + user[i] + '</td><td>' + date[i] + '</td><td>' + rating[i] + '</td><td>' + comment[i] + '</td></tr>';
+        }
+        table+='</tbody></table>';
+        text.innerHTML = '<a href="https://www.yelp.com/biz/jack-in-the-box-northridge-3" title="Jack in the Box" target=_blank>Jack in the box</a>' + table;
+    
+    } else if (typesIn == "Chilis"){
+        var user = ['<u>Sydney A.', '<u>Maya C.', '<u>B B.']
+        var date = ['1/23/2023', '1/15/2023', '2/3/2023']
+        var rating = ['5', '5', '4']
+        var comment = ['<i>"Awesome service from Amber and Lesley! Good food as always! Been going here since the pandemic and food quality is still the same!!"</i>', '<i>"The best sushi spot in the valley! Best service, food, and environment. (Come on your birthay, you won&#8217t regret it) THANK YOU LESLEY FOR TAKING CARE OF US"</i>', '<i>"The food was great, the new server was very personable and quick, we were seated fast and efficiently. Fish tasted very fresh as well. Would recommend. Servers name was Tristan highly recommend"</i>']
+      
+        var table =
+        '<table><thead><tr><th>User</th><th>Date</th><th>Stars</th><th>Comment</th></tr></thead><tbody>';
+        for(var i=0; i<user.length; i++){
+        table += '<tr><td>' + user[i] + '</td><td>' + date[i] + '</td><td>' + rating[i] + '</td><td>' + comment[i] + '</td></tr>';
+        }
+        table+='</tbody></table>';
+        text.innerHTML = '<a href="https://www.yelp.com/biz/hikari-sushi-chatsworth-2" title="Hikari Sushi" target=_blank>Hikari Sushi</a>' + table;   
+    } else if (typesIn == "Dunkin Donuts"){
+        var user = ['<u>Sydney A.', '<u>Maya C.', '<u>B B.']
+        var date = ['1/23/2023', '1/15/2023', '2/3/2023']
+        var rating = ['5', '5', '4']
+        var comment = ['<i>"Awesome service from Amber and Lesley! Good food as always! Been going here since the pandemic and food quality is still the same!!"</i>', '<i>"The best sushi spot in the valley! Best service, food, and environment. (Come on your birthay, you won&#8217t regret it) THANK YOU LESLEY FOR TAKING CARE OF US"</i>', '<i>"The food was great, the new server was very personable and quick, we were seated fast and efficiently. Fish tasted very fresh as well. Would recommend. Servers name was Tristan highly recommend"</i>']
+          
+        var table =
+        '<table><thead><tr><th>User</th><th>Date</th><th>Stars</th><th>Comment</th></tr></thead><tbody>';
+        for(var i=0; i<user.length; i++){
+        table += '<tr><td>' + user[i] + '</td><td>' + date[i] + '</td><td>' + rating[i] + '</td><td>' + comment[i] + '</td></tr>';
+        }
+        table+='</tbody></table>';
+        text.innerHTML = '<a href="https://www.yelp.com/biz/hikari-sushi-chatsworth-2" title="Hikari Sushi" target=_blank>Hikari Sushi</a>' + table;        
+    } else if (typesIn == "Rincome Restaurants"){
+        var user = ['<u>Sydney A.', '<u>Maya C.', '<u>B B.']
+        var date = ['1/23/2023', '1/15/2023', '2/3/2023']
+        var rating = ['5', '5', '4']
+        var comment = ['<i>"Awesome service from Amber and Lesley! Good food as always! Been going here since the pandemic and food quality is still the same!!"</i>', '<i>"The best sushi spot in the valley! Best service, food, and environment. (Come on your birthay, you won&#8217t regret it) THANK YOU LESLEY FOR TAKING CARE OF US"</i>', '<i>"The food was great, the new server was very personable and quick, we were seated fast and efficiently. Fish tasted very fresh as well. Would recommend. Servers name was Tristan highly recommend"</i>']
+          
+        var table =
+        '<table><thead><tr><th>User</th><th>Date</th><th>Stars</th><th>Comment</th></tr></thead><tbody>';
+        for(var i=0; i<user.length; i++){
+        table += '<tr><td>' + user[i] + '</td><td>' + date[i] + '</td><td>' + rating[i] + '</td><td>' + comment[i] + '</td></tr>';
+        }
+        table+='</tbody></table>';
+        text.innerHTML = '<a href="https://www.yelp.com/biz/hikari-sushi-chatsworth-2" title="Hikari Sushi" target=_blank>Hikari Sushi</a>' + table;        
+    } else if (typesIn == "Boba Snow House"){
+        var user = ['<u>Sydney A.', '<u>Maya C.', '<u>B B.']
+        var date = ['1/23/2023', '1/15/2023', '2/3/2023']
+        var rating = ['5', '5', '4']
+        var comment = ['<i>"Awesome service from Amber and Lesley! Good food as always! Been going here since the pandemic and food quality is still the same!!"</i>', '<i>"The best sushi spot in the valley! Best service, food, and environment. (Come on your birthay, you won&#8217t regret it) THANK YOU LESLEY FOR TAKING CARE OF US"</i>', '<i>"The food was great, the new server was very personable and quick, we were seated fast and efficiently. Fish tasted very fresh as well. Would recommend. Servers name was Tristan highly recommend"</i>']
+          
+        var table =
+        '<table><thead><tr><th>User</th><th>Date</th><th>Stars</th><th>Comment</th></tr></thead><tbody>';
+        for(var i=0; i<user.length; i++){
+        table += '<tr><td>' + user[i] + '</td><td>' + date[i] + '</td><td>' + rating[i] + '</td><td>' + comment[i] + '</td></tr>';
+        }
+        table+='</tbody></table>';
+        text.innerHTML = '<a href="https://www.yelp.com/biz/hikari-sushi-chatsworth-2" title="Hikari Sushi" target=_blank>Hikari Sushi</a>' + table;        
+    } else if (typesIn == "Rococo Ramen"){
+        var user = ['<u>Sydney A.', '<u>Maya C.', '<u>B B.']
+        var date = ['1/23/2023', '1/15/2023', '2/3/2023']
+        var rating = ['5', '5', '4']
+        var comment = ['<i>"Awesome service from Amber and Lesley! Good food as always! Been going here since the pandemic and food quality is still the same!!"</i>', '<i>"The best sushi spot in the valley! Best service, food, and environment. (Come on your birthay, you won&#8217t regret it) THANK YOU LESLEY FOR TAKING CARE OF US"</i>', '<i>"The food was great, the new server was very personable and quick, we were seated fast and efficiently. Fish tasted very fresh as well. Would recommend. Servers name was Tristan highly recommend"</i>']
+          
+        var table =
+        '<table><thead><tr><th>User</th><th>Date</th><th>Stars</th><th>Comment</th></tr></thead><tbody>';
+        for(var i=0; i<user.length; i++){
+        table += '<tr><td>' + user[i] + '</td><td>' + date[i] + '</td><td>' + rating[i] + '</td><td>' + comment[i] + '</td></tr>';
+        }
+        table+='</tbody></table>';
+        text.innerHTML = '<a href="https://www.yelp.com/biz/hikari-sushi-chatsworth-2" title="Hikari Sushi" target=_blank>Hikari Sushi</a>' + table;            
+    } else if (typesIn == "Outback Steakhouse"){
+        var user = ['<u>Sydney A.', '<u>Maya C.', '<u>B B.']
+        var date = ['1/23/2023', '1/15/2023', '2/3/2023']
+        var rating = ['5', '5', '4']
+        var comment = ['<i>"Awesome service from Amber and Lesley! Good food as always! Been going here since the pandemic and food quality is still the same!!"</i>', '<i>"The best sushi spot in the valley! Best service, food, and environment. (Come on your birthay, you won&#8217t regret it) THANK YOU LESLEY FOR TAKING CARE OF US"</i>', '<i>"The food was great, the new server was very personable and quick, we were seated fast and efficiently. Fish tasted very fresh as well. Would recommend. Servers name was Tristan highly recommend"</i>']
+          
+        var table =
+        '<table><thead><tr><th>User</th><th>Date</th><th>Stars</th><th>Comment</th></tr></thead><tbody>';
+        for(var i=0; i<user.length; i++){
+        table += '<tr><td>' + user[i] + '</td><td>' + date[i] + '</td><td>' + rating[i] + '</td><td>' + comment[i] + '</td></tr>';
+        }
+        table+='</tbody></table>';
+        text.innerHTML = '<a href="https://www.yelp.com/biz/hikari-sushi-chatsworth-2" title="Hikari Sushi" target=_blank>Hikari Sushi</a>' + table;        
+    } else if (typesIn == "Presidente Restaurant"){
+        var user = ['<u>Sydney A.', '<u>Maya C.', '<u>B B.']
+        var date = ['1/23/2023', '1/15/2023', '2/3/2023']
+        var rating = ['5', '5', '4']
+        var comment = ['<i>"Awesome service from Amber and Lesley! Good food as always! Been going here since the pandemic and food quality is still the same!!"</i>', '<i>"The best sushi spot in the valley! Best service, food, and environment. (Come on your birthay, you won&#8217t regret it) THANK YOU LESLEY FOR TAKING CARE OF US"</i>', '<i>"The food was great, the new server was very personable and quick, we were seated fast and efficiently. Fish tasted very fresh as well. Would recommend. Servers name was Tristan highly recommend"</i>']
+          
+        var table =
+        '<table><thead><tr><th>User</th><th>Date</th><th>Stars</th><th>Comment</th></tr></thead><tbody>';
+        for(var i=0; i<user.length; i++){
+        table += '<tr><td>' + user[i] + '</td><td>' + date[i] + '</td><td>' + rating[i] + '</td><td>' + comment[i] + '</td></tr>';
+        }
+        table+='</tbody></table>';
+        text.innerHTML = '<a href="https://www.yelp.com/biz/hikari-sushi-chatsworth-2" title="Hikari Sushi" target=_blank>Hikari Sushi</a>' + table;        
+    } else if (typesIn == "Good Pho You"){
+        var user = ['<u>Sydney A.', '<u>Maya C.', '<u>B B.']
+        var date = ['1/23/2023', '1/15/2023', '2/3/2023']
+        var rating = ['5', '5', '4']
+        var comment = ['<i>"Awesome service from Amber and Lesley! Good food as always! Been going here since the pandemic and food quality is still the same!!"</i>', '<i>"The best sushi spot in the valley! Best service, food, and environment. (Come on your birthay, you won&#8217t regret it) THANK YOU LESLEY FOR TAKING CARE OF US"</i>', '<i>"The food was great, the new server was very personable and quick, we were seated fast and efficiently. Fish tasted very fresh as well. Would recommend. Servers name was Tristan highly recommend"</i>']
+          
+        var table =
+        '<table><thead><tr><th>User</th><th>Date</th><th>Stars</th><th>Comment</th></tr></thead><tbody>';
+        for(var i=0; i<user.length; i++){
+        table += '<tr><td>' + user[i] + '</td><td>' + date[i] + '</td><td>' + rating[i] + '</td><td>' + comment[i] + '</td></tr>';
+        }
+        table+='</tbody></table>';
+        text.innerHTML = '<a href="https://www.yelp.com/biz/hikari-sushi-chatsworth-2" title="Hikari Sushi" target=_blank>Hikari Sushi</a>' + table;        
+    } else if (typesIn == "Maru Ramen"){
+        var user = ['<u>Sydney A.', '<u>Maya C.', '<u>B B.']
+        var date = ['1/23/2023', '1/15/2023', '2/3/2023']
+        var rating = ['5', '5', '4']
+        var comment = ['<i>"Awesome service from Amber and Lesley! Good food as always! Been going here since the pandemic and food quality is still the same!!"</i>', '<i>"The best sushi spot in the valley! Best service, food, and environment. (Come on your birthay, you won&#8217t regret it) THANK YOU LESLEY FOR TAKING CARE OF US"</i>', '<i>"The food was great, the new server was very personable and quick, we were seated fast and efficiently. Fish tasted very fresh as well. Would recommend. Servers name was Tristan highly recommend"</i>']
+          
+        var table =
+        '<table><thead><tr><th>User</th><th>Date</th><th>Stars</th><th>Comment</th></tr></thead><tbody>';
+        for(var i=0; i<user.length; i++){
+        table += '<tr><td>' + user[i] + '</td><td>' + date[i] + '</td><td>' + rating[i] + '</td><td>' + comment[i] + '</td></tr>';
+        }
+        table+='</tbody></table>';
+        text.innerHTML = '<a href="https://www.yelp.com/biz/hikari-sushi-chatsworth-2" title="Hikari Sushi" target=_blank>Hikari Sushi</a>' + table;        
+    } else if (typesIn == "Truman House Tavern"){
+        var user = ['<u>Sydney A.', '<u>Maya C.', '<u>B B.']
+        var date = ['1/23/2023', '1/15/2023', '2/3/2023']
+        var rating = ['5', '5', '4']
+        var comment = ['<i>"Awesome service from Amber and Lesley! Good food as always! Been going here since the pandemic and food quality is still the same!!"</i>', '<i>"The best sushi spot in the valley! Best service, food, and environment. (Come on your birthay, you won&#8217t regret it) THANK YOU LESLEY FOR TAKING CARE OF US"</i>', '<i>"The food was great, the new server was very personable and quick, we were seated fast and efficiently. Fish tasted very fresh as well. Would recommend. Servers name was Tristan highly recommend"</i>']
+          
+        var table =
+        '<table><thead><tr><th>User</th><th>Date</th><th>Stars</th><th>Comment</th></tr></thead><tbody>';
+        for(var i=0; i<user.length; i++){
+        table += '<tr><td>' + user[i] + '</td><td>' + date[i] + '</td><td>' + rating[i] + '</td><td>' + comment[i] + '</td></tr>';
+        }
+        table+='</tbody></table>';
+        text.innerHTML = '<a href="https://www.yelp.com/biz/hikari-sushi-chatsworth-2" title="Hikari Sushi" target=_blank>Hikari Sushi</a>' + table;        
+    } else if (typesIn == "Gen Korean BBQ House"){
+        var user = ['<u>Sydney A.', '<u>Maya C.', '<u>B B.']
+        var date = ['1/23/2023', '1/15/2023', '2/3/2023']
+        var rating = ['5', '5', '4']
+        var comment = ['<i>"Awesome service from Amber and Lesley! Good food as always! Been going here since the pandemic and food quality is still the same!!"</i>', '<i>"The best sushi spot in the valley! Best service, food, and environment. (Come on your birthay, you won&#8217t regret it) THANK YOU LESLEY FOR TAKING CARE OF US"</i>', '<i>"The food was great, the new server was very personable and quick, we were seated fast and efficiently. Fish tasted very fresh as well. Would recommend. Servers name was Tristan highly recommend"</i>']
+          
+        var table =
+        '<table><thead><tr><th>User</th><th>Date</th><th>Stars</th><th>Comment</th></tr></thead><tbody>';
+        for(var i=0; i<user.length; i++){
+        table += '<tr><td>' + user[i] + '</td><td>' + date[i] + '</td><td>' + rating[i] + '</td><td>' + comment[i] + '</td></tr>';
+        }
+        table+='</tbody></table>';
+        text.innerHTML = '<a href="https://www.yelp.com/biz/hikari-sushi-chatsworth-2" title="Hikari Sushi" target=_blank>Hikari Sushi</a>' + table;        
+    } else if (typesIn == "Applebee's Grill + Bar"){
+        var user = ['<u>Sydney A.', '<u>Maya C.', '<u>B B.']
+        var date = ['1/23/2023', '1/15/2023', '2/3/2023']
+        var rating = ['5', '5', '4']
+        var comment = ['<i>"Awesome service from Amber and Lesley! Good food as always! Been going here since the pandemic and food quality is still the same!!"</i>', '<i>"The best sushi spot in the valley! Best service, food, and environment. (Come on your birthay, you won&#8217t regret it) THANK YOU LESLEY FOR TAKING CARE OF US"</i>', '<i>"The food was great, the new server was very personable and quick, we were seated fast and efficiently. Fish tasted very fresh as well. Would recommend. Servers name was Tristan highly recommend"</i>']
+          
+        var table =
+        '<table><thead><tr><th>User</th><th>Date</th><th>Stars</th><th>Comment</th></tr></thead><tbody>';
+        for(var i=0; i<user.length; i++){
+        table += '<tr><td>' + user[i] + '</td><td>' + date[i] + '</td><td>' + rating[i] + '</td><td>' + comment[i] + '</td></tr>';
+        }
+        table+='</tbody></table>';
+        text.innerHTML = '<a href="https://www.yelp.com/biz/hikari-sushi-chatsworth-2" title="Hikari Sushi" target=_blank>Hikari Sushi</a>' + table;        
+    } else if (typesIn == "Buffalo Wild Wings"){
+        var user = ['<u>Sydney A.', '<u>Maya C.', '<u>B B.']
+        var date = ['1/23/2023', '1/15/2023', '2/3/2023']
+        var rating = ['5', '5', '4']
+        var comment = ['<i>"Awesome service from Amber and Lesley! Good food as always! Been going here since the pandemic and food quality is still the same!!"</i>', '<i>"The best sushi spot in the valley! Best service, food, and environment. (Come on your birthay, you won&#8217t regret it) THANK YOU LESLEY FOR TAKING CARE OF US"</i>', '<i>"The food was great, the new server was very personable and quick, we were seated fast and efficiently. Fish tasted very fresh as well. Would recommend. Servers name was Tristan highly recommend"</i>']
+          
+        var table =
+        '<table><thead><tr><th>User</th><th>Date</th><th>Stars</th><th>Comment</th></tr></thead><tbody>';
+        for(var i=0; i<user.length; i++){
+        table += '<tr><td>' + user[i] + '</td><td>' + date[i] + '</td><td>' + rating[i] + '</td><td>' + comment[i] + '</td></tr>';
+        }
+        table+='</tbody></table>';
+        text.innerHTML = '<a href="https://www.yelp.com/biz/hikari-sushi-chatsworth-2" title="Hikari Sushi" target=_blank>Hikari Sushi</a>' + table;        
+    } else if (typesIn == "TGI Fridays"){
+        var user = ['<u>Sydney A.', '<u>Maya C.', '<u>B B.']
+        var date = ['1/23/2023', '1/15/2023', '2/3/2023']
+        var rating = ['5', '5', '4']
+        var comment = ['<i>"Awesome service from Amber and Lesley! Good food as always! Been going here since the pandemic and food quality is still the same!!"</i>', '<i>"The best sushi spot in the valley! Best service, food, and environment. (Come on your birthay, you won&#8217t regret it) THANK YOU LESLEY FOR TAKING CARE OF US"</i>', '<i>"The food was great, the new server was very personable and quick, we were seated fast and efficiently. Fish tasted very fresh as well. Would recommend. Servers name was Tristan highly recommend"</i>']
+          
+        var table =
+        '<table><thead><tr><th>User</th><th>Date</th><th>Stars</th><th>Comment</th></tr></thead><tbody>';
+        for(var i=0; i<user.length; i++){
+        table += '<tr><td>' + user[i] + '</td><td>' + date[i] + '</td><td>' + rating[i] + '</td><td>' + comment[i] + '</td></tr>';
+        }
+        table+='</tbody></table>';
+        text.innerHTML = '<a href="https://www.yelp.com/biz/hikari-sushi-chatsworth-2" title="Hikari Sushi" target=_blank>Hikari Sushi</a>' + table;        
+    } else if (typesIn == "Finney's Crafthouse-Porter Ranch"){
+        var user = ['<u>Sydney A.', '<u>Maya C.', '<u>B B.']
+        var date = ['1/23/2023', '1/15/2023', '2/3/2023']
+        var rating = ['5', '5', '4']
+        var comment = ['<i>"Awesome service from Amber and Lesley! Good food as always! Been going here since the pandemic and food quality is still the same!!"</i>', '<i>"The best sushi spot in the valley! Best service, food, and environment. (Come on your birthay, you won&#8217t regret it) THANK YOU LESLEY FOR TAKING CARE OF US"</i>', '<i>"The food was great, the new server was very personable and quick, we were seated fast and efficiently. Fish tasted very fresh as well. Would recommend. Servers name was Tristan highly recommend"</i>']
+          
+        var table =
+        '<table><thead><tr><th>User</th><th>Date</th><th>Stars</th><th>Comment</th></tr></thead><tbody>';
+        for(var i=0; i<user.length; i++){
+        table += '<tr><td>' + user[i] + '</td><td>' + date[i] + '</td><td>' + rating[i] + '</td><td>' + comment[i] + '</td></tr>';
+        }
+        table+='</tbody></table>';
+        text.innerHTML = '<a href="https://www.yelp.com/biz/hikari-sushi-chatsworth-2" title="Hikari Sushi" target=_blank>Hikari Sushi</a>' + table;        
+    } else if (typesIn == "Gus's BBQ"){
+        var user = ['<u>Sydney A.', '<u>Maya C.', '<u>B B.']
+        var date = ['1/23/2023', '1/15/2023', '2/3/2023']
+        var rating = ['5', '5', '4']
+        var comment = ['<i>"Awesome service from Amber and Lesley! Good food as always! Been going here since the pandemic and food quality is still the same!!"</i>', '<i>"The best sushi spot in the valley! Best service, food, and environment. (Come on your birthay, you won&#8217t regret it) THANK YOU LESLEY FOR TAKING CARE OF US"</i>', '<i>"The food was great, the new server was very personable and quick, we were seated fast and efficiently. Fish tasted very fresh as well. Would recommend. Servers name was Tristan highly recommend"</i>']
+          
+        var table =
+        '<table><thead><tr><th>User</th><th>Date</th><th>Stars</th><th>Comment</th></tr></thead><tbody>';
+        for(var i=0; i<user.length; i++){
+        table += '<tr><td>' + user[i] + '</td><td>' + date[i] + '</td><td>' + rating[i] + '</td><td>' + comment[i] + '</td></tr>';
+        }
+        table+='</tbody></table>';
+        text.innerHTML = '<a href="https://www.yelp.com/biz/hikari-sushi-chatsworth-2" title="Hikari Sushi" target=_blank>Hikari Sushi</a>' + table;        
+    } else if (typesIn == "Domino's Pizza"){
+        var user = ['<u>Sydney A.', '<u>Maya C.', '<u>B B.']
+        var date = ['1/23/2023', '1/15/2023', '2/3/2023']
+        var rating = ['5', '5', '4']
+        var comment = ['<i>"Awesome service from Amber and Lesley! Good food as always! Been going here since the pandemic and food quality is still the same!!"</i>', '<i>"The best sushi spot in the valley! Best service, food, and environment. (Come on your birthay, you won&#8217t regret it) THANK YOU LESLEY FOR TAKING CARE OF US"</i>', '<i>"The food was great, the new server was very personable and quick, we were seated fast and efficiently. Fish tasted very fresh as well. Would recommend. Servers name was Tristan highly recommend"</i>']
+          
+        var table =
+        '<table><thead><tr><th>User</th><th>Date</th><th>Stars</th><th>Comment</th></tr></thead><tbody>';
+        for(var i=0; i<user.length; i++){
+        table += '<tr><td>' + user[i] + '</td><td>' + date[i] + '</td><td>' + rating[i] + '</td><td>' + comment[i] + '</td></tr>';
+        }
+        table+='</tbody></table>';
+        text.innerHTML = '<a href="https://www.yelp.com/biz/hikari-sushi-chatsworth-2" title="Hikari Sushi" target=_blank>Hikari Sushi</a>' + table;        
+    } else if (typesIn == "Chipotle Mexican Grill"){
+        var user = ['<u>Sydney A.', '<u>Maya C.', '<u>B B.']
+        var date = ['1/23/2023', '1/15/2023', '2/3/2023']
+        var rating = ['5', '5', '4']
+        var comment = ['<i>"Awesome service from Amber and Lesley! Good food as always! Been going here since the pandemic and food quality is still the same!!"</i>', '<i>"The best sushi spot in the valley! Best service, food, and environment. (Come on your birthay, you won&#8217t regret it) THANK YOU LESLEY FOR TAKING CARE OF US"</i>', '<i>"The food was great, the new server was very personable and quick, we were seated fast and efficiently. Fish tasted very fresh as well. Would recommend. Servers name was Tristan highly recommend"</i>']
+          
+        var table =
+        '<table><thead><tr><th>User</th><th>Date</th><th>Stars</th><th>Comment</th></tr></thead><tbody>';
+        for(var i=0; i<user.length; i++){
+        table += '<tr><td>' + user[i] + '</td><td>' + date[i] + '</td><td>' + rating[i] + '</td><td>' + comment[i] + '</td></tr>';
+        }
+        table+='</tbody></table>';
+        text.innerHTML = '<a href="https://www.yelp.com/biz/hikari-sushi-chatsworth-2" title="Hikari Sushi" target=_blank>Hikari Sushi</a>' + table;        
+    } else if (typesIn == "PokiMX (San Fernando)"){
+        var user = ['<u>Sydney A.', '<u>Maya C.', '<u>B B.']
+        var date = ['1/23/2023', '1/15/2023', '2/3/2023']
+        var rating = ['5', '5', '4']
+        var comment = ['<i>"Awesome service from Amber and Lesley! Good food as always! Been going here since the pandemic and food quality is still the same!!"</i>', '<i>"The best sushi spot in the valley! Best service, food, and environment. (Come on your birthay, you won&#8217t regret it) THANK YOU LESLEY FOR TAKING CARE OF US"</i>', '<i>"The food was great, the new server was very personable and quick, we were seated fast and efficiently. Fish tasted very fresh as well. Would recommend. Servers name was Tristan highly recommend"</i>']
+          
+        var table =
+        '<table><thead><tr><th>User</th><th>Date</th><th>Stars</th><th>Comment</th></tr></thead><tbody>';
+        for(var i=0; i<user.length; i++){
+        table += '<tr><td>' + user[i] + '</td><td>' + date[i] + '</td><td>' + rating[i] + '</td><td>' + comment[i] + '</td></tr>';
+        }
+        table+='</tbody></table>';
+        text.innerHTML = '<a href="https://www.yelp.com/biz/hikari-sushi-chatsworth-2" title="Hikari Sushi" target=_blank>Hikari Sushi</a>' + table;        
+    } else if (typesIn == "Bar Louie-Northridge Fashion Center"){
+        var user = ['<u>Sydney A.', '<u>Maya C.', '<u>B B.']
+        var date = ['1/23/2023', '1/15/2023', '2/3/2023']
+        var rating = ['5', '5', '4']
+        var comment = ['<i>"Awesome service from Amber and Lesley! Good food as always! Been going here since the pandemic and food quality is still the same!!"</i>', '<i>"The best sushi spot in the valley! Best service, food, and environment. (Come on your birthay, you won&#8217t regret it) THANK YOU LESLEY FOR TAKING CARE OF US"</i>', '<i>"The food was great, the new server was very personable and quick, we were seated fast and efficiently. Fish tasted very fresh as well. Would recommend. Servers name was Tristan highly recommend"</i>']
+          
+        var table =
+        '<table><thead><tr><th>User</th><th>Date</th><th>Stars</th><th>Comment</th></tr></thead><tbody>';
+        for(var i=0; i<user.length; i++){
+        table += '<tr><td>' + user[i] + '</td><td>' + date[i] + '</td><td>' + rating[i] + '</td><td>' + comment[i] + '</td></tr>';
+        }
+        table+='</tbody></table>';
+        text.innerHTML = '<a href="https://www.yelp.com/biz/hikari-sushi-chatsworth-2" title="Hikari Sushi" target=_blank>Hikari Sushi</a>' + table;        
+    } else if (typesIn == "Porto's Bakery and Cafe"){
+        var user = ['<u>Sydney A.', '<u>Maya C.', '<u>B B.']
+        var date = ['1/23/2023', '1/15/2023', '2/3/2023']
+        var rating = ['5', '5', '4']
+        var comment = ['<i>"Awesome service from Amber and Lesley! Good food as always! Been going here since the pandemic and food quality is still the same!!"</i>', '<i>"The best sushi spot in the valley! Best service, food, and environment. (Come on your birthay, you won&#8217t regret it) THANK YOU LESLEY FOR TAKING CARE OF US"</i>', '<i>"The food was great, the new server was very personable and quick, we were seated fast and efficiently. Fish tasted very fresh as well. Would recommend. Servers name was Tristan highly recommend"</i>']
+          
+        var table =
+        '<table><thead><tr><th>User</th><th>Date</th><th>Stars</th><th>Comment</th></tr></thead><tbody>';
+        for(var i=0; i<user.length; i++){
+        table += '<tr><td>' + user[i] + '</td><td>' + date[i] + '</td><td>' + rating[i] + '</td><td>' + comment[i] + '</td></tr>';
+        }
+        table+='</tbody></table>';
+        text.innerHTML = '<a href="https://www.yelp.com/biz/hikari-sushi-chatsworth-2" title="Hikari Sushi" target=_blank>Hikari Sushi</a>' + table;        
+    } else if (typesIn == "Yard House"){
+        var user = ['<u>Sydney A.', '<u>Maya C.', '<u>B B.']
+        var date = ['1/23/2023', '1/15/2023', '2/3/2023']
+        var rating = ['5', '5', '4']
+        var comment = ['<i>"Awesome service from Amber and Lesley! Good food as always! Been going here since the pandemic and food quality is still the same!!"</i>', '<i>"The best sushi spot in the valley! Best service, food, and environment. (Come on your birthay, you won&#8217t regret it) THANK YOU LESLEY FOR TAKING CARE OF US"</i>', '<i>"The food was great, the new server was very personable and quick, we were seated fast and efficiently. Fish tasted very fresh as well. Would recommend. Servers name was Tristan highly recommend"</i>']
+          
+        var table =
+        '<table><thead><tr><th>User</th><th>Date</th><th>Stars</th><th>Comment</th></tr></thead><tbody>';
+        for(var i=0; i<user.length; i++){
+        table += '<tr><td>' + user[i] + '</td><td>' + date[i] + '</td><td>' + rating[i] + '</td><td>' + comment[i] + '</td></tr>';
+        }
+        table+='</tbody></table>';
+        text.innerHTML = '<a href="https://www.yelp.com/biz/hikari-sushi-chatsworth-2" title="Hikari Sushi" target=_blank>Hikari Sushi</a>' + table;        
+    } else if (typesIn == "Wood Ranch"){
+        var user = ['<u>Sydney A.', '<u>Maya C.', '<u>B B.']
+        var date = ['1/23/2023', '1/15/2023', '2/3/2023']
+        var rating = ['5', '5', '4']
+        var comment = ['<i>"Awesome service from Amber and Lesley! Good food as always! Been going here since the pandemic and food quality is still the same!!"</i>', '<i>"The best sushi spot in the valley! Best service, food, and environment. (Come on your birthay, you won&#8217t regret it) THANK YOU LESLEY FOR TAKING CARE OF US"</i>', '<i>"The food was great, the new server was very personable and quick, we were seated fast and efficiently. Fish tasted very fresh as well. Would recommend. Servers name was Tristan highly recommend"</i>']
+          
+        var table =
+        '<table><thead><tr><th>User</th><th>Date</th><th>Stars</th><th>Comment</th></tr></thead><tbody>';
+        for(var i=0; i<user.length; i++){
+        table += '<tr><td>' + user[i] + '</td><td>' + date[i] + '</td><td>' + rating[i] + '</td><td>' + comment[i] + '</td></tr>';
+        }
+        table+='</tbody></table>';
+        text.innerHTML = '<a href="https://www.yelp.com/biz/hikari-sushi-chatsworth-2" title="Hikari Sushi" target=_blank>Hikari Sushi</a>' + table;        
+    } else if (typesIn == "Los Tres Hermanos Bar & Grill"){
+        var user = ['<u>Sydney A.', '<u>Maya C.', '<u>B B.']
+        var date = ['1/23/2023', '1/15/2023', '2/3/2023']
+        var rating = ['5', '5', '4']
+        var comment = ['<i>"Awesome service from Amber and Lesley! Good food as always! Been going here since the pandemic and food quality is still the same!!"</i>', '<i>"The best sushi spot in the valley! Best service, food, and environment. (Come on your birthay, you won&#8217t regret it) THANK YOU LESLEY FOR TAKING CARE OF US"</i>', '<i>"The food was great, the new server was very personable and quick, we were seated fast and efficiently. Fish tasted very fresh as well. Would recommend. Servers name was Tristan highly recommend"</i>']
+          
+        var table =
+        '<table><thead><tr><th>User</th><th>Date</th><th>Stars</th><th>Comment</th></tr></thead><tbody>';
+        for(var i=0; i<user.length; i++){
+        table += '<tr><td>' + user[i] + '</td><td>' + date[i] + '</td><td>' + rating[i] + '</td><td>' + comment[i] + '</td></tr>';
+        }
+        table+='</tbody></table>';
+        text.innerHTML = '<a href="https://www.yelp.com/biz/hikari-sushi-chatsworth-2" title="Hikari Sushi" target=_blank>Hikari Sushi</a>' + table;        
+    } else if (typesIn == "El Torito"){
+        var user = ['<u>Sydney A.', '<u>Maya C.', '<u>B B.']
+        var date = ['1/23/2023', '1/15/2023', '2/3/2023']
+        var rating = ['5', '5', '4']
+        var comment = ['<i>"Awesome service from Amber and Lesley! Good food as always! Been going here since the pandemic and food quality is still the same!!"</i>', '<i>"The best sushi spot in the valley! Best service, food, and environment. (Come on your birthay, you won&#8217t regret it) THANK YOU LESLEY FOR TAKING CARE OF US"</i>', '<i>"The food was great, the new server was very personable and quick, we were seated fast and efficiently. Fish tasted very fresh as well. Would recommend. Servers name was Tristan highly recommend"</i>']
+          
+        var table =
+        '<table><thead><tr><th>User</th><th>Date</th><th>Stars</th><th>Comment</th></tr></thead><tbody>';
+        for(var i=0; i<user.length; i++){
+        table += '<tr><td>' + user[i] + '</td><td>' + date[i] + '</td><td>' + rating[i] + '</td><td>' + comment[i] + '</td></tr>';
+        }
+        table+='</tbody></table>';
+        text.innerHTML = '<a href="https://www.yelp.com/biz/hikari-sushi-chatsworth-2" title="Hikari Sushi" target=_blank>Hikari Sushi</a>' + table;        
+    } else if (typesIn == "Fishbowl Poke Co."){
+        var user = ['<u>Sydney A.', '<u>Maya C.', '<u>B B.']
+        var date = ['1/23/2023', '1/15/2023', '2/3/2023']
+        var rating = ['5', '5', '4']
+        var comment = ['<i>"Awesome service from Amber and Lesley! Good food as always! Been going here since the pandemic and food quality is still the same!!"</i>', '<i>"The best sushi spot in the valley! Best service, food, and environment. (Come on your birthay, you won&#8217t regret it) THANK YOU LESLEY FOR TAKING CARE OF US"</i>', '<i>"The food was great, the new server was very personable and quick, we were seated fast and efficiently. Fish tasted very fresh as well. Would recommend. Servers name was Tristan highly recommend"</i>']
+          
+        var table =
+        '<table><thead><tr><th>User</th><th>Date</th><th>Stars</th><th>Comment</th></tr></thead><tbody>';
+        for(var i=0; i<user.length; i++){
+        table += '<tr><td>' + user[i] + '</td><td>' + date[i] + '</td><td>' + rating[i] + '</td><td>' + comment[i] + '</td></tr>';
+        }
+        table+='</tbody></table>';
+        text.innerHTML = '<a href="https://www.yelp.com/biz/hikari-sushi-chatsworth-2" title="Hikari Sushi" target=_blank>Hikari Sushi</a>' + table;        
+    } else if (typesIn == "California Pizza Kitchen at Northridge"){
+        var user = ['<u>Sydney A.', '<u>Maya C.', '<u>B B.']
+        var date = ['1/23/2023', '1/15/2023', '2/3/2023']
+        var rating = ['5', '5', '4']
+        var comment = ['<i>"Awesome service from Amber and Lesley! Good food as always! Been going here since the pandemic and food quality is still the same!!"</i>', '<i>"The best sushi spot in the valley! Best service, food, and environment. (Come on your birthay, you won&#8217t regret it) THANK YOU LESLEY FOR TAKING CARE OF US"</i>', '<i>"The food was great, the new server was very personable and quick, we were seated fast and efficiently. Fish tasted very fresh as well. Would recommend. Servers name was Tristan highly recommend"</i>']
+          
+        var table =
+        '<table><thead><tr><th>User</th><th>Date</th><th>Stars</th><th>Comment</th></tr></thead><tbody>';
+        for(var i=0; i<user.length; i++){
+        table += '<tr><td>' + user[i] + '</td><td>' + date[i] + '</td><td>' + rating[i] + '</td><td>' + comment[i] + '</td></tr>';
+        }
+        table+='</tbody></table>';
+        text.innerHTML = '<a href="https://www.yelp.com/biz/hikari-sushi-chatsworth-2" title="Hikari Sushi" target=_blank>Hikari Sushi</a>' + table;        
+    } else if (typesIn == "Ceviches mariscos estilo Nayarit"){
+        var user = ['<u>Sydney A.', '<u>Maya C.', '<u>B B.']
+        var date = ['1/23/2023', '1/15/2023', '2/3/2023']
+        var rating = ['5', '5', '4']
+        var comment = ['<i>"Awesome service from Amber and Lesley! Good food as always! Been going here since the pandemic and food quality is still the same!!"</i>', '<i>"The best sushi spot in the valley! Best service, food, and environment. (Come on your birthay, you won&#8217t regret it) THANK YOU LESLEY FOR TAKING CARE OF US"</i>', '<i>"The food was great, the new server was very personable and quick, we were seated fast and efficiently. Fish tasted very fresh as well. Would recommend. Servers name was Tristan highly recommend"</i>']
+          
+        var table =
+        '<table><thead><tr><th>User</th><th>Date</th><th>Stars</th><th>Comment</th></tr></thead><tbody>';
+        for(var i=0; i<user.length; i++){
+        table += '<tr><td>' + user[i] + '</td><td>' + date[i] + '</td><td>' + rating[i] + '</td><td>' + comment[i] + '</td></tr>';
+        }
+        table+='</tbody></table>';
+        text.innerHTML = '<a href="https://www.yelp.com/biz/hikari-sushi-chatsworth-2" title="Hikari Sushi" target=_blank>Hikari Sushi</a>' + table;        
+    } else if (typesIn == "SUSHIRAW"){
+        var user = ['<u>Sydney A.', '<u>Maya C.', '<u>B B.']
+        var date = ['1/23/2023', '1/15/2023', '2/3/2023']
+        var rating = ['5', '5', '4']
+        var comment = ['<i>"Awesome service from Amber and Lesley! Good food as always! Been going here since the pandemic and food quality is still the same!!"</i>', '<i>"The best sushi spot in the valley! Best service, food, and environment. (Come on your birthay, you won&#8217t regret it) THANK YOU LESLEY FOR TAKING CARE OF US"</i>', '<i>"The food was great, the new server was very personable and quick, we were seated fast and efficiently. Fish tasted very fresh as well. Would recommend. Servers name was Tristan highly recommend"</i>']
+          
+        var table =
+        '<table><thead><tr><th>User</th><th>Date</th><th>Stars</th><th>Comment</th></tr></thead><tbody>';
+        for(var i=0; i<user.length; i++){
+        table += '<tr><td>' + user[i] + '</td><td>' + date[i] + '</td><td>' + rating[i] + '</td><td>' + comment[i] + '</td></tr>';
+        }
+        table+='</tbody></table>';
+        text.innerHTML = '<a href="https://www.yelp.com/biz/hikari-sushi-chatsworth-2" title="Hikari Sushi" target=_blank>Hikari Sushi</a>' + table;        
+    } else if (typesIn == "Asahi Sushi"){
+        var user = ['<u>Sydney A.', '<u>Maya C.', '<u>B B.']
+        var date = ['1/23/2023', '1/15/2023', '2/3/2023']
+        var rating = ['5', '5', '4']
+        var comment = ['<i>"Awesome service from Amber and Lesley! Good food as always! Been going here since the pandemic and food quality is still the same!!"</i>', '<i>"The best sushi spot in the valley! Best service, food, and environment. (Come on your birthay, you won&#8217t regret it) THANK YOU LESLEY FOR TAKING CARE OF US"</i>', '<i>"The food was great, the new server was very personable and quick, we were seated fast and efficiently. Fish tasted very fresh as well. Would recommend. Servers name was Tristan highly recommend"</i>']
+          
+        var table =
+        '<table><thead><tr><th>User</th><th>Date</th><th>Stars</th><th>Comment</th></tr></thead><tbody>';
+        for(var i=0; i<user.length; i++){
+        table += '<tr><td>' + user[i] + '</td><td>' + date[i] + '</td><td>' + rating[i] + '</td><td>' + comment[i] + '</td></tr>';
+        }
+        table+='</tbody></table>';
+        text.innerHTML = '<a href="https://www.yelp.com/biz/hikari-sushi-chatsworth-2" title="Hikari Sushi" target=_blank>Hikari Sushi</a>' + table;        
+    } else if (typesIn == "Blue Palms Brewhouse"){
+        var user = ['<u>Sydney A.', '<u>Maya C.', '<u>B B.']
+        var date = ['1/23/2023', '1/15/2023', '2/3/2023']
+        var rating = ['5', '5', '4']
+        var comment = ['<i>"Awesome service from Amber and Lesley! Good food as always! Been going here since the pandemic and food quality is still the same!!"</i>', '<i>"The best sushi spot in the valley! Best service, food, and environment. (Come on your birthay, you won&#8217t regret it) THANK YOU LESLEY FOR TAKING CARE OF US"</i>', '<i>"The food was great, the new server was very personable and quick, we were seated fast and efficiently. Fish tasted very fresh as well. Would recommend. Servers name was Tristan highly recommend"</i>']
+          
+        var table =
+        '<table><thead><tr><th>User</th><th>Date</th><th>Stars</th><th>Comment</th></tr></thead><tbody>';
+        for(var i=0; i<user.length; i++){
+        table += '<tr><td>' + user[i] + '</td><td>' + date[i] + '</td><td>' + rating[i] + '</td><td>' + comment[i] + '</td></tr>';
+        }
+        table+='</tbody></table>';
+        text.innerHTML = '<a href="https://www.yelp.com/biz/hikari-sushi-chatsworth-2" title="Hikari Sushi" target=_blank>Hikari Sushi</a>' + table;        
+    } else if (typesIn == "San Fernando Brewing Company"){
+        var user = ['<u>Sydney A.', '<u>Maya C.', '<u>B B.']
+        var date = ['1/23/2023', '1/15/2023', '2/3/2023']
+        var rating = ['5', '5', '4']
+        var comment = ['<i>"Awesome service from Amber and Lesley! Good food as always! Been going here since the pandemic and food quality is still the same!!"</i>', '<i>"The best sushi spot in the valley! Best service, food, and environment. (Come on your birthay, you won&#8217t regret it) THANK YOU LESLEY FOR TAKING CARE OF US"</i>', '<i>"The food was great, the new server was very personable and quick, we were seated fast and efficiently. Fish tasted very fresh as well. Would recommend. Servers name was Tristan highly recommend"</i>']
+          
+        var table =
+        '<table><thead><tr><th>User</th><th>Date</th><th>Stars</th><th>Comment</th></tr></thead><tbody>';
+        for(var i=0; i<user.length; i++){
+        table += '<tr><td>' + user[i] + '</td><td>' + date[i] + '</td><td>' + rating[i] + '</td><td>' + comment[i] + '</td></tr>';
+        }
+        table+='</tbody></table>';
+        text.innerHTML = '<a href="https://www.yelp.com/biz/hikari-sushi-chatsworth-2" title="Hikari Sushi" target=_blank>Hikari Sushi</a>' + table;        
+    } else if (typesIn == "Lucille's Smokehouse Bar-B-Que"){
+        var user = ['<u>Sydney A.', '<u>Maya C.', '<u>B B.']
+        var date = ['1/23/2023', '1/15/2023', '2/3/2023']
+        var rating = ['5', '5', '4']
+        var comment = ['<i>"Awesome service from Amber and Lesley! Good food as always! Been going here since the pandemic and food quality is still the same!!"</i>', '<i>"The best sushi spot in the valley! Best service, food, and environment. (Come on your birthay, you won&#8217t regret it) THANK YOU LESLEY FOR TAKING CARE OF US"</i>', '<i>"The food was great, the new server was very personable and quick, we were seated fast and efficiently. Fish tasted very fresh as well. Would recommend. Servers name was Tristan highly recommend"</i>']
+          
+        var table =
+        '<table><thead><tr><th>User</th><th>Date</th><th>Stars</th><th>Comment</th></tr></thead><tbody>';
+        for(var i=0; i<user.length; i++){
+        table += '<tr><td>' + user[i] + '</td><td>' + date[i] + '</td><td>' + rating[i] + '</td><td>' + comment[i] + '</td></tr>';
+        }
+        table+='</tbody></table>';
+        text.innerHTML = '<a href="https://www.yelp.com/biz/hikari-sushi-chatsworth-2" title="Hikari Sushi" target=_blank>Hikari Sushi</a>' + table;        
+    } else if (typesIn == "Lazy Dog Restaurant & Bar"){
+        var user = ['<u>Sydney A.', '<u>Maya C.', '<u>B B.']
+        var date = ['1/23/2023', '1/15/2023', '2/3/2023']
+        var rating = ['5', '5', '4']
+        var comment = ['<i>"Awesome service from Amber and Lesley! Good food as always! Been going here since the pandemic and food quality is still the same!!"</i>', '<i>"The best sushi spot in the valley! Best service, food, and environment. (Come on your birthay, you won&#8217t regret it) THANK YOU LESLEY FOR TAKING CARE OF US"</i>', '<i>"The food was great, the new server was very personable and quick, we were seated fast and efficiently. Fish tasted very fresh as well. Would recommend. Servers name was Tristan highly recommend"</i>']
+          
+        var table =
+        '<table><thead><tr><th>User</th><th>Date</th><th>Stars</th><th>Comment</th></tr></thead><tbody>';
+        for(var i=0; i<user.length; i++){
+        table += '<tr><td>' + user[i] + '</td><td>' + date[i] + '</td><td>' + rating[i] + '</td><td>' + comment[i] + '</td></tr>';
+        }
+        table+='</tbody></table>';
+        text.innerHTML = '<a href="https://www.yelp.com/biz/hikari-sushi-chatsworth-2" title="Hikari Sushi" target=_blank>Hikari Sushi</a>' + table;        
+    } else if (typesIn == "Marci's Sports Bar & Grill"){
+        var user = ['<u>Sydney A.', '<u>Maya C.', '<u>B B.']
+        var date = ['1/23/2023', '1/15/2023', '2/3/2023']
+        var rating = ['5', '5', '4']
+        var comment = ['<i>"Awesome service from Amber and Lesley! Good food as always! Been going here since the pandemic and food quality is still the same!!"</i>', '<i>"The best sushi spot in the valley! Best service, food, and environment. (Come on your birthay, you won&#8217t regret it) THANK YOU LESLEY FOR TAKING CARE OF US"</i>', '<i>"The food was great, the new server was very personable and quick, we were seated fast and efficiently. Fish tasted very fresh as well. Would recommend. Servers name was Tristan highly recommend"</i>']
+          
+        var table =
+        '<table><thead><tr><th>User</th><th>Date</th><th>Stars</th><th>Comment</th></tr></thead><tbody>';
+        for(var i=0; i<user.length; i++){
+        table += '<tr><td>' + user[i] + '</td><td>' + date[i] + '</td><td>' + rating[i] + '</td><td>' + comment[i] + '</td></tr>';
+        }
+        table+='</tbody></table>';
+        text.innerHTML = '<a href="https://www.yelp.com/biz/hikari-sushi-chatsworth-2" title="Hikari Sushi" target=_blank>Hikari Sushi</a>' + table;        
+    } else if (typesIn == "BJ's Restaurant & Brewhouse"){
+        var user = ['<u>Sydney A.', '<u>Maya C.', '<u>B B.']
+        var date = ['1/23/2023', '1/15/2023', '2/3/2023']
+        var rating = ['5', '5', '4']
+        var comment = ['<i>"Awesome service from Amber and Lesley! Good food as always! Been going here since the pandemic and food quality is still the same!!"</i>', '<i>"The best sushi spot in the valley! Best service, food, and environment. (Come on your birthay, you won&#8217t regret it) THANK YOU LESLEY FOR TAKING CARE OF US"</i>', '<i>"The food was great, the new server was very personable and quick, we were seated fast and efficiently. Fish tasted very fresh as well. Would recommend. Servers name was Tristan highly recommend"</i>']
+          
+        var table =
+        '<table><thead><tr><th>User</th><th>Date</th><th>Stars</th><th>Comment</th></tr></thead><tbody>';
+        for(var i=0; i<user.length; i++){
+        table += '<tr><td>' + user[i] + '</td><td>' + date[i] + '</td><td>' + rating[i] + '</td><td>' + comment[i] + '</td></tr>';
+        }
+        table+='</tbody></table>';
+        text.innerHTML = '<a href="https://www.yelp.com/biz/hikari-sushi-chatsworth-2" title="Hikari Sushi" target=_blank>Hikari Sushi</a>' + table;        
+    } else if (typesIn == "Red Robin Gourmet Burgers and Brews"){
+        var user = ['<u>Sydney A.', '<u>Maya C.', '<u>B B.']
+        var date = ['1/23/2023', '1/15/2023', '2/3/2023']
+        var rating = ['5', '5', '4']
+        var comment = ['<i>"Awesome service from Amber and Lesley! Good food as always! Been going here since the pandemic and food quality is still the same!!"</i>', '<i>"The best sushi spot in the valley! Best service, food, and environment. (Come on your birthay, you won&#8217t regret it) THANK YOU LESLEY FOR TAKING CARE OF US"</i>', '<i>"The food was great, the new server was very personable and quick, we were seated fast and efficiently. Fish tasted very fresh as well. Would recommend. Servers name was Tristan highly recommend"</i>']
+          
+        var table =
+        '<table><thead><tr><th>User</th><th>Date</th><th>Stars</th><th>Comment</th></tr></thead><tbody>';
+        for(var i=0; i<user.length; i++){
+        table += '<tr><td>' + user[i] + '</td><td>' + date[i] + '</td><td>' + rating[i] + '</td><td>' + comment[i] + '</td></tr>';
+        }
+        table+='</tbody></table>';
+        text.innerHTML = '<a href="https://www.yelp.com/biz/hikari-sushi-chatsworth-2" title="Hikari Sushi" target=_blank>Hikari Sushi</a>' + table;            
+    } else if (typesIn == "Dave & Buster's"){
+        var user = ['<u>Sydney A.', '<u>Maya C.', '<u>B B.']
+        var date = ['1/23/2023', '1/15/2023', '2/3/2023']
+        var rating = ['5', '5', '4']
+        var comment = ['<i>"Awesome service from Amber and Lesley! Good food as always! Been going here since the pandemic and food quality is still the same!!"</i>', '<i>"The best sushi spot in the valley! Best service, food, and environment. (Come on your birthay, you won&#8217t regret it) THANK YOU LESLEY FOR TAKING CARE OF US"</i>', '<i>"The food was great, the new server was very personable and quick, we were seated fast and efficiently. Fish tasted very fresh as well. Would recommend. Servers name was Tristan highly recommend"</i>']
+          
+        var table =
+        '<table><thead><tr><th>User</th><th>Date</th><th>Stars</th><th>Comment</th></tr></thead><tbody>';
+        for(var i=0; i<user.length; i++){
+        table += '<tr><td>' + user[i] + '</td><td>' + date[i] + '</td><td>' + rating[i] + '</td><td>' + comment[i] + '</td></tr>';
+        }
+        table+='</tbody></table>';
+        text.innerHTML = '<a href="https://www.yelp.com/biz/hikari-sushi-chatsworth-2" title="Hikari Sushi" target=_blank>Hikari Sushi</a>' + table;        
+    } else if (typesIn == "Wing Stop"){
+        var user = ['<u>Sydney A.', '<u>Maya C.', '<u>B B.']
+        var date = ['1/23/2023', '1/15/2023', '2/3/2023']
+        var rating = ['5', '5', '4']
+        var comment = ['<i>"Awesome service from Amber and Lesley! Good food as always! Been going here since the pandemic and food quality is still the same!!"</i>', '<i>"The best sushi spot in the valley! Best service, food, and environment. (Come on your birthay, you won&#8217t regret it) THANK YOU LESLEY FOR TAKING CARE OF US"</i>', '<i>"The food was great, the new server was very personable and quick, we were seated fast and efficiently. Fish tasted very fresh as well. Would recommend. Servers name was Tristan highly recommend"</i>']
+          
+        var table =
+        '<table><thead><tr><th>User</th><th>Date</th><th>Stars</th><th>Comment</th></tr></thead><tbody>';
+        for(var i=0; i<user.length; i++){
+        table += '<tr><td>' + user[i] + '</td><td>' + date[i] + '</td><td>' + rating[i] + '</td><td>' + comment[i] + '</td></tr>';
+        }
+        table+='</tbody></table>';
+        text.innerHTML = '<a href="https://www.yelp.com/biz/hikari-sushi-chatsworth-2" title="Hikari Sushi" target=_blank>Hikari Sushi</a>' + table;        
+    } else if (typesIn == "Dave's Hot Chicken"){
+        var user = ['<u>Sydney A.', '<u>Maya C.', '<u>B B.']
+        var date = ['1/23/2023', '1/15/2023', '2/3/2023']
+        var rating = ['5', '5', '4']
+        var comment = ['<i>"Awesome service from Amber and Lesley! Good food as always! Been going here since the pandemic and food quality is still the same!!"</i>', '<i>"The best sushi spot in the valley! Best service, food, and environment. (Come on your birthay, you won&#8217t regret it) THANK YOU LESLEY FOR TAKING CARE OF US"</i>', '<i>"The food was great, the new server was very personable and quick, we were seated fast and efficiently. Fish tasted very fresh as well. Would recommend. Servers name was Tristan highly recommend"</i>']
+          
+        var table =
+        '<table><thead><tr><th>User</th><th>Date</th><th>Stars</th><th>Comment</th></tr></thead><tbody>';
+        for(var i=0; i<user.length; i++){
+        table += '<tr><td>' + user[i] + '</td><td>' + date[i] + '</td><td>' + rating[i] + '</td><td>' + comment[i] + '</td></tr>';
+        }
+        table+='</tbody></table>';
+        text.innerHTML = '<a href="https://www.yelp.com/biz/hikari-sushi-chatsworth-2" title="Hikari Sushi" target=_blank>Hikari Sushi</a>' + table;  
     } else {
       clear();
     }
