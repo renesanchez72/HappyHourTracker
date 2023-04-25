@@ -358,6 +358,9 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 font-weight: bold;
+margin-right: 500px;
+margin-top: 30px;
+margin-bottom: 30px;
 font-family: 'Fugaz One', cursive;
 }
 
