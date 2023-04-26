@@ -90,6 +90,15 @@ body{
   box-shadow: 0 0 16px -4px black;
 }
 
+.favs{
+  border-radius: 10px;
+  overflow: hidden;
+  background: black;
+  color: #000;
+  animation: fadeIn 2s;
+  margin: 0.6rem 0;
+  box-shadow: 0 0 16px -4px black;
+}
 .foodCat{
   border-radius: 10px;
   overflow: hidden;
@@ -247,6 +256,13 @@ p{
       padding: 1rem;
       column-gap: 1rem;
   }
+  .favs{
+    display: grid;
+    grid-template-columns: 25% auto;
+    align-items: center;
+    padding: 1rem;
+    column-gap: 1rem;
+}
 
   .info{
       padding: 0;

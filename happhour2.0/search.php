@@ -66,7 +66,7 @@
           <button type="button" class="tabBtn activeBtn" id="categories">CATEGORIES</button>
           <button type="button" class="tabBtn" id="todaysDeal">SPECIAL DEALS</button>
           <button type="button" class="tabBtn" id="addDeal">ADD DEAL</button>
-          <button type="button" class="tabBtn" id="favs">Favorite Deals</button>
+          <button type="button" class="tabBtn" id="favs">FAVORITE DEALS</button>
         </div>
         
         <div class="specials">
@@ -135,9 +135,7 @@
         }
     } else {
         // Print a message if there are no rows in the result
-         echo "<div class='food todaysDeal'>";
-         echo "<p>no deals favorited</p>";
-         echo "</div>";
+
     }
        // Close the database connection
        mysqli_close($mysqli);
@@ -245,7 +243,9 @@
   }
             } else {
                 // Print a message if there are no rows in the result
-        
+                echo "<div class='food todaysDeal'>";
+                echo "<p>no deals favorited</p>";
+                echo "</div>";
             }
         }
         // Select all columns from the table
