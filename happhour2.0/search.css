@@ -99,6 +99,7 @@ body{
   margin: 0.6rem 0;
   box-shadow: 0 0 16px -4px black;
 }
+
 .foodCat{
   border-radius: 10px;
   overflow: hidden;
@@ -232,19 +233,19 @@ a{
 
 .name {
   font-family: 'Knewave', cursive;
-  font-size: 26px;
+  font-size: 22px;
   color: #5334dd;
 }
 
 .description p{
   font-family: 'Gurajada', serif;  
   color: #F2EBE2;
-  font-size: 25px;
+  font-size: 21px;
 }
 
 p{
   font-family: 'Gurajada', serif;  
-  font-size: 24px;
+  font-size: 21px;
   color: white;
 }
 

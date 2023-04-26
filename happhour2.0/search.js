@@ -30,7 +30,7 @@ function display_tab_pages(currBtn){
     } else{
         foodItem.style.display = "none";
     }
-});
+  });
 
   catBox.forEach((foodItem) => {
       if(foodItem.classList.contains(active)){
@@ -42,12 +42,11 @@ function display_tab_pages(currBtn){
 
   addBox.forEach((foodItem) => {
     if(foodItem.classList.contains(active)){
-        foodItem.style.display = "block"; 
+        foodItem.style.display = "flex"; 
     } else{
         foodItem.style.display = "none";
     }
-});
-
+  });
 }
 
 tabBtn.forEach((btn) => {
