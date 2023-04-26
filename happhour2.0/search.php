@@ -81,7 +81,7 @@
               echo "<li><i class='fas fa-star'></i></li>";
               echo "</ul>";
               echo "<p>$daysofweek</p>";
-              echo "<button class='btn'>Order now</button>";
+              echo "<button class='btn'>Favorite deal</button>";
             echo "</div>";
             // echo "<button   onclick='fav($restaurantID,$userid);'>Favorite</button>";
             echo "</div>";
