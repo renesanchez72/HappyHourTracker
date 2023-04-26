@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             session_start();
             $_SESSION["userid"] = $user["id"];
             $_SESSION["username"] = $user["username"];
-            header("Location: home.php");
+            header("Location: search.php");
             exit;
         }else {
             print_r("login failed press back to try again ");

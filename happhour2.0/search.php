@@ -1,3 +1,7 @@
+<?php
+        session_start();
+        $userid = $_SESSION["userid"];
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -7,6 +11,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="search.css">
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
   </head>
   <body>
       <section class="searchPage">
