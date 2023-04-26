@@ -66,9 +66,13 @@
               echo "<img src='$image' alt='Restraunt Image'>";
               echo "</div>";
               echo "<div class='info'>";
-              echo "<a><p>$rest_name</p></a>";
+              echo "<div class='name'>";
+              echo "$rest_name";
+            echo "</div>";
               echo "<div class='line'></div>";
+              echo "<div class='description'>";
               echo "<p>$deal</p>";
+            echo "</div>";
               echo "<ul class='stars'>";
               echo "<li><i class='fas fa-star'></i></li>";
               echo "<li><i class='fas fa-star'></i></li>";
@@ -234,4 +238,58 @@
      
      <script src="search.js"></script> 
   </body>
+
+<style> 
+  /*moved addDeal css to here*/
+label,
+input {
+    display: block;
+    width: 400px;
+    height: 30px;
+}
+
+input checkbox {
+    display: inline;
+}
+
+form {
+color: black;
+font-size: 20px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-weight: bold;
+font-family: 'Fugaz One', cursive;
+}
+
+input {
+border-radius: 10px;
+}
+
+input button {
+display: flex;
+justify-content: center;
+align-items: center;  
+}
+
+input[type=button] {
+font-family: monospace;
+background-color:black;
+color:white;
+margin-top: 30px;
+margin-bottom: 30px;
+border-radius: 0px;
+width:120px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: 'Fugaz One', cursive;
+}
+
+input[type=checkbox] {
+margin-top: 10px;
+}
+</style>
+
 </html>
