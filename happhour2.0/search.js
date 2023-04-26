@@ -7,6 +7,7 @@ const tabBtn = document.querySelectorAll('.tabBtn');
 const foodBox = document.querySelectorAll('.food');
 const catBox = document.querySelectorAll('.foodCat');
 const addBox = document.querySelectorAll('.addDeal');
+const favBox = document.querySelectorAll('.favs');
 
 //tab switchover & shows current tab
 let active = "categories";
@@ -22,6 +23,14 @@ function display_tab_pages(currBtn){
           foodItem.style.display = "none";
       }
   });
+
+  favBox.forEach((foodItem) => {
+    if(foodItem.classList.contains(active)){
+        foodItem.style.display = "grid";
+    } else{
+        foodItem.style.display = "none";
+    }
+});
 
   catBox.forEach((foodItem) => {
       if(foodItem.classList.contains(active)){

@@ -33,6 +33,26 @@
                 }
             });
         }
+        function unFav(restaurantid, userid) {
+            console.log('removing fav');
+            console.log(restaurantid);
+            console.log(userid);
+            var request = $.ajax({
+                type: 'POST',
+                url: 'removeFavorite.php',
+                dataType: 'json',
+                data: 'restaurantid=' + restaurantid + '&userid=' + userid,
+                success: function (response) {
+                    console.log(response);
+                    if (response.favoriteRemoved) {
+                        console.log("Removed from favorites");
+                        alert(response.text);
+                    } else {
+                        alert(response.text);
+                    }
+                }
+            });
+        }
     </script>
   </head>
   <body>
@@ -46,6 +66,7 @@
           <button type="button" class="tabBtn activeBtn" id="categories">CATEGORIES</button>
           <button type="button" class="tabBtn" id="todaysDeal">SPECIAL DEALS</button>
           <button type="button" class="tabBtn" id="addDeal">ADD DEAL</button>
+          <button type="button" class="tabBtn" id="favs">Favorite Deals</button>
         </div>
         
         <div class="specials">
@@ -110,17 +131,128 @@
               echo "<p>$daysofweek</p>";
               echo "<button class='btn' onclick='fav($restaurantID,$userid);'>Favorite deal</button>";
             echo "</div>";
-            // echo "<button   onclick='fav($restaurantID,$userid);'>Favorite</button>";
             echo "</div>";
         }
     } else {
         // Print a message if there are no rows in the result
-        echo "<p>No data found in the table.</p>";
+         echo "<div class='food todaysDeal'>";
+         echo "<p>no deals favorited</p>";
+         echo "</div>";
     }
-
        // Close the database connection
        mysqli_close($mysqli);
        ?>
+<!-- PHP code that retrieves data from the database and displays it in a table -->
+        <?php
+        // Connect to the database
+        $mysqli = require __DIR__ . "/database.php";
+
+        $table = "user";
+        $sql = sprintf("SELECT favorites FROM user
+        WHERE id = '%s'",
+            $mysqli->real_escape_string($userid)
+        );
+        if (!$result = $mysqli->query($sql)) {
+            die(
+                json_encode(
+                    array(
+                        'favoriteAdded' => false,
+                        'text' => "'Mysql error: ' . $mysqli->error"
+                    )
+                )
+            );
+            exit;
+        }
+        ;
+        if (!$row = mysqli_fetch_assoc($result)) {
+            die(
+                json_encode(
+                    array(
+                        'favoriteAdded' => false,
+                        'text' => "'Mysql error: ' . $mysqli->error"
+                    )
+                )
+            );
+            exit;
+        }
+        ;
+        // Append a new value to the values column
+        // split into an array and split at each comma 
+        $values = explode(",", $row["favorites"]);
+
+        foreach ($values as $restaurantID) {
+            $table_name = "restaurants";
+            $query = "SELECT * FROM $table_name WHERE id = $restaurantID";
+            $result = mysqli_query($mysqli, $query);
+            // if no favorites print out they aint nuthin
+            if (!$result || mysqli_num_rows($result) == 0) {
+                echo "<p>No data found in the table.</p>";
+                exit;
+            }
+            if (mysqli_num_rows($result) > 0) {
+                // Store the data in an array
+                $data = [];
+                while ($row = mysqli_fetch_assoc($result)) {
+                    $data[] = $row;
+                }
+
+    // Generate HTML code for each row of data
+    foreach ($data as $row) {
+              
+      foreach ($row as $col => $value) {
+          if ($col == "image") {
+            $image = $value;
+          }elseif ($col == "id") {
+              $restaurantID = $value;
+          }elseif ($col == "name"){
+              // echo "<p>$value</p>";
+              $rest_name = $value;
+          }elseif ($col == "address") {
+            # code...
+            $address = $value;
+          }elseif ($col == "deal") {
+            # code...
+            $deal = $value;
+          }elseif ($col == "daysofweek") {
+            # code...
+            $daysofweek = $value;
+          }
+      }
+
+      echo "<div class='favs todaysDeal'>";
+        echo "<div class='picture'>";
+        echo "<img src='$image' alt='Restraunt Image'>";
+        echo "</div>";
+        echo "<div class='info'>";
+        echo "<div class='name'>";
+        echo "$rest_name";
+      echo "</div>";
+        echo "<div class='line'></div>";
+        echo "<div class='description'>";
+        echo "<p>$deal</p>";
+      echo "</div>";
+        echo "<ul class='stars'>";
+        echo "<li><i class='fas fa-star'></i></li>";
+        echo "<li><i class='fas fa-star'></i></li>";
+        echo "<li><i class='fas fa-star'></i></li>";
+        echo "<li><i class='fas fa-star'></i></li>";
+        echo "<li><i class='fas fa-star'></i></li>";
+        echo "</ul>";
+        echo "<p>$daysofweek</p>";
+        echo "<button class='btn' onclick='unfav($restaurantID,$userid);'>Remove Favorite</button>";
+      echo "</div>";
+      echo "</div>";
+  }
+            } else {
+                // Print a message if there are no rows in the result
+        
+            }
+        }
+        // Select all columns from the table
+        
+        // Close the database connection
+        mysqli_close($mysqli);
+        ?>
           <!--specials #1 EXAMPLE-->
           <!-- <div class="food todaysDeal">
             <div class="picture">
