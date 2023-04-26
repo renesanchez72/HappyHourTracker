@@ -61,10 +61,7 @@ $userid = $_SESSION["userid"];
                         alert(response.text);
                     }
                 }
-
-
             });
-            //some code
         }
     </script>
 </head>
@@ -158,18 +155,6 @@ $userid = $_SESSION["userid"];
         
             }
         }
-
-
-
-
-
-
-
-
-
-
-
-
         // Select all columns from the table
         
         // Close the database connection
