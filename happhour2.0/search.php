@@ -12,6 +12,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="search.css">
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script>
+        function fav(restaurantid,userid){
+            console.log('adding fav');
+            console.log(restaurantid);
+            console.log(userid);
+            var request = $.ajax({
+                type: 'POST',
+                url: 'favorite.php',
+                dataType: 'json',
+                data: 'restaurantid='+restaurantid+'&userid='+userid,
+                success: function (response) {
+                    console.log(response);
+                    if (response.favoriteAdded) {
+                        console.log("added to favorites");
+                        alert('Restaurant added to favorites');
+                    }else{
+                        alert(response.text);
+                    }
+                }
+            });
+        }
+    </script>
   </head>
   <body>
       <section class="searchPage">
