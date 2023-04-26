@@ -313,10 +313,10 @@ inputBox.onkeyup = (e)=>{
         table+='</tbody></table>';
         text.innerHTML = '<a href="https://www.yelp.com/biz/finneys-crafthouse-porter-ranch-porter-ranch" title="Finneys Crafthouse" target=_blank>Finneys Crafthouse</a>' + table;        
     } else if (typesIn == "Gus's BBQ"){
-        var user = ['<u>Sydney A.', '<u>Maya C.', '<u>B B.']
-        var date = ['1/23/2023', '1/15/2023', '2/3/2023']
+        var user = ['<u>Erik A.', '<u>Guy G.', '<u>Marlisa S.']
+        var date = ['4/6/2023', '3/29/2023', '4/16/2023']
         var rating = ['5', '5', '5']
-        var comment = ['<i>""</i>', '<i>""</i>', '<i>""</i>']
+        var comment = ['<i>"Great food, great service from Jessica.  Had a small issue manger totally was on it.  Will be back for the great food and the awesome service.  Thanks"</i>', '<i>"Great ambiance and vibe! Friendly down home relaxed atmosphere. Can be crowded on weekends."</i>', '<i>"Food was so yummy and it came out so fast!! The servers were all really nice and they allowed us to move tables without any problems. I liked the overall vibe, pretty loud but only cause it&#8217s always packed!! Loved it here!"</i>']
           
         var table =
         '<table><thead><tr><th>User</th><th>Date</th><th>Stars</th><th>Comment</th></tr></thead><tbody>';
@@ -324,7 +324,7 @@ inputBox.onkeyup = (e)=>{
         table += '<tr><td>' + user[i] + '</td><td>' + date[i] + '</td><td>' + rating[i] + '</td><td>' + comment[i] + '</td></tr>';
         }
         table+='</tbody></table>';
-        text.innerHTML = '<a href="https://www.yelp.com/biz/guss-bbq-porter-ranch" title="Gus BBQ" target=_blank>Gus BBQ</a>' + table;        
+        text.innerHTML = '<a href="https://www.yelp.com/biz/guss-bbq-porter-ranch" title="Gus BBQ" target=_blank>Gus BBQ</a>' + table;       
     } else if (typesIn == "Domino's Pizza"){
         var user = ['<u>Erik A.', '<u>Guy G.', '<u>Marlisa S.']
         var date = ['4/6/2023', '3/29/2023', '4/16/2023']
@@ -880,10 +880,10 @@ function select(element){
         table+='</tbody></table>';
         text.innerHTML = '<a href="https://www.yelp.com/biz/finneys-crafthouse-porter-ranch-porter-ranch" title="Finneys Crafthouse" target=_blank>Finneys Crafthouse</a>' + table;        
     } else if (clicksOn == "Gus's BBQ"){
-        var user = ['<u>Sydney A.', '<u>Maya C.', '<u>B B.']
-        var date = ['1/23/2023', '1/15/2023', '2/3/2023']
+        var user = ['<u>Erik A.', '<u>Guy G.', '<u>Marlisa S.']
+        var date = ['4/6/2023', '3/29/2023', '4/16/2023']
         var rating = ['5', '5', '5']
-        var comment = ['<i>""</i>', '<i>""</i>', '<i>""</i>']
+        var comment = ['<i>"Great food, great service from Jessica.  Had a small issue manger totally was on it.  Will be back for the great food and the awesome service.  Thanks"</i>', '<i>"Great ambiance and vibe! Friendly down home relaxed atmosphere. Can be crowded on weekends."</i>', '<i>"Food was so yummy and it came out so fast!! The servers were all really nice and they allowed us to move tables without any problems. I liked the overall vibe, pretty loud but only cause it&#8217s always packed!! Loved it here!"</i>']
           
         var table =
         '<table><thead><tr><th>User</th><th>Date</th><th>Stars</th><th>Comment</th></tr></thead><tbody>';

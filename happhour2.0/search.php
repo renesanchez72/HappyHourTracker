@@ -116,30 +116,6 @@
               <!-- end of specials #8 --> 
             </div> <!--end of specials-->
 
-            <!-- add deal -->
-            <div class="addDeal">
-              <form name="addRestaurant" class="addDeal addRest">
-                <img src = "./happyhourlogo2.PNG" class="addDeal">
-                <label class="addDeal addRest" for="restaurantName">Name of Restaurant</label>
-                <input class="addDeal addRest" type="text" name="restaurantName" id="restaurantName"> 
-                <label class="addDeal addRest" for="restaurantImage">Image Link</label>
-                <input class="addDeal addRest" type="text" name="restaurantImage" id="restaurantImage">
-                <label class="addDeal addRest" for="address">Address of Restaurant</label>
-                <input class="addDeal addRest" type="text" name="address" id="address">
-                <label class="addDeal addRest" for="deal">Deal or Promotion</label>
-                <input class="addDeal addRest" type="text" name="deal" id="deal">
-                <label class="addDeal addRest" for="days">Select the days of the week promo is active:</label><br>
-                <input class="addDeal addRest" type="checkbox" name="days" value="MON">Monday<br>
-                <input class="addDeal addRest" type="checkbox" name="days" value="TUES">Tuesday<br>
-                <input class="addDeal addRest" type="checkbox" name="days" value="WED">Wednesday<br>
-                <input class="addDeal addRest" type="checkbox" name="days" value="THUR">Thursday<br>
-                <input class="addDeal addRest" type="checkbox" name="days" value="FRI">Friday<br>
-                <input class="addDeal addRest" type="checkbox" name="days" value="SAT">Saturday<br>
-                <input class="addDeal addRest" type="checkbox" name="days" value="SUN">Sunday<br>
-                <input class="addDeal addRest" type="button" value="Submit" id="addRestaurantButton">
-              </form>
-            </div>
-
             <!--category--> 
             <div class="categories">
               <!--category #1-->
@@ -235,7 +211,31 @@
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <script src="autocompletesearchlist.js"></script>
     <script src="addRestaurantPage.js"></script>
-     
-     <script src="search.js"></script> 
+    <script src="search.js"></script> 
   </body>
+
+<!-- add deal -->
+<div class="addDeal">
+  <form name="addRestaurant" class="addDeal addRest">
+  <img src = "./happyhourlogo2.PNG" class="addDeal">
+  <label class="addDeal addRest" for="restaurantName">Name of Restaurant</label>
+  <input class="addDeal addRest" type="text" name="restaurantName" id="restaurantName"> 
+  <label class="addDeal addRest" for="restaurantImage">Image Link</label>
+  <input class="addDeal addRest" type="text" name="restaurantImage" id="restaurantImage">
+  <label class="addDeal addRest" for="address">Address of Restaurant</label>
+  <input class="addDeal addRest" type="text" name="address" id="address">
+  <label class="addDeal addRest" for="deal">Deal or Promotion</label>
+  <input class="addDeal addRest" type="text" name="deal" id="deal">
+  <label class="addDeal addRest" for="days">Select the days of the week promo is active:</label><br>
+  <input class="addDeal addRest" type="checkbox" name="days" value="MON">Monday<br>
+  <input class="addDeal addRest" type="checkbox" name="days" value="TUES">Tuesday<br>
+  <input class="addDeal addRest" type="checkbox" name="days" value="WED">Wednesday<br>
+  <input class="addDeal addRest" type="checkbox" name="days" value="THUR">Thursday<br>
+  <input class="addDeal addRest" type="checkbox" name="days" value="FRI">Friday<br>
+  <input class="addDeal addRest" type="checkbox" name="days" value="SAT">Saturday<br>
+  <input class="addDeal addRest" type="checkbox" name="days" value="SUN">Sunday<br>
+  <input class="addDeal addRest" type="button" value="Submit" id="addRestaurantButton">
+  </form>
+</div>
+
 </html>
