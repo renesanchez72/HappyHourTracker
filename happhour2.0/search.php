@@ -237,7 +237,7 @@
         echo "<li><i class='fas fa-star'></i></li>";
         echo "</ul>";
         echo "<p>$daysofweek</p>";
-        echo "<button class='btn' onclick='unfav($restaurantID,$userid);'>Remove Favorite</button>";
+        echo "<button class='btn' onclick='unFav($restaurantID,$userid);'>Remove Favorite</button>";
       echo "</div>";
       echo "</div>";
   }
