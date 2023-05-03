@@ -8,7 +8,6 @@ const foodBox = document.querySelectorAll('.food');
 const catBox = document.querySelectorAll('.foodCat');
 const addBox = document.querySelectorAll('.addDeal');
 const favBox = document.querySelectorAll('.favs');
-var sidebar = document.getElementById("mySidebar");
 
 //tab switchover & shows current tab
 let active = "categories";
@@ -1234,15 +1233,5 @@ function clear(){
   text.innerHTML = "no result found";
 }
 
-//sidebar appears closed by default
-sidebar.style.display = "none";
 
-//open and close sidebar
-function openSidebar() {
-    sidebar.style.display = "block";
-}
-  
-function closeSidebar() {
-    sidebar.style.display = "none";
-}
 
