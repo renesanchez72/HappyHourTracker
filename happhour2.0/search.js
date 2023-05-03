@@ -8,6 +8,7 @@ const foodBox = document.querySelectorAll('.food');
 const catBox = document.querySelectorAll('.foodCat');
 const addBox = document.querySelectorAll('.addDeal');
 const favBox = document.querySelectorAll('.favs');
+var sidebar = document.getElementById("mySidebar");
 
 //tab switchover & shows current tab
 let active = "categories";
@@ -1234,14 +1235,14 @@ function clear(){
 }
 
 //sidebar appears closed by default
-document.getElementById("mySidebar").style.display = "none";
+sidebar.style.display = "none";
 
 //open and close sidebar
 function openSidebar() {
-    document.getElementById("mySidebar").style.display = "block";
+    sidebar.style.display = "block";
 }
   
 function closeSidebar() {
-    document.getElementById("mySidebar").style.display = "none";
+    sidebar.style.display = "none";
 }
 

@@ -537,13 +537,6 @@ hr.solid {
 color: #AFA398;
 }
 
-nav {
-  background-color: #333;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  padding: 0.5em 1em;
-}
 nav a {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -551,6 +544,7 @@ nav a {
   color: #fff;
   text-decoration: none;
 }
+
 nav a:hover {
   opacity: 0.8;
 }
