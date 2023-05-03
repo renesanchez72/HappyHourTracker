@@ -53,19 +53,6 @@
                 }
             });
         }
-
-        //sidebar appears closed by default
-        document.getElementById("mySidebar").style.display = "none";
-
-        //open and close sidebar
-        function openSidebar() {
-          document.getElementById("mySidebar").style.display = "block";   
-        }
-  
-        function closeSidebar() {
-          document.getElementById("mySidebar").style.display = "none";
-        }
-        
     </script>
 
     <nav>
