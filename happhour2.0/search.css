@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gurajada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
 
 *{
   margin: 0;
@@ -414,7 +415,15 @@ p{
  padding-left: 10px;
  background-color: #f5f5f5;
  font-family: 'Fugaz One', cursive;
- box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+ border-radius: 2rem;
+ padding: 0.4em;
+ border: 0.2rem solid #fff;
+ box-shadow: 0 0 .2rem #fff,
+            0 0 .2rem #fff,
+            0 0 2rem #bc13fe,
+            0 0 0.8rem #bc13fe,
+            0 0 2.8rem #bc13fe,
+            inset 0 0 1.3rem #bc13fe;
 }
 
  input button {
@@ -437,8 +446,32 @@ p{
  font-family: 'Roboto', sans-serif;
  }
 
- input[type=checkbox] {
+input[type=checkbox] {
  margin-top: 10px;
- }
+}
 
+.neonFlash{
+ animation: flash 1.5s infinite alternate;
+ color: #fff;
+ font-size: 90px;
+ font-family: 'Londrina Outline', cursive;
+ text-align: center;
+}
 
+@keyframes flash {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+      text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #5334dd,
+      0 0 80px #5334dd,
+      0 0 90px #5334dd,
+      0 0 100px #5334dd,
+      0 0 150px #5334dd;
+  }
+  
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
+}

@@ -278,7 +278,7 @@
 
             <!-- add deal -->
             <div class="addDeal">
-              <form name="addRestaurant" class="addDeal addRest">
+              <div class="neonFlash">ADD DEAL</div>
               <img src = "./happyhourlogo.png" class="addDeal">
               <label class="addDeal addRest" for="restaurantName">Name of Restaurant</label>
               <input class="addDeal addRest" type="text" name="restaurantName" id="restaurantName"> 
