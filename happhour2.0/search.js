@@ -9,6 +9,19 @@ const catBox = document.querySelectorAll('.foodCat');
 const addBox = document.querySelectorAll('.addDeal');
 const favBox = document.querySelectorAll('.favs');
 
+//sidebar appears closed by default
+document.getElementById("mySidebar").style.display = "none";
+
+//open and close sidebar
+function openSidebar() {
+    document.getElementById("mySidebar").style.display = "block";   
+}
+  
+function closeSidebar() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+
+
 //tab switchover & shows current tab
 let active = "categories";
 display_tab_pages(active);
