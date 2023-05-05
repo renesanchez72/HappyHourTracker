@@ -345,7 +345,7 @@
               </div>
               <div id="popupBox" class="popup">
                 <div class="popupContent">
-                      <div class="food ">
+                      <!-- <div class="food ">
                   <div class="picture">
                   <img src="cocktail.PNG" alt="Bar Louie">
                   </div>
@@ -359,9 +359,9 @@
                       <li><i class="fas fa-star"></i></li>
                       <li><i class="fas fa-star"></i></li>
                       <li><i class="far fa-star"></i></li>
-                    </ul>
+                    </ul> -->
                     <p>Mon-Fri 4pm-7pm</p>
-                  </div>     
+                  <!-- </div>      -->
                 </div>
                   <a href="#" class="popupClose">&times;</a>
                 </div>
