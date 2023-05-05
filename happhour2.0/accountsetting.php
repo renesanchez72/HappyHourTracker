@@ -1,3 +1,9 @@
+<?php
+        session_start();
+        $userid = $_SESSION["userid"];
+        $currentuser = $_SESSION["username"];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +11,54 @@
     <title>Account Settings Page</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script >
+        function resetUsername(userid){
+            console.log('Resetting username');
+            const userField = document.getElementById('newUsername').value
+            var request = $.ajax({
+                type: 'POST',
+                url: 'resetUsername.php',
+                dataType: 'json',
+                data: 'userid='+userid+'&newUsername='+userField,
+                success: function (response) {
+                    console.log(response);
+                    if (response.usernameReset) {
+                        console.log("username reset");
+                        alert(response.text);
+                    }else{
+                        alert(response.text);
+                    }
+                }
+
+                
+            });
+            //some code
+        }
+        function resetPassword(userid){
+            console.log('Resetting password');
+            const currentPassword = document.getElementById('currentPassword').value
+            const newPassword = document.getElementById('password').value
+            var request = $.ajax({
+                type: 'POST',
+                url: 'resetPassword.php',
+                dataType: 'json',
+                data: 'userid='+userid+'&currentPassword='+currentPassword+'&newPassword='+newPassword,
+                success: function (response) {
+                    console.log(response);
+                    if (response.usernameReset) {
+                        console.log("password reset");
+                        alert(response.text);
+                    }else{
+                        alert(response.text);
+                    }
+                }
+
+                
+            });
+            //some code
+        }
+        </script>
 </head>
  <body>
     <div class="settings-page">
