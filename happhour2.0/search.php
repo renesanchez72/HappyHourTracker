@@ -345,24 +345,7 @@
               </div>
               <div id="popupBox" class="popup">
                 <div class="popupContent">
-                      <!-- <div class="food ">
-                  <div class="picture">
-                  <img src="cocktail.PNG" alt="Bar Louie">
-                  </div>
-                    <div class="info">
-                    <a href="https://www.yelp.com/biz/bar-louie-northridge-fashion-center-northridge-2" target="_blank"><p>Bar Louie-Northridge Fashion Center</p></a>
-                    <div class="line"></div>
-                    <p>$8 select premium cocktails.</p> 
-                    <ul class="stars">
-                      <li><i class="fas fa-star"></i></li>
-                      <li><i class="fas fa-star"></i></li>
-                      <li><i class="fas fa-star"></i></li>
-                      <li><i class="fas fa-star"></i></li>
-                      <li><i class="far fa-star"></i></li>
-                    </ul> -->
-                    <p>Mon-Fri 4pm-7pm</p>
-                  <!-- </div>      -->
-                </div>
+                  <p>sssssssssssssss</p>
                   <a href="#" class="popupClose">&times;</a>
                 </div>
               </div> 
