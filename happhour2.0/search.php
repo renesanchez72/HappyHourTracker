@@ -357,10 +357,10 @@
               <div class="foodCat categories" >
                 <div class="picture2"><img src="steakhouse.PNG" alt="steak"></div>
                   <div class="overlay">
-                    <a href="#popupBox">View Restaurants</a>
+                    <a href="#popupBox2">View Restaurants</a>
                   </div>
               </div>
-              <div id="popupBox" class="popup">
+              <div id="popupBox2" class="popup">
                 <div class="popupContent">
                   <p>sssssssssssssss</p>
                   <a href="#" class="popupClose">&times;</a>
