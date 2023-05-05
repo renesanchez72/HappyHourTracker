@@ -330,7 +330,7 @@
               </div>
               <div id="popupBox" class="popup">
                 <div class="popupContent">
-                  <p>bla bla bla</p>
+                  <p>ssssssss</p>
                   <a href="#" class="popupClose">&times;</a>
                 </div>
               </div>     
