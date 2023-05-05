@@ -330,8 +330,8 @@
               </div>
               <div id="popupBox" class="popup">
                 <div class="popupContent">
-                <div class="food ">
-            <div class="picture">
+                <div class="food popupContent">
+            <div class="picture popupContent">
             <img src="cocktail.PNG" alt="Bar Louie">
             </div>
               <div class="info">
