@@ -74,7 +74,7 @@
            ?>
            <input id="newUsername" name="newUsername" placeholder="new username" type="text" class="form-control" autocomplete="new username"  value="">
             <div class="form-submit">
-             <button class="btn button full" <?php echo "onclick='resetUsername($userid);'"; ?>Update</button>
+             <button class="btn button full" <?php echo "onclick='resetUsername($userid);'"; ?>>Update</button>
             </div> <!--end of "form-submit"-->
           </div> <!--end of "form my-form"-->
 
@@ -93,7 +93,7 @@
               </div> <!--end of "input-group"-->
              </div> <!--end of "form-group"-->
                <div class="form-submit right">
-                <button class="btn button full" <?php echo "onclick='resetPassword($userid);'"; ?>Update</button>
+                <button class="btn button full" <?php echo "onclick='resetPassword($userid);'"; ?>>Update</button>
                </div> <!--end of "form-submit right"-->
           </div> <!--end of "form my-form"-->
 

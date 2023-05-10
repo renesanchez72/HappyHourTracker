@@ -330,6 +330,11 @@
               </div>
               <div id="popupBox" class="popup">
                 <div class="popupContent">
+                <!--categories content
+              
+                bla bla bla
+              
+                -->
                 <div class="food categories">
             <div class="picture">
             <img src="cocktail.PNG" alt="Bar Louie">
@@ -362,7 +367,11 @@
               </div>
               <div id="popupBox2" class="popup">
                 <div class="popupContent">
-                  <p>sssssssssssssss</p>
+                <!--categories content
+              
+                bla bla bla
+              
+                -->
                   <a href="#" class="popupClose">&times;</a>
                 </div>
               </div> 
@@ -377,7 +386,11 @@
               </div>
               <div id="popupBox" class="popup">
                 <div class="popupContent">
-                  <p>bla bla bla</p>
+                <!--categories content
+              
+                bla bla bla
+              
+                -->
                   <a href="#" class="popupClose">&times;</a>
                 </div>
               </div> 
@@ -392,7 +405,11 @@
               </div>
               <div id="popupBox" class="popup">
                 <div class="popupContent">
-                  <p>bla bla bla</p>
+                <!--categories content
+              
+                bla bla bla
+              
+                -->
                   <a href="#" class="popupClose">&times;</a>
                 </div>
               </div> 
@@ -407,7 +424,11 @@
               </div>
               <div id="popupBox" class="popup">
                 <div class="popupContent">
-                  <p>bla bla bla</p>
+                <!--categories content
+              
+                bla bla bla
+              
+                -->
                   <a href="#" class="popupClose">&times;</a>
                 </div>
               </div> 

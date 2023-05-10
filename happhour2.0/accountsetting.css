@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gurajada&display=swap');
+
 body, html{
     background-color: black;
     width: 100%;
@@ -12,12 +15,16 @@ body, html{
     justify-content: center;
     align-items: center;
 }
-
+  
+.page-title{
+    font-family: 'Knewave', cursive;
+}
+  
 .settings-page{
     font-size: 1.25rem;
     line-height: 130%;
 }
-
+  
 .settings-container{
     box-sizing: border-box;
     padding: 10px 30px;
@@ -26,10 +33,9 @@ body, html{
     display: flex;
     flex-direction: column;
 }
-
+  
 .settings-title {
-    background-color: #ebebeb;
-    color: rgb(68, 67, 67);
+    background-color: white;
     font-weight: bold;
     cursor: pointer;
     padding: 18px;
@@ -37,10 +43,10 @@ body, html{
     text-align: left;
     font-size: 15px;
     margin-bottom: 10px;
-    border: none;
     position: relative;
+    font-family: 'Times New Roman', serif;
 }
-
+  
 .settings-title::before{
     content: '+';
     position: absolute;
@@ -49,29 +55,32 @@ body, html{
     transform: translateY(-50%);
     font-size: 1.5em;
 }
-
+  
 .active.settings-title::before{
     content: '-';
 }
-
+  
 .active, .settings-title:hover{
     background-color: black;
     color:white;
-  }
-
+}
+  
 .form{
     padding: 0 18px;
-    background-color: white;
+    background-color: #ebebeb;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     margin-bottom: 5px;
-  }
-
+    font-family: 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+  
 .btn{
     cursor:pointer;
     background-color: lightgray;
 }
-
+  
 
 
