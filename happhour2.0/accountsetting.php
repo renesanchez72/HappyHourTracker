@@ -11,6 +11,7 @@
     <title>Account Settings Page</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <script src="https://kit.fontawesome.com/519591b792.js" crossorigin="anonymous"></script>
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <script >
         function resetUsername(userid){
@@ -79,7 +80,7 @@
     <span class="openBtn" onclick="openSidebar()">&#9776;</span>
       <ul>
     <div id="mySidebar" class="sidebar">
-      <a href="javascript:void(0)" class="closeBtn" onclick="closeSidebar()">&#215;</a>
+      <a href="javascript:void(0)" class="closeBtn" onclick="closeSidebar()"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></a>
       <hr class="solid">
       <li><a href="./homepage.php"><i class="fa-solid fa-house"></i>  Home</a></li>
       <li><a href="./search.php"><i class="fa-solid fa-heart"></i> Search</a></li>
