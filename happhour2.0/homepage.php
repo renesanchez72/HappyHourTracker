@@ -17,8 +17,7 @@
         /* Basic styles for the page */
         @import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
-
-
+        @import url('https://fonts.googleapis.com/css2?family=Gurajada&display=swap');
 
         nav {
             background-color: #333;
@@ -189,18 +188,19 @@ nav a:hover {
     </style>
 
     <script >
-    //code to open and close sidebar
-    function openSidebar() {
-      document.getElementById("mySidebar").style.width = "250px";
-    }
-    
-    function closeSidebar() {
-      document.getElementById("mySidebar").style.width = "0px";
-    }
+        //sidebar appears closed by default
+        document.getElementById("mySidebar").style.display = "none";
+
+        //open and close sidebar
+        function openSidebar() {
+        document.getElementById("mySidebar").style.display = "block";   
+        }
+  
+        function closeSidebar() {
+        document.getElementById("mySidebar").style.display = "none";
+        }
     </script>
 
-</head>
-<body>
     <nav>
         <!--HAPPY HOUR LOGO-->
         <img src="./happyhourlogo.png" width='100px' height='100px' alt='image'>
@@ -223,7 +223,8 @@ nav a:hover {
         </div>
         <!--end of sidebar-->
     </nav>
-
+</head>
+<body>
     <!--PICTURE CAROUSEL-->
     <div id="slider">
         <figure>

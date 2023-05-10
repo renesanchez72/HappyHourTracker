@@ -71,8 +71,6 @@
     </div>
     <!--end of sidebar-->
     </nav>
-
-
   </head>
   <body>
       <section class="searchPage">

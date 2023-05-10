@@ -58,9 +58,22 @@
             });
             //some code
         }
+
+        //sidebar appears closed by default
+        document.getElementById("mySidebar").style.display = "none";
+
+        //open and close sidebar
+        function openSidebar() {
+        document.getElementById("mySidebar").style.display = "block";   
+        }
+  
+        function closeSidebar() {
+        document.getElementById("mySidebar").style.display = "none";
+        }
+
         </script>
-</head>
- <body>
+
+
     <nav>
     <!--sidebar-->
     <span class="openBtn" onclick="openSidebar()">&#9776;</span>
@@ -77,7 +90,8 @@
     </div>
     <!--end of sidebar-->
     </nav>
-
+</head>
+ <body>
     <div class="settings-page">
      <div class="settings-container">
         <img src = "happyhourlogo2.PNG" width="300px">
