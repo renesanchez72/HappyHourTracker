@@ -61,6 +61,23 @@
         </script>
 </head>
  <body>
+    <nav>
+    <!--sidebar-->
+    <span class="openBtn" onclick="openSidebar()">&#9776;</span>
+      <ul>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closeBtn" onclick="closeSidebar()">&#215;</a>
+      <hr class="solid">
+      <li><a href="./homepage.php"><i class="fa-solid fa-house"></i>  Home</a></li>
+      <li><a href="./search.php"><i class="fa-solid fa-heart"></i> Search</a></li>
+      <li><a href="./accountsetting.php"><i class="fa-sharp fa-solid fa-gear"></i> Settings</a></li>
+      <li><a href="./aboutus.php"><i class="fa-solid fa-face-smile"></i> About Us</a></li>
+      <a href="./logout.php"><button class="logoutBtn"><i class="fa-solid fa-right-to-bracket"></i> LOGOUT</button></a> 
+    </ul>
+    </div>
+    <!--end of sidebar-->
+    </nav>
+
     <div class="settings-page">
      <div class="settings-container">
         <img src = "happyhourlogo2.PNG" width="300px">
