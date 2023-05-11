@@ -80,84 +80,89 @@ body, html{
   
 /*sidebar*/
 .sidebar {
-    height: 100%;
-    position: fixed;
-    right: 0;
-    top: 0;
-    background-color: #eeeeeb;
-    overflow-x: hidden;
-    transition: 0.3 ease-in;
-    padding-top: 80px;
-    z-index: 2;
+  height: 100%;
+  width: 150px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: #eeeeeb;
+  overflow-x: hidden;
+  padding-top: 80px;
+  z-index: 1;
+}
+
+.sidebar a {
+  padding: 8px 8px 3px 15px;
+  margin: 0;
+  display: flex;
+  font-size: 25px;
+  color: black;
+  text-decoration: none;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Gurajada', serif;  
   }
-  
-  .sidebar a {
-    padding: 8px 8px 3px 15px;
-    display: block;
-    font-size: 28px;
-    color: black;
-    text-decoration: none;
-    text-align: right;
-    font-family: 'Gurajada', serif;  
-  
+
+  a:hover{
+    color: #5334dd;
   }
-  
-  .closeBtn {
-    position: absolute;
-    top: 0px;
-    right: 0px;
+
+.closeBtn {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.openBtn {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  font-size: 30px; 
+  cursor: pointer;
+}
+
+.logoutBtn{
+  padding: 4px 4px;
+  position: absolute;
+  color: black;
+  font-size: 13px;
+  margin-top: 10px;
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/*solid line divider*/
+hr.solid {
+  border-top: 1px solid lightgray;
+}
+
+/*icon*/
+.fas
+{
+color: #AFA398;
+}
+
+nav a {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: 'Palanquin Dark', sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 600px) {
+  nav .sidebarBtn{
+      display: flex;
   }
-  
-  .openBtn {
-    position: absolute;
-    top: 0px;
-    right: 10px;
-    font-size: 30px; 
-    cursor: pointer;
+  nav .navLinks{
+      display: none;
   }
-  
-  .logoutBtn{
-    position: absolute;
-    color: white;
-    font-size: 15px;
-    margin-left: 40px;
-    display: block;
-    cursor: pointer;
-    border-radius: 5px;
-    background-color: black;
-    font-family: 'Gurajada', serif;  
-  }
-  
-  /*solid line divider*/
-  hr.solid {
-    border-top: 1px solid lightgray;
-  }
-  
-  /*icon*/
-  .fas
-  {
-  color: #AFA398;
-  }
-  
-  nav a {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-family: 'Palanquin Dark', sans-serif;
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  nav a:hover {
-    opacity: 0.8;
-  }
-  
-  @media screen and (max-width: 600px) {
-    nav .sidebarBtn{
-        display: flex;
-    }
-    nav .navLinks{
-        display: none;
-    }
-  }
+}
 
 

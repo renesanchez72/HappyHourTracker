@@ -63,10 +63,14 @@
       <a href="javascript:void(0)" class="closeBtn" onclick="closeSidebar()">&#215;</a>
       <hr class="solid">
       <li><a href="./homepage.php"><i class="fa-solid fa-house"></i>  Home</a></li>
+      <hr class="solid">
       <li><a href="./search.php"><i class="fa-solid fa-heart"></i> Search</a></li>
+      <hr class="solid">
       <li><a href="./accountsetting.php"><i class="fa-sharp fa-solid fa-gear"></i> Settings</a></li>
+      <hr class="solid">
       <li><a href="./aboutus.php"><i class="fa-solid fa-face-smile"></i> About Us</a></li>
-      <a href="./logout.php"><button class="logoutBtn"><i class="fa-solid fa-right-to-bracket"></i> LOGOUT</button></a> 
+      <hr class="solid">
+      <a href="./logout.php"><button class="logoutBtn"> LOGOUT</button></a> 
     </ul>
     </div>
     <!--end of sidebar-->

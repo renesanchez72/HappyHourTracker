@@ -106,85 +106,90 @@
 
 /*sidebar*/
 .sidebar {
-  height: 100%;
-  position: fixed;
-  right: 0;
-  top: 0;
-  background-color: #eeeeeb;
-  overflow-x: hidden;
-  transition: 0.3 ease-in;
-  padding-top: 80px;
-  z-index: 2;
-}
-
-.sidebar a {
-  padding: 8px 8px 3px 15px;
-  display: block;
-  font-size: 28px;
-  color: black;
-  text-decoration: none;
-  text-align: right;
-  font-family: 'Gurajada', serif;  
-
-}
-
-.closeBtn {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-}
-
-.openBtn {
-  position: absolute;
-  top: 0px;
-  right: 10px;
-  font-size: 30px; 
-  cursor: pointer;
-}
-
-.logoutBtn{
-  position: absolute;
-  color: white;
-  font-size: 15px;
-  margin-left: 40px;
-  display: block;
-  cursor: pointer;
-  border-radius: 5px;
-  background-color: black;
-  font-family: 'Gurajada', serif;  
-}
-
-/*solid line divider*/
-hr.solid {
-  border-top: 1px solid lightgray;
-}
-
-/*icon*/
-.fas
-{
-color: #AFA398;
-}
-
-nav a {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  font-family: 'Palanquin Dark', sans-serif;
-  color: #fff;
-  text-decoration: none;
-}
-
-nav a:hover {
-  opacity: 0.8;
-}
-
-@media screen and (max-width: 600px) {
-  nav .sidebarBtn{
-      display: flex;
+    height: 100%;
+    width: 150px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: #eeeeeb;
+    overflow-x: hidden;
+    padding-top: 80px;
+    z-index: 1;
   }
-  nav .navLinks{
-      display: none;
+  
+  .sidebar a {
+    padding: 8px 8px 3px 15px;
+    margin: 0;
+    display: flex;
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Gurajada', serif;  
+    }
+
+    a:hover{
+      color: #5334dd;
+    }
+  
+  .closeBtn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
   }
-}
+  
+  .openBtn {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font-size: 30px; 
+    cursor: pointer;
+  }
+  
+  .logoutBtn{
+    padding: 4px 4px;
+    position: absolute;
+    color: black;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  /*solid line divider*/
+  hr.solid {
+    border-top: 1px solid lightgray;
+  }
+  
+  /*icon*/
+  .fas
+  {
+  color: #AFA398;
+  }
+  
+  nav a {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Palanquin Dark', sans-serif;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    opacity: 0.8;
+  }
+  
+  @media screen and (max-width: 600px) {
+    nav .sidebarBtn{
+        display: flex;
+    }
+    nav .navLinks{
+        display: none;
+    }
+  }
     </style>
 
     <script >
@@ -215,10 +220,14 @@ nav a:hover {
         <a href="javascript:void(0)" class="closeBtn" onclick="closeSidebar()">&#215;</a>
         <hr class="solid">
         <li><a href="./homepage.php"><i class="fa-solid fa-house"></i>  Home</a></li>
+        <hr class="solid">
         <li><a href="./search.php"><i class="fa-solid fa-heart"></i> Search</a></li>
+        <hr class="solid">
         <li><a href="./accountsetting.php"><i class="fa-sharp fa-solid fa-gear"></i> Settings</a></li>
+        <hr class="solid">
         <li><a href="./aboutus.php"><i class="fa-solid fa-face-smile"></i> About Us</a></li>
-        <a href="./logout.php"><button class="logoutBtn"><i class="fa-solid fa-right-to-bracket"></i> LOGOUT</button></a> 
+        <hr class="solid">
+        <a href="./logout.php"><button class="logoutBtn"> LOGOUT</button></a> 
         </ul>
         </div>
         <!--end of sidebar-->

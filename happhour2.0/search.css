@@ -478,26 +478,31 @@ input[type=checkbox] {
 /*sidebar*/
 .sidebar {
   height: 100%;
+  width: 150px;
   position: fixed;
   right: 0;
   top: 0;
   background-color: #eeeeeb;
   overflow-x: hidden;
-  transition: 0.3 ease-in;
   padding-top: 80px;
-  z-index: 2;
+  z-index: 1;
 }
 
 .sidebar a {
   padding: 8px 8px 3px 15px;
-  display: block;
-  font-size: 28px;
+  margin: 0;
+  display: flex;
+  font-size: 25px;
   color: black;
   text-decoration: none;
-  text-align: right;
+  align-items: center;
+  justify-content: space-between;
   font-family: 'Gurajada', serif;  
+  }
 
-}
+  .sidebar a:hover{
+    color: #5334dd;
+  }
 
 .closeBtn {
   position: absolute;
@@ -514,15 +519,15 @@ input[type=checkbox] {
 }
 
 .logoutBtn{
+  padding: 4px 4px;
   position: absolute;
-  color: white;
-  font-size: 15px;
+  color: black;
+  font-size: 13px;
+  margin-top: 10px;
   margin-left: 40px;
-  display: block;
+  display: flex;
+  align-items: center;
   cursor: pointer;
-  border-radius: 5px;
-  background-color: black;
-  font-family: 'Gurajada', serif;  
 }
 
 /*solid line divider*/
@@ -533,7 +538,7 @@ hr.solid {
 /*icon*/
 .fas
 {
-color: #6699CC;
+color: #AFA398;
 }
 
 nav a {
@@ -556,4 +561,5 @@ nav a:hover {
       display: none;
   }
 }
+
 
