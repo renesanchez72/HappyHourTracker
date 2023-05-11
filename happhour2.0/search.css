@@ -4,8 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
 
 *{
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -500,9 +498,9 @@ input[type=checkbox] {
   font-family: 'Gurajada', serif;  
   }
 
-  .sidebar a:hover{
-    color: #5334dd;
-  }
+.sidebar a:hover{
+  color: #5334dd;
+}
 
 .closeBtn {
   position: absolute;

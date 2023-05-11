@@ -129,9 +129,9 @@
     font-family: 'Gurajada', serif;  
     }
 
-    a:hover{
-      color: #5334dd;
-    }
+  a:hover{
+    color: #5334dd;
+  }
   
   .closeBtn {
     position: absolute;
@@ -219,13 +219,13 @@
         <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closeBtn" onclick="closeSidebar()">&#215;</a>
         <hr class="solid">
-        <li><a href="./homepage.php"><i class="fa-solid fa-house"></i>  Home</a></li>
+        <li><a href="./homepage.php"><i class="fa-solid fa-house"></i>  HOME</a></li>
         <hr class="solid">
-        <li><a href="./search.php"><i class="fa-solid fa-heart"></i> Search</a></li>
+        <li><a href="./search.php"><i class="fa-solid fa-heart"></i> SEARCH</a></li>
         <hr class="solid">
-        <li><a href="./accountsetting.php"><i class="fa-sharp fa-solid fa-gear"></i> Settings</a></li>
+        <li><a href="./accountsetting.php"><i class="fa-sharp fa-solid fa-gear"></i> SETTINGS</a></li>
         <hr class="solid">
-        <li><a href="./aboutus.php"><i class="fa-solid fa-face-smile"></i> About Us</a></li>
+        <li><a href="./aboutus.php"><i class="fa-solid fa-face-smile"></i> ABOUT US</a></li>
         <hr class="solid">
         <a href="./logout.php"><button class="logoutBtn"> LOGOUT</button></a> 
         </ul>
