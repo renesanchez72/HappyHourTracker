@@ -4,6 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
 
 *{
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -29,7 +31,7 @@ body{
 }
 
 .tabs{
-  padding: 0;
+  padding: 0.6rem 0;
   display: flex;
   justify-content: center;
 }
