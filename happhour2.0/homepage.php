@@ -129,7 +129,7 @@
     font-family: 'Gurajada', serif;  
     }
 
-  a:hover{
+  .sidebar a:hover{
     color: #5334dd;
   }
   
@@ -162,12 +162,6 @@
   /*solid line divider*/
   hr.solid {
     border-top: 1px solid lightgray;
-  }
-  
-  /*icon*/
-  .fas
-  {
-  color: #AFA398;
   }
   
   nav a {
