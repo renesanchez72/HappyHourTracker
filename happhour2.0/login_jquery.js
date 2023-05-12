@@ -2,7 +2,7 @@ $(document).ready(function() {
     $('#login-btn').on('click', function() {
       // Get the form data
       var formData = $('#login-form').serialize();
-      console.log(formData);
+    //   console.log(formData);
       
       // Send the post request
       $.ajax({
@@ -40,7 +40,7 @@ $(document).ready(function() {
     $('#signup-btn').on('click', function() {
       // Get the form data
       var formData = $('#signup-form').serialize();
-      console.log(formData);
+    //   console.log(formData);
       
       // Send the post request
       $.ajax({
