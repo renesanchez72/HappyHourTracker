@@ -2,6 +2,7 @@ $(document).ready(function() {
     $('#login-btn').on('click', function() {
       // Get the form data
       var formData = $('#login-form').serialize();
+      console.log(formData);
       
       // Send the post request
       $.ajax({
