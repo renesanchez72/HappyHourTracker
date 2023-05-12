@@ -22,12 +22,19 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             session_start();
             $_SESSION["userid"] = $user["id"];
             $_SESSION["username"] = $user["username"];
-            header("Location: search.php");
+            echo json_encode(array('success' => true));
             exit;
+            // header("Location: search.php");
+            // exit;
         }else {
-            print_r("login failed press back to try again ");
-
+            // print_r("login failed press back to try again ");
+            echo json_encode(array('success' => false, 'error' => 'Invalid password'));
+            exit;
         }
+
+    } else {
+        echo json_encode(array('success' => false, 'error' => 'Invalid username'));
+        exit;
     }
 }
 
