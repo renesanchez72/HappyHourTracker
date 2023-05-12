@@ -11,11 +11,11 @@ $(document).ready(function() {
         data: formData,
         success: function(response) {
           // If the login is successful, redirect to the search page
-          let response = JSON.parse(response)
-          if (response.success) {
+          let responseParse = JSON.parse(response)
+          if (responseParse.success) {
             window.location.href = 'search.php';
         } else {
-            alert(response.error);
+            alert(responseParse.error);
         }
         },
         // error: function(xhr, status, error) {
