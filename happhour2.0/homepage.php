@@ -105,6 +105,63 @@
             left: -400%;
         }
     }
+
+    /*Footer*/
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .footer{
+      width: 100%;
+      padding: 100px 15%;
+      display: flex;
+      color: white;
+    }
+
+    .footer div{
+      text-align: center;
+    }
+
+    .contact{
+      flex-grow: 2;
+    }
+
+    .footer div h3{
+      font-weight: 300;
+      margin-bottom: 30px;
+      letter-spacing: 1px;
+      color: #5334dd;
+      font-family: 'Gurajada', serif;  
+    }
+
+    .siteLinks a{
+      display: block;
+      text-decoration: none;
+      color: white;
+      margin-bottom: 10px;
+    }
+
+    .contact p{
+      display: block;
+    }
+
+    .socials i{
+      font: 20px;
+      margin: 5px;
+      cursor: pointer;
+      color: white;
+    }
+
+    .copyright{
+      color: white;
+      display: flex;
+      justify-content: center;
+      background-color: #5334dd;
+      font-family: 'Gurajada', serif;  
+      font-size: 20px;
+    }
     </style>
 
     <nav class="myNavs">
@@ -119,12 +176,40 @@
     <!--PICTURE CAROUSEL-->
     <div id="slider">
         <figure>
-            <img src="./welcome.PNG" height= "800px">
+            <img src="./welcome.png" height= "800px">
             <img src="./pizza.jpg" height="800px">
             <img src="./wine.jpg" height="800px">
             <img src="./hamburger.jpg" height="800px">
-            <img src="./welcome.PNG" height="800px">
+            <img src="./welcome.png" height="800px">
         </figure>
-    </div> 
+    </div>
+    
+    <!--footer-->
+    <div class="footer">
+      <div class="siteLinks">
+        <h3>SITE LINKS</h3>
+        <a href="./homepage.php">Home</a>
+        <a href="./about.html">About Us</a>
+        <a href="./search.php">Search</a>
+        <a href="./accountsetting.php">Settings</a>
+      </div>
+
+      <div class="contact">
+        <h3>CONTACT US</h3>
+        <p><i class="fa-solid fa-phone"></i> +1-800-777-7777<br><br><i class="fa-solid fa-envelope"></i> help@happyhour.com<br><br>
+        <i class="fa-sharp fa-solid fa-house-chimney"></i> 18111 Nordhoff St, Northridge, CA 91330</p>
+      </div>
+
+      <div class="socials">
+        <h3>SOCIALS</h3>
+        <a href="https://twitter.com/HappyHour481" target="_blank"><i class="fa-brands fa-square-twitter fa-xl"></i></a>
+        <a href="https://www.instagram.com/thehappyhourapp481/" target="_blank"><i class="fa-brands fa-square-instagram fa-xl"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100092731233530" target="_blank"><i class="fa-brands fa-square-facebook fa-xl"></i></a>
+      </div>
+    </div>
+
+    <div class="copyright">
+      &copy;2022-2023 Happy Hour. All rights reserved.
+    </div>
 </body>
 </html>
