@@ -46,7 +46,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     
     try {
         $statement->execute();
-
+        echo json_encode(array('success' => true, 'text' => 'Signup Successful'));
+        // header("Location: afterSignup.php");
+        exit;
     } catch (\Throwable $th) {
         //throw $th;
         if ($mysqli->errno === 1062) {
