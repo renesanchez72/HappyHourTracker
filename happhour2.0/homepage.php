@@ -110,11 +110,11 @@
     <!--PICTURE CAROUSEL-->
     <div id="slider">
         <figure>
-            <img src="./carouseltxt.PNG" height= "800px">
+            <img src="./carouseltxt.png" height= "800px">
             <img src="./pizza.jpg" height="800px">
             <img src="./wine.jpg" height="800px">
             <img src="./hamburger.jpg" height="800px">
-            <img src="./carouseltxt.PNG" height="800px">
+            <img src="./carouseltxt.png" height="800px">
         </figure>
     </div> 
 </body>

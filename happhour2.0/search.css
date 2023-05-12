@@ -562,31 +562,5 @@ nav a:hover {
   }
 }
 
-/*navigation bar at top*/
-.myNavs {
-  display: flex;
-  margin-right: auto;
-  padding-bottom: 10px;
-  background-color: black;
-}
-
-
-.myNavs > :nth-child(1) {
-  margin-right: auto; 
-}
-
-
-.myNavs a {
-font-family: 'Gurajada', serif;  
-font-size: 23px;
-color: white;
-text-decoration: none;
-padding: 10px;
-
-}
-
-.myNavs a:hover{
-background-color: #5334dd;
-}
 
 
