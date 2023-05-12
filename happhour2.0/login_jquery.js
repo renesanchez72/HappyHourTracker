@@ -11,7 +11,11 @@ $(document).ready(function() {
         data: formData,
         success: function(response) {
           // If the login is successful, redirect to the search page
-          window.location.href = 'search.php';
+          if (response.success) {
+            window.location.href = 'search.php';
+        } else {
+            alert(response.error);
+        }
         },
         // error: function(xhr, status, error) {
         //   // If there's an error, display an error message
