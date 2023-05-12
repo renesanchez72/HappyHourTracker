@@ -67,7 +67,7 @@
         width: 500%;
         margin: 0;
         left: 0;
-        animation: 20s slider infinite;
+        animation: 10s slider infinite;
     }    
 
     #slider figure img {
@@ -108,8 +108,6 @@
 
     /*Footer*/
     *{
-      margin: 0;
-      padding: 0;
       box-sizing: border-box;
     }
 
