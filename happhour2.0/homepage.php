@@ -40,6 +40,15 @@
           text-decoration: none;
           padding: 10px;
 
+          text-shadow:
+            0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 21px #fff,
+            0 0 42px #5334dd,
+            0 0 82px #5334dd,
+            0 0 92px #5334dd,
+            0 0 102px #5334dd,
+            0 0 151px #5334dd;
         }
         
         .myNavs a:hover{
@@ -102,7 +111,7 @@
       <img src="./happyhourlogo.png" width='80px' height='80px' alt='image'>
         <a href="./homepage.php"><u>Home</u></a>
         <a href="./about.html"><u>About</u></a>
-        <a href="./search.php"><u>Search</u></a>
+        <a href="./search.php"><u>Search Now</u></a>
         <a href="./logout.php">Logout</a>
     </nav>
 </head>
@@ -110,16 +119,12 @@
     <!--PICTURE CAROUSEL-->
     <div id="slider">
         <figure>
-            <img src="./carouseltxt.png" height= "800px">
+            <img src="./welcome.PNG" height= "800px">
             <img src="./pizza.jpg" height="800px">
             <img src="./wine.jpg" height="800px">
             <img src="./hamburger.jpg" height="800px">
-            <img src="./carouseltxt.png" height="800px">
+            <img src="./welcome.PNG" height="800px">
         </figure>
     </div> 
 </body>
 </html>
-
-
-
-
