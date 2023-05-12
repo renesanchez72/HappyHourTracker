@@ -24,7 +24,8 @@
             display: flex;
             margin-right: auto;
             padding-bottom: 10px;
-
+            padding-top: 10px;
+            padding-left: 10px;
         }
 
 
@@ -67,7 +68,7 @@
         width: 500%;
         margin: 0;
         left: 0;
-        animation: 10s slider infinite;
+        animation: 20s slider infinite;
     }    
 
     #slider figure img {
@@ -108,6 +109,8 @@
 
     /*Footer*/
     *{
+      padding: 0;
+      margin: 0;
       box-sizing: border-box;
     }
 
