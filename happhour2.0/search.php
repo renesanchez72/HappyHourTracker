@@ -62,7 +62,7 @@
     <div id="mySidebar" class="sidebar">
       <a href="javascript:void(0)" class="closeBtn" onclick="closeSidebar()">&#215;</a>
       <hr class="solid">
-      <li><a href="./search.php"><i class="fa-solid fa-house"></i>  HOME</a></li>
+      <li><a href="./homepage.php"><i class="fa-solid fa-house"></i>  HOME</a></li>
       <hr class="solid">
       <li><a href="./search.php"><i class="fa-solid fa-heart"></i> SEARCH</a></li>
       <hr class="solid">

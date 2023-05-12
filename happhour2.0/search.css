@@ -519,7 +519,7 @@ input[type=checkbox] {
 }
 
 .logoutBtn{
-  padding: 4px 4px;
+  padding: 2px;
   position: absolute;
   color: black;
   font-size: 13px;
@@ -538,7 +538,7 @@ hr.solid {
 /*icon*/
 .fas
 {
-color: #AFA398;
+color: #6699CC;
 }
 
 nav a {
