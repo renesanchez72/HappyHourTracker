@@ -1,6 +1,6 @@
 <?php
 
 session_destroy();
-header("Location: HH_LoginSignUp.html");
+header("Location: login_SignupFinal.html");
 exit;
 ?>
