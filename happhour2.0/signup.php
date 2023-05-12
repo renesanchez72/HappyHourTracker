@@ -1,19 +1,25 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     if (empty($_POST["username"])) {
-        die("Username is required");
+        // die("Username is required");
+        echo json_encode(array('success' => false, 'error' => 'Username is required'));
+        exit;
     }
     
     
     // see if password is less that 8 chars , regex does this too
     if (strlen($_POST["password"]) < 8) {
-       die("must be at least 8 chars");
+    //    die("must be at least 8 chars");
+        echo json_encode(array('success' => false, 'error' => 'password must be at least 8 characters'));
+        exit;
     }
     
     
     // checks for 1 letter 1 numer and 1 special character
     if (! preg_match("/^(?=.*[A-Za-z])(?=.*\d)(?=.*[$&+,:;=?@#|'<>.^*()%!-])[A-Za-z\d$&+,:;=?@#|'<>.^*()%!-]{8,}$/", $_POST["password"])) {
-        die("password does not meet requirements press back to");
+        // die("password does not meet requirements press back to");
+        echo json_encode(array('success' => false, 'error' => 'password does not meet requirements'));
+        exit;
     }
     
     $length = 8;    
@@ -31,21 +37,29 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $statement = $mysqli->stmt_init();
     
     if ( !$statement->prepare($sql) ) {
-        die("Mysql error: " . $mysqli->error);
+        // die("Mysql error: " . $mysqli->error);
+        echo json_encode(array('success' => false, 'error' => "Mysql error: " . $mysqli->error));
+        exit;
     };
     
     $statement->bind_param("sss",$_POST["username"],$hashed_password,$salt);
     
     try {
         $statement->execute();
-        header("Location: afterSignup.php");
+        echo json_encode(array('success' => true, 'text' => 'Signup Successful'));
+        // header("Location: afterSignup.php");
         exit;
     } catch (\Throwable $th) {
         //throw $th;
         if ($mysqli->errno === 1062) {
-            die("username is already taken");
+            // die("username is already taken");
+            echo json_encode(array('success' => false, 'error' => 'username is already taken'));
+            exit;
         }
-        die("Mysql error: " . $mysqli->error . " " . $mysqli->errno);
+        // die("Mysql error: " . $mysqli->error . " " . $mysqli->errno);
+        echo json_encode(array('success' => false, 'error' => "Mysql error: " . $mysqli->error . " " . $mysqli->errno));
+        exit;
+
     }
 }
 
