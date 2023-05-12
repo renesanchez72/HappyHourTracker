@@ -37,9 +37,9 @@ $(document).ready(function() {
 // for singup now
 
 $(document).ready(function() {
-    $('#login-btn').on('click', function() {
+    $('#signup-btn').on('click', function() {
       // Get the form data
-      var formData = $('#login-form').serialize();
+      var formData = $('#signup-form').serialize();
       console.log(formData);
       
       // Send the post request
