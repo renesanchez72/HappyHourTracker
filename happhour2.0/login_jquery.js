@@ -1,4 +1,11 @@
 $(document).ready(function() {
+    $("form").submit(function(event) {
+      event.preventDefault(); // Prevent the default form submission behavior
+      
+      // Your code for handling the form submission goes here
+    });
+  });
+$(document).ready(function() {
     $('#login-btn').on('click', function() {
       // Get the form data
       var formData = $('#login-form').serialize();
