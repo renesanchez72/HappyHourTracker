@@ -11,6 +11,7 @@ $(document).ready(function() {
         data: formData,
         success: function(response) {
           // If the login is successful, redirect to the search page
+          console.log(response);
           if (response.success) {
             window.location.href = 'search.php';
         } else {
