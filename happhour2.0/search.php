@@ -55,6 +55,15 @@
         }
     </script>
 
+    <!--navigation bar at top-->
+    <nav class="myNavs">
+      <img src="./happyhourlogo.png" width='80px' height='80px' alt='image'>
+        <a href="./homepage.php"><u>Home</u></a>
+        <a href="./about.html"><u>About</u></a>
+        <a href="./search.php"><u>Search</u></a>
+        <a href="./logout.php">Logout</a>
+    </nav>
+
     <nav>
     <!--sidebar-->
     <span class="openBtn" onclick="openSidebar()">&#9776;</span>
