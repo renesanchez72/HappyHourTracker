@@ -457,4 +457,32 @@
     <script src="addRestaurantPage.js"></script>
     <script src="search.js"></script> 
   </body>
+
+  <!--footer-->
+  <div class="footer">
+  <div class="siteLinks">
+    <h3>SITE LINKS</h3>
+    <a href="./homepage.php">Home</a>
+    <a href="./about.html">About Us</a>
+    <a href="./search.php">Search</a>
+    <a href="./accountsetting.php">Settings</a>
+  </div>
+
+  <div class="contact">
+    <h3>CONTACT US</h3>
+    <p><i class="fa-solid fa-phone"></i> +1-800-777-7777<br><i class="fa-solid fa-envelope"></i> help@happyhour.com<br>
+    <i class="fa-sharp fa-solid fa-house-chimney"></i> 18111 Nordhoff St, Northridge, CA 91330</p>
+  </div>
+
+  <div class="socials">
+    <h3>SOCIALS</h3>
+    <a href="https://twitter.com/HappyHour481" target="_blank"><i class="fa-brands fa-square-twitter fa-xl"></i></a>
+    <a href="https://www.instagram.com/thehappyhourapp481/" target="_blank"><i class="fa-brands fa-square-instagram fa-xl"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=100092731233530" target="_blank"><i class="fa-brands fa-square-facebook fa-xl"></i></a>
+    </div>
+  </div>
+
+  <div class="copyright">
+    &copy;2022-2023 Happy Hour. All rights reserved.
+  </div>
 </html>

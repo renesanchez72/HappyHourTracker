@@ -11,8 +11,6 @@
 
 body{
   background: #6699CC;
-  padding: 0 20px;
-  line-height: 1.5;
 }
 
 .container{
@@ -562,5 +560,62 @@ nav a:hover {
   }
 }
 
+/*Footer*/
+.footer{
+  width: 100%;
+  padding: 100px 15%;
+  display: flex;
+  color: white;
+  background-color: black;
+}
+
+.footer div{
+  text-align: center;
+}
+
+.contact{
+  flex-grow: 2;
+}
+
+.footer div h3{
+  font-weight: 300;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  color: #5334dd;
+  font-family: 'Gurajada', serif;  
+}
+
+.siteLinks a{
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-family: 'Gurajada', serif;  
+  font-size: 20px;
+}
+
+.contact p{
+  display: block;
+}
+
+.socials i{
+  font: 20px;
+  margin: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.copyright{
+  color: white;
+  display: flex;
+  justify-content: center;
+  background-color: #5334dd;
+  font-family: 'Gurajada', serif;  
+  font-size: 20px;
+}
+
+.socials a:link{
+  font-size: 20px;
+  display: inline-block;    
+}
 
 

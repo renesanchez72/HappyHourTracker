@@ -142,10 +142,12 @@
       text-decoration: none;
       color: white;
       margin-bottom: 10px;
+      font-family: 'Gurajada', serif;  
     }
 
     .contact p{
       display: block;
+      font-family: 'Gurajada', serif;  
     }
 
     .socials i{
