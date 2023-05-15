@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="accountsetting.css">
+    <link rel="stylesheet" href="lovelycss.css">
     <title>Account Settings Page</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial scale=1.0">
@@ -96,6 +96,7 @@
     </nav>
 </head>
  <body>
+  <div class="entirety">
     <div class="settings-page">
      <div class="settings-container">
         <img src = "happyhourlogo2.PNG" width="300px">
@@ -145,7 +146,8 @@
         </div> <!--end of "form my-form"-->
 
     </section> <!--end of "settings-container"-->
-    </div> <!--end of "settings-page"-->      
+    </div> <!--end of "settings-page"-->   
+  </div> <!--end of "entirety"-->
 
     <script>
     var accordian = document.getElementsByClassName("settings-title");
@@ -164,15 +166,15 @@
 
     </script>
  </body>
-    <!--footer-->
-    <div class="footer">
-     <div class="siteLinks">
+   <!--footer-->
+   <div class="footer">
+    <div class="siteLinks">
       <h3>SITE LINKS</h3>
       <a href="./homepage.php">Home</a>
       <a href="./about.html">About Us</a>
       <a href="./search.php">Search</a>
       <a href="./accountsetting.php">Settings</a>
-     </div>
+    </div>
   
     <div class="contact">
       <h3>CONTACT US</h3>
