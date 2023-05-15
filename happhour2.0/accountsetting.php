@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="lovelycss.css">
+    <link rel="stylesheet" href="accountsetting.css">
     <title>Account Settings Page</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial scale=1.0">
