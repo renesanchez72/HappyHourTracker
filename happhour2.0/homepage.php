@@ -141,7 +141,6 @@
       display: block;
       text-decoration: none;
       color: white;
-      margin-bottom: 10px;
       font-size: 20px;
       font-family: 'Gurajada', serif;  
     }

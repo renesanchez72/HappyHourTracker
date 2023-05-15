@@ -1,27 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Gurajada&display=swap');
 
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body, html{
-    background-color: black;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
     background-image: url(bokeh.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative; 
+}
+  
+
+.settings-page{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-  
-.settings-page{
     font-size: 1.25rem;
     line-height: 130%;
 }
   
 .settings-container{
-    box-sizing: border-box;
     padding: 10px 30px;
     background-color: white;
     border-radius: 0px;
@@ -103,9 +109,9 @@ body, html{
   font-family: 'Gurajada', serif;  
   }
 
-  a:hover{
-    color: #5334dd;
-  }
+a:hover{
+  color: #5334dd;
+}
 
 .closeBtn {
   position: absolute;
@@ -126,7 +132,7 @@ body, html{
   position: absolute;
   color: black;
   font-size: 13px;
-  margin-top: 10px;
+  margin-top: 15px;
   margin-left: 40px;
   display: flex;
   align-items: center;
@@ -136,6 +142,7 @@ body, html{
 /*solid line divider*/
 hr.solid {
   border-top: 1px solid lightgray;
+  margin: 0;
 }
 
 /*icon*/
@@ -166,3 +173,67 @@ nav a:hover {
 }
 
 
+/*Footer*/
+.footer{
+  padding: 0px 15%;
+  padding-bottom: 100px;
+  display: flex;
+  color: white;
+  background-color: black;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.footer div{
+  text-align: center;
+}
+
+.contact{
+  flex-grow: 2;
+}
+
+.footer div h3{
+  font-weight: 300;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  color: #5334dd;
+  font-family: 'Gurajada', serif;  
+}
+
+.siteLinks a{
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-family: 'Gurajada', serif;  
+  font-size: 20px;
+}
+
+.contact p{
+  display: block;
+}
+
+.socials i{
+  font: 20px;
+  margin: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.copyright{
+  color: white;
+  display: flex;
+  justify-content: center;
+  background-color: #5334dd;
+  font-family: 'Gurajada', serif;  
+  bottom: 0;
+  font-size: 20px;
+  width: 100%;
+  left: 0;
+  position: fixed;
+}
+
+.socials a:link{
+  font-size: 20px;
+  display: inline-block;    
+}
