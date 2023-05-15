@@ -142,12 +142,14 @@
       text-decoration: none;
       color: white;
       margin-bottom: 10px;
+      font-size: 20px;
       font-family: 'Gurajada', serif;  
     }
 
     .contact p{
       display: block;
       font-family: 'Gurajada', serif;  
+      font-size: 20px;
     }
 
     .socials i{
@@ -199,7 +201,7 @@
 
       <div class="contact">
         <h3>CONTACT US</h3>
-        <p><i class="fa-solid fa-phone"></i> +1-800-777-7777<br><br><i class="fa-solid fa-envelope"></i> help@happyhour.com<br><br>
+        <p><i class="fa-solid fa-phone"></i> +1-800-777-7777<br><i class="fa-solid fa-envelope"></i> help@happyhour.com<br>
         <i class="fa-sharp fa-solid fa-house-chimney"></i> 18111 Nordhoff St, Northridge, CA 91330</p>
       </div>
 
