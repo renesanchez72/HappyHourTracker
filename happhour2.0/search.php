@@ -135,7 +135,6 @@
                 }
             }
             if ($category == "taco") {
-              $htmlContent .=  "<div class='popupContent'>";
                 $htmlContent .=  "<div class='food categories'>";
                  $htmlContent .=  "<div class='picture'>";
                  $htmlContent .=  "<img src='$image' alt='Restraunt Image'>";
@@ -155,7 +154,6 @@
                   $htmlContent .=  "</div>";     
                 $htmlContent .=  "</div>";
                 $htmlContent .=  "<a href='#' class='popupClose'>&times;</a>";
-              $htmlContent .=  "</div>";
 
             $tacoData[] = $htmlContent;
 
@@ -394,10 +392,12 @@
                   </div>
               </div>
               <div id='popupBox' class='popup'>
-              <?php 
-              echo implode($tacoData);
-              ?>
-              <a href="#" class="popupClose">&times;</a>
+                <div class='popupContent'>
+                  <?php 
+                  echo implode($tacoData);
+                  ?>
+                <a href="#" class="popupClose">&times;</a>
+                </div>
               </div>
               <!--end of category #1--> 
 
