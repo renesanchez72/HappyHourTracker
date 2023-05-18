@@ -136,6 +136,7 @@
                 }
             }
             if ($category == "taco") {
+              $htmlContent = null;
                 $htmlContent .=  "<div class='food categories'>";
                  $htmlContent .=  "<div class='picture'>";
                  $htmlContent .=  "<img src='$image' alt='Restraunt Image'>";
