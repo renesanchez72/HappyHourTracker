@@ -109,6 +109,8 @@
         $tacoData = [];
         $steakData = [];
         $fastfoodData = [];
+        $asianData = [];
+
 
 
         // Generate HTML code for each row of data
@@ -206,6 +208,29 @@
              $htmlContent3 .=  "<a href='#' class='popupClose'>&times;</a>";
 
          $fastfoodData[] = $htmlContent3;
+            }elseif ($category == "asian") {
+              $htmlContent4 = null;
+              $htmlContent4 .=  "<div class='food categories'>";
+              $htmlContent4 .=  "<div class='picture'>";
+              $htmlContent4 .=  "<img src='$image' alt='Restraunt Image'>";
+               $htmlContent4 .=  "</div>";
+                $htmlContent4 .=  "<div class='info'>";
+                $htmlContent4 .=  "<a href='https://www.yelp.com/search?find_desc=$rest_name' target='_blank'><p >$rest_name</p></a>";
+                 $htmlContent4 .=  "<div class='line'></div>";
+                 $htmlContent4 .=  "<p>$deal</p>";
+                 $htmlContent4 .=  "<ul class='stars'>";
+                   $htmlContent4 .=  "<li><i class='fas fa-star'></i></li>";
+                   $htmlContent4 .=  "<li><i class='fas fa-star'></i></li>";
+                   $htmlContent4 .=  "<li><i class='fas fa-star'></i></li>";
+                   $htmlContent4 .=  "<li><i class='fas fa-star'></i></li>";
+                   $htmlContent4 .=  "<li><i class='fas fa-star'></i></li>";
+                 $htmlContent4 .=  "</ul>";
+                 $htmlContent4 .=  "<p>$daysofweek</p>";
+               $htmlContent4 .=  "</div>";     
+             $htmlContent4 .=  "</div>";
+             $htmlContent4 .=  "<a href='#' class='popupClose'>&times;</a>";
+             $asianData[] = $htmlContent4;
+
             }
 
             echo "<div class='food todaysDeal'>";
@@ -465,16 +490,14 @@
                     <a href="#popupBox4">View Restaurants</a>
                   </div>
               </div>
-              <div id="popupBox4" class="popup">
-                <div class="popupContent">
-                <!--categories content
-              
-                bla bla bla
-              
-                -->
-                  <a href="#" class="popupClose">&times;</a>
+              <div id='popupBox4' class='popup'>
+                <div class='popupContent'>
+                  <?php 
+                  echo implode($asianData);
+                  ?>
+                <a href="#" class="popupClose">&times;</a>
                 </div>
-              </div> 
+              </div>
               <!--end of category #4-->
 
               <!--category #5-->
