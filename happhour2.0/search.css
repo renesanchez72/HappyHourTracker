@@ -648,6 +648,8 @@ nav a:hover {
 
 .italic-text {
   font-style: italic;
+  font-size: 20px;
+  font-family: 'Gurajada', serif;
 }
 
 
