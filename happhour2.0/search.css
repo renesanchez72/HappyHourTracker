@@ -622,4 +622,32 @@ nav a:hover {
   display: inline-block;    
 }
 
+/* stuff for table */
+.clean-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.clean-table-header {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  padding: 10px;
+  text-align: left;
+}
+
+.clean-table td {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+
+.bold-text {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.italic-text {
+  font-style: italic;
+}
+
 
