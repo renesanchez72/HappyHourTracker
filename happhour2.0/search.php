@@ -424,10 +424,10 @@
               <div class="foodCat categories" >
                 <div class="picture2"><img src="fastfood.PNG" alt="fast food"></div>
                   <div class="overlay">
-                    <a href="#popupBox">View Restaurants</a>
+                    <a href="#popupBox3">View Restaurants</a>
                   </div>
               </div>
-              <div id="popupBox" class="popup">
+              <div id="popupBox3" class="popup">
                 <div class="popupContent">
                 <!--categories content
               
@@ -443,10 +443,10 @@
               <div class="foodCat categories" >
                 <div class="picture2"><img src="asian.PNG" alt="asian"></div>
                   <div class="overlay">
-                    <a href="#popupBox">View Restaurants</a>
+                    <a href="#popupBox4">View Restaurants</a>
                   </div>
               </div>
-              <div id="popupBox" class="popup">
+              <div id="popupBox4" class="popup">
                 <div class="popupContent">
                 <!--categories content
               
@@ -462,10 +462,10 @@
               <div class="foodCat categories" >
                 <div class="picture2"><img src="bar.PNG" alt="bar"></div>
                   <div class="overlay">
-                    <a href="#popupBox">View Restaurants</a>
+                    <a href="#popupBox5">View Restaurants</a>
                   </div>
               </div>
-              <div id="popupBox" class="popup">
+              <div id="popupBox5" class="popup">
                 <div class="popupContent">
                 <!--categories content
               
