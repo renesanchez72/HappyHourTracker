@@ -108,6 +108,7 @@
         }
         $tacoData = [];
         $steakData = [];
+        $fastfoodData = [];
 
 
         // Generate HTML code for each row of data
@@ -160,6 +161,7 @@
             $tacoData[] = $htmlContent;
 
             }elseif ($category == "steak") {
+              $htmlContent2 = null;
               $htmlContent2 .=  "<div class='food categories'>";
               $htmlContent2 .=  "<div class='picture'>";
               $htmlContent2 .=  "<img src='$image' alt='Restraunt Image'>";
@@ -181,6 +183,29 @@
              $htmlContent2 .=  "<a href='#' class='popupClose'>&times;</a>";
 
          $steakData[] = $htmlContent2;
+            }elseif ($category = "fastfood") {
+              $htmlContent3 = null;
+              $htmlContent3 .=  "<div class='food categories'>";
+              $htmlContent3 .=  "<div class='picture'>";
+              $htmlContent3 .=  "<img src='$image' alt='Restraunt Image'>";
+               $htmlContent3 .=  "</div>";
+                $htmlContent3 .=  "<div class='info'>";
+                $htmlContent3 .=  "<a href='https://www.yelp.com/search?find_desc=$rest_name' target='_blank'><p >$rest_name</p></a>";
+                 $htmlContent3 .=  "<div class='line'></div>";
+                 $htmlContent3 .=  "<p>$deal</p>";
+                 $htmlContent3 .=  "<ul class='stars'>";
+                   $htmlContent3 .=  "<li><i class='fas fa-star'></i></li>";
+                   $htmlContent3 .=  "<li><i class='fas fa-star'></i></li>";
+                   $htmlContent3 .=  "<li><i class='fas fa-star'></i></li>";
+                   $htmlContent3 .=  "<li><i class='fas fa-star'></i></li>";
+                   $htmlContent3 .=  "<li><i class='fas fa-star'></i></li>";
+                 $htmlContent3 .=  "</ul>";
+                 $htmlContent3 .=  "<p>$daysofweek</p>";
+               $htmlContent3 .=  "</div>";     
+             $htmlContent3 .=  "</div>";
+             $htmlContent3 .=  "<a href='#' class='popupClose'>&times;</a>";
+
+         $fastfoodData[] = $htmlContent3;
             }
 
             echo "<div class='food todaysDeal'>";
@@ -423,16 +448,14 @@
                     <a href="#popupBox3">View Restaurants</a>
                   </div>
               </div>
-              <div id="popupBox3" class="popup">
-                <div class="popupContent">
-                <!--categories content
-              
-                bla bla bla
-              
-                -->
-                  <a href="#" class="popupClose">&times;</a>
+              <div id='popupBox3' class='popup'>
+                <div class='popupContent'>
+                  <?php 
+                  echo implode($fastfooData);
+                  ?>
+                <a href="#" class="popupClose">&times;</a>
                 </div>
-              </div> 
+              </div>
               <!--end of category #3-->
 
               <!--category #4-->
