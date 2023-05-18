@@ -12,7 +12,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial scale=1.0">
     <script src="https://kit.fontawesome.com/519591b792.js" crossorigin="anonymous"></script>
-    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="//code.jquery.com/jquery-1.9.1.js"></script>
     <script >
         function resetUsername(userid){
             console.log('Resetting username');

@@ -177,7 +177,7 @@
 
     </style>
 
-    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="//code.jquery.com/jquery-1.9.1.js"></script>
     <script >
         function fav(restaurantid,userid){
             console.log('adding fav');

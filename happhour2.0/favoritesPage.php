@@ -41,7 +41,7 @@ $userid = $_SESSION["userid"];
         }
     </style>
     
-    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="//code.jquery.com/jquery-1.9.1.js"></script>
     <script>
         function unFav(restaurantid, userid) {
             console.log('removing fav');
