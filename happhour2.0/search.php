@@ -253,7 +253,7 @@
                $htmlContent5 .=  "</div>";     
              $htmlContent5 .=  "</div>";
              $htmlContent5 .=  "<a href='#' class='popupClose'>&times;</a>";
-             $asianData[] = $htmlContent5;
+             $barData[] = $htmlContent5;
             }
 
             echo "<div class='food todaysDeal'>";
