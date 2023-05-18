@@ -451,7 +451,7 @@
               <div id='popupBox3' class='popup'>
                 <div class='popupContent'>
                   <?php 
-                  echo implode($fastfooData);
+                  echo implode($fastfoodData);
                   ?>
                 <a href="#" class="popupClose">&times;</a>
                 </div>
