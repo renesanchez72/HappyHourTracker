@@ -140,7 +140,7 @@
                  echo "<img src='$image' alt='Restraunt Image'>";
                   echo "</div>";
                    echo "<div class='info'>";
-                   echo "<a href='https://www.yelp.com/search?find_desc=$rest_name' target='_blank'><p class='name'>$rest_name</p></a>";
+                   echo "<a href='https://www.yelp.com/search?find_desc=$rest_name' target='_blank'><p >$rest_name</p></a>";
                     echo "<div class='line'></div>";
                     echo "<p>$deal</p>";
                     echo "<ul class='stars'>";
