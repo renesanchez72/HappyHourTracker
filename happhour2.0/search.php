@@ -556,7 +556,7 @@
     </div>
     <div id = "text"></div>
     <script src="https://kit.fontawesome.com/519591b792.js" crossorigin="anonymous"></script>
-    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="//code.jquery.com/jquery-1.9.1.js"></script>
     <script src="autocompletesearchlist.js"></script>
     <script src="addRestaurantPage.js"></script>
     <script src="search.js"></script> 
