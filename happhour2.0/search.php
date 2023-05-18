@@ -137,12 +137,12 @@
               echo "<div class='popupContent'>";
                 echo "<div class='food categories'>";
                  echo "<div class='picture'>";
-                  echo "<img src='cocktail.PNG' alt='Bar Louie'>";
+                 echo "<img src='$image' alt='Restraunt Image'>";
                   echo "</div>";
                    echo "<div class='info'>";
-                    echo "<a href='https://www.yelp.com/biz/bar-louie-northridge-fashion-center-northridge-2' target='_blank'><p>Bar Louie-Northridge Fashion Center</p></a>";
+                   echo "<a href='https://www.yelp.com/search?find_desc=$rest_name' target='_blank'><p class='name'>$rest_name</p></a>";
                     echo "<div class='line'></div>";
-                    echo "<p>$8 select premium cocktails.</p>";
+                    echo "<p>$deal</p>";
                     echo "<ul class='stars'>";
                       echo "<li><i class='fas fa-star'></i></li>";
                       echo "<li><i class='fas fa-star'></i></li>";
@@ -150,7 +150,8 @@
                       echo "<li><i class='fas fa-star'></i></li>";
                       echo "<li><i class='fas fa-star'></i></li>";
                     echo "</ul>";
-                    echo "<p>Mon-Fri 4pm-7pm</p>";
+                    echo "<p>$daysofweek</p>";
+                    echo "<button class='btn' onclick='fav($restaurantID,$userid);'>Favorite deal</button>";
                   echo "</div>";     
                 echo "</div>";
                 echo "<a href='#' class='popupClose'>&times;</a>";
