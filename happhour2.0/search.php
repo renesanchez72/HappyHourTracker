@@ -249,7 +249,7 @@
       echo "</div>";
         echo "<div class='line'></div>";
         echo "<div class='description'>";
-        echo "<p>$deal</p>";
+        echo "<p class='name'>$deal</p>";
       echo "</div>";
         echo "<ul class='stars'>";
         echo "<li><i class='fas fa-star'></i></li>";
