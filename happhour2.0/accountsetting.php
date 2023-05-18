@@ -171,7 +171,7 @@
     <div class="siteLinks">
       <h3>SITE LINKS</h3>
       <a href="./homepage.php">Home</a>
-      <a href="./about.html">About Us</a>
+      <a href="./about.php">About Us</a>
       <a href="./search.php">Search</a>
       <a href="./accountsetting.php">Settings</a>
     </div>

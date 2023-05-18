@@ -1,6 +1,6 @@
 <?php
-        session_start();
-        $userid = $_SESSION["userid"];
+    session_start();
+    $userid = $_SESSION["userid"];
 ?>
 <!DOCTYPE html>
 <html>
@@ -158,6 +158,38 @@
       color: white;
     }
 
+    .about-section {
+      padding: 50px 0;
+      background-color: #5334dd;
+      color: white;
+      text-align: center;
+    }
+
+    .about-section h2 {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      font-family: 'Gurajada', serif;  
+    }
+
+    .about-section p {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    .about-section p:last-child {
+      margin-bottom: 0;
+    }
+
+    .about-section a {
+      color: white;
+      text-decoration: underline;
+    }
+
+    .about-section a:hover {
+      text-decoration: none;
+    }
+
     .copyright{
       color: white;
       display: flex;
@@ -177,17 +209,14 @@
     </nav>
 </head>
 <body>
-    <!--PICTURE CAROUSEL-->
-    <div id="slider">
-        <figure>
-            <img src="./welcome.png" height= "800px">
-            <img src="./pizza.jpg" height="800px">
-            <img src="./wine.jpg" height="800px">
-            <img src="./hamburger.jpg" height="800px">
-            <img src="./welcome.png" height="800px">
-        </figure>
+    <div class="about-section">
+      <h2>About Happy Hour Tracker</h2>
+      <p>Happy Hour Tracker is a place to find the best deals around. We are a community-led platform where users can discover and share the latest happy hour specials in their area.</p>
+      <p>Our mission is to connect people with great happy hour experiences and help them save money while enjoying their favorite drinks and food.</p>
+      <p>Join our community today and start exploring the best happy hour deals near you!</p>
+      <p><a href="./search.php">Search Now</a></p>
     </div>
-    
+     
     <!--footer-->
     <div class="footer">
       <div class="siteLinks">
