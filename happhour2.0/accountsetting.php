@@ -87,7 +87,7 @@
       <hr class="solid">
       <li><a href="./accountsetting.php"><i class="fa-sharp fa-solid fa-gear"></i> SETTINGS</a></li>
       <hr class="solid">
-      <li><a href="./aboutus.php"><i class="fa-solid fa-face-smile"></i> ABOUT US</a></li>
+      <li><a href="./about.php"><i class="fa-solid fa-face-smile"></i> ABOUT US</a></li>
       <hr class="solid">
       <a href="./logout.php"><button class="logoutBtn"> LOGOUT</button></a> 
     </ul>
