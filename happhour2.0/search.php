@@ -183,7 +183,7 @@
              $htmlContent2 .=  "<a href='#' class='popupClose'>&times;</a>";
 
          $steakData[] = $htmlContent2;
-            }elseif ($category = "fastfood") {
+            }elseif ($category == "fastfood") {
               $htmlContent3 = null;
               $htmlContent3 .=  "<div class='food categories'>";
               $htmlContent3 .=  "<div class='picture'>";
