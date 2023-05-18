@@ -20,7 +20,7 @@ $(document).ready(function() {
           // If the login is successful, redirect to the search page
           let responseParse = JSON.parse(response)
           if (responseParse.success) {
-            window.location.href = 'search.php';
+            window.location.href = 'homepage.php';
         } else {
             alert(responseParse.error);
         }
