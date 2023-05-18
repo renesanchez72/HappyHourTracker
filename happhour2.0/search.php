@@ -127,7 +127,35 @@
                 }elseif ($col == "daysofweek") {
                   # code...
                   $daysofweek = $value;
+                }elseif ($col == "category") {
+                  # code...
+                  $category = $value;
                 }
+            }
+            if ($category == "taco") {
+              echo "<div id='popupBox' class='popup'>";
+              echo "<div class='popupContent'>";
+                echo "<div class='food categories'>";
+                 echo "<div class='picture'>";
+                  echo "<img src='cocktail.PNG' alt='Bar Louie'>";
+                  echo "</div>";
+                   echo "<div class='info'>";
+                    echo "<a href='https://www.yelp.com/biz/bar-louie-northridge-fashion-center-northridge-2' target='_blank'><p>Bar Louie-Northridge Fashion Center</p></a>";
+                    echo "<div class='line'></div>";
+                    echo "<p>$8 select premium cocktails.</p>";
+                    echo "<ul class='stars'>";
+                      echo "<li><i class='fas fa-star'></i></li>";
+                      echo "<li><i class='fas fa-star'></i></li>";
+                      echo "<li><i class='fas fa-star'></i></li>";
+                      echo "<li><i class='fas fa-star'></i></li>";
+                      echo "<li><i class='fas fa-star'></i></li>";
+                    echo "</ul>";
+                    echo "<p>Mon-Fri 4pm-7pm</p>";
+                  echo "</div>";     
+                echo "</div>";
+                echo "<a href='#' class='popupClose'>&times;</a>";
+              echo "</div>";
+            echo "</div>";
             }
 
             echo "<div class='food todaysDeal'>";
@@ -236,6 +264,8 @@
           }elseif ($col == "daysofweek") {
             # code...
             $daysofweek = $value;
+          }elseif ($col == "category") {
+            $category = $value;
           }
       }
 
@@ -332,34 +362,7 @@
                     <a href="#popupBox">View Restaurants</a>
                   </div>
               </div>
-              <div id="popupBox" class="popup">
-                <div class="popupContent">
-                <!--categories content
-              
-                bla bla bla
-              
-                -->
-                <div class="food categories">
-            <div class="picture">
-            <img src="cocktail.PNG" alt="Bar Louie">
-            </div>
-              <div class="info">
-              <a href="https://www.yelp.com/biz/bar-louie-northridge-fashion-center-northridge-2" target="_blank"><p>Bar Louie-Northridge Fashion Center</p></a>
-              <div class="line"></div>
-              <p>$8 select premium cocktails.</p> 
-              <ul class="stars">
-                <li><i class="fas fa-star"></i></li>
-                <li><i class="fas fa-star"></i></li>
-                <li><i class="fas fa-star"></i></li>
-                <li><i class="fas fa-star"></i></li>
-                <li><i class="far fa-star"></i></li>
-              </ul>
-              <p>Mon-Fri 4pm-7pm</p>
-            </div>     
-          </div> 
-                  <a href="#" class="popupClose">&times;</a>
-                </div>
-              </div>     
+
               <!--end of category #1-->
 
               <!--category #2-->
