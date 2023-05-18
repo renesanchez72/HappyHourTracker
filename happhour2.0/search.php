@@ -191,7 +191,7 @@
               echo "<div class='info'>";
               echo "<div class='name'>";
               // echo "$rest_name";
-              echo "<a href='https://www.yelp.com/search?find_desc=$rest_name' target='_blank'><p class='name'>$rest_name</p></a>";
+              echo "<a href='https://www.yelp.com/search?find_desc=$rest_name' target='_blank'><p >$rest_name</p></a>";
             echo "</div>";
               echo "<div class='line'></div>";
               echo "<div class='description'>";
