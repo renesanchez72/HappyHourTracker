@@ -133,16 +133,16 @@
                </div> <!--end of "form-submit right"-->
           </div> <!--end of "form my-form"-->
 
-        <div class="img-upload-container">
-         <button class="settings-title">Change Profile Photo</button>
-         <div class="form my-form">
+        <!-- <div class="img-upload-container"> -->
+         <!-- <button class="settings-title">Change Profile Photo</button> -->
+         <!-- <div class="form my-form">
           <label class="img-upload btn btn-bwm" style="background-image: url(&quot;/profile-placeholder.jpg&quot;);">
           <input type="file" accept=".jpg, .png, .jpeg, .gif" value="">
           </label>
            <div class="img-preview-container">
             <div class="img-preview" style="background-image: url('http://www.personalbrandingblog.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png');"></div>
-           </div> <!--end of "img-preview-container"-->
-        </div> <!--end of "img-upload-container"-->
+           </div> end of "img-preview-container" -->
+        <!-- </div> end of "img-upload-container" -->
         </div> <!--end of "form my-form"-->
 
     </section> <!--end of "settings-container"-->
