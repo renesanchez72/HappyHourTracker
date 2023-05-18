@@ -151,7 +151,7 @@
                       echo "<li><i class='fas fa-star'></i></li>";
                     echo "</ul>";
                     echo "<p>$daysofweek</p>";
-                    echo "<button class='btn' onclick='fav($restaurantID,$userid);'>Favorite deal</button>";
+                    // echo "<button class='btn' onclick='fav($restaurantID,$userid);'>Favorite deal</button>";
                   echo "</div>";     
                 echo "</div>";
                 echo "<a href='#' class='popupClose'>&times;</a>";
@@ -205,7 +205,7 @@
               echo "<li><i class='fas fa-star'></i></li>";
               echo "</ul>";
               echo "<p>$daysofweek</p>";
-              // echo "<button class='btn' onclick='fav($restaurantID,$userid);'>Favorite deal</button>";
+              echo "<button class='btn' onclick='fav($restaurantID,$userid);'>Favorite deal</button>";
             echo "</div>";
             echo "</div>";
         }
