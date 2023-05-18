@@ -107,6 +107,7 @@
             $data[] = $row;
         }
         $tacoData = [];
+        $steakData = [];
 
 
         // Generate HTML code for each row of data
@@ -158,31 +159,27 @@
             $tacoData[] = $htmlContent;
 
             }elseif ($category == "steak") {
-              echo "<div id='popupBox2' class='popup'>";
-              echo "<div class='popupContent'>";
-                echo "<div class='food categories'>";
-                 echo "<div class='picture'>";
-                 echo "<img src='$image' alt='Restraunt Image'>";
-                  echo "</div>";
-                   echo "<div class='info'>";
-                   echo "<a href='https://www.yelp.com/search?find_desc=$rest_name' target='_blank'><p class='name'>$rest_name</p></a>";
-                    echo "<div class='line'></div>";
-                    echo "<p>$deal</p>";
-                    echo "<ul class='stars'>";
-                      echo "<li><i class='fas fa-star'></i></li>";
-                      echo "<li><i class='fas fa-star'></i></li>";
-                      echo "<li><i class='fas fa-star'></i></li>";
-                      echo "<li><i class='fas fa-star'></i></li>";
-                      echo "<li><i class='fas fa-star'></i></li>";
-                    echo "</ul>";
-                    echo "<p>$address</p>";
-                    echo "<p>$daysofweek</p>";
-                    // echo "<button class='btn' onclick='fav($restaurantID,$userid);'>Favorite deal</button>";
-                  echo "</div>";     
-                echo "</div>";
-                echo "<a href='#' class='popupClose'>&times;</a>";
-              echo "</div>";
-            echo "</div>";
+              $htmlContent2 .=  "<div class='food categories'>";
+              $htmlContent2 .=  "<div class='picture'>";
+              $htmlContent2 .=  "<img src='$image' alt='Restraunt Image'>";
+               $htmlContent2 .=  "</div>";
+                $htmlContent2 .=  "<div class='info'>";
+                $htmlContent2 .=  "<a href='https://www.yelp.com/search?find_desc=$rest_name' target='_blank'><p >$rest_name</p></a>";
+                 $htmlContent2 .=  "<div class='line'></div>";
+                 $htmlContent2 .=  "<p>$deal</p>";
+                 $htmlContent2 .=  "<ul class='stars'>";
+                   $htmlContent2 .=  "<li><i class='fas fa-star'></i></li>";
+                   $htmlContent2 .=  "<li><i class='fas fa-star'></i></li>";
+                   $htmlContent2 .=  "<li><i class='fas fa-star'></i></li>";
+                   $htmlContent2 .=  "<li><i class='fas fa-star'></i></li>";
+                   $htmlContent2 .=  "<li><i class='fas fa-star'></i></li>";
+                 $htmlContent2 .=  "</ul>";
+                 $htmlContent2 .=  "<p>$daysofweek</p>";
+               $htmlContent2 .=  "</div>";     
+             $htmlContent2 .=  "</div>";
+             $htmlContent2 .=  "<a href='#' class='popupClose'>&times;</a>";
+
+         $steakData[] = $htmlContent2;
             }
 
             echo "<div class='food todaysDeal'>";
@@ -408,16 +405,14 @@
                     <a href="#popupBox2">View Restaurants</a>
                   </div>
               </div>
-              <div id="popupBox2" class="popup">
-                <div class="popupContent">
-                <!--categories content
-              
-                bla bla bla
-              
-                -->
-                  <a href="#" class="popupClose">&times;</a>
+              <div id='popupBox2' class='popup'>
+                <div class='popupContent'>
+                  <?php 
+                  echo implode($steakData);
+                  ?>
+                <a href="#" class="popupClose">&times;</a>
                 </div>
-              </div> 
+              </div>
               <!--end of category #2-->
 
               <!--category #3-->
