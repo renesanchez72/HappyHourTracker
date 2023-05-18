@@ -235,6 +235,11 @@ a{
   font-size: 22px;
   color: #5334dd;
 }
+.name p {
+  font-family: 'Knewave', cursive;
+  font-size: 22px;
+  color: #5334dd;
+}
 
 .description p{
   font-family: 'Gurajada', serif;  
