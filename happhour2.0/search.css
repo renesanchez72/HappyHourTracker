@@ -121,10 +121,8 @@ body{
 a:link{
   text-decoration: none!important;
   display: flex;
-  /* justify-content: center; */
   font-size: 50px;
   font-family: 'Knewave', cursive;
-  /* justify-content: flex-start; */
 }
 
 a{
