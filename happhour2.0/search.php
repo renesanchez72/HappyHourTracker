@@ -182,7 +182,7 @@
              $htmlContent .=  "</div>";
              $htmlContent .=  "<a href='#' class='popupClose'>&times;</a>";
 
-         $steakData[] = $htmlContent;
+        //  $steakData[] = $htmlContent;
             }elseif ($category == "fastfood") {
                     $htmlContent .=  "<div class='food categories'>";
                     $htmlContent .=  "<div class='picture'>";
@@ -204,7 +204,7 @@
                   $htmlContent .=  "</div>";
                   $htmlContent .=  "<a href='#' class='popupClose'>&times;</a>";
 
-              $fastfoodData[] = $htmlContent;
+              // $fastfoodData[] = $htmlContent;
             }elseif ($category == "asian") {
               # code...
               $htmlContent .=  "<div class='food categories'>";
@@ -227,7 +227,7 @@
              $htmlContent .=  "</div>";
              $htmlContent .=  "<a href='#' class='popupClose'>&times;</a>";
 
-         $asianData[] = $htmlContent;
+        //  $asianData[] = $htmlContent;
             }elseif ($category == "bar") {
               # code...
               $htmlContent .=  "<div class='food categories'>";
@@ -250,7 +250,7 @@
              $htmlContent .=  "</div>";
              $htmlContent .=  "<a href='#' class='popupClose'>&times;</a>";
 
-         $barData[] = $htmlContent;
+        //  $barData[] = $htmlContent;
             }
 
             echo "<div class='food todaysDeal'>";
@@ -483,6 +483,7 @@
                   ?>
                 <a href="#" class="popupClose">&times;</a>
                 </div>
+                
               <!--end of category #2-->
 
               <!--category #3-->
