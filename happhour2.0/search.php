@@ -110,6 +110,7 @@
         $steakData = [];
         $fastfoodData = [];
         $asianData = [];
+        $barData = [];
 
 
 
@@ -231,6 +232,28 @@
              $htmlContent4 .=  "<a href='#' class='popupClose'>&times;</a>";
              $asianData[] = $htmlContent4;
 
+            }elseif ($category == "bar") {
+              $htmlContent5 = null;
+              $htmlContent5 .=  "<div class='food categories'>";
+              $htmlContent5 .=  "<div class='picture'>";
+              $htmlContent5 .=  "<img src='$image' alt='Restraunt Image'>";
+               $htmlContent5 .=  "</div>";
+                $htmlContent5 .=  "<div class='info'>";
+                $htmlContent5 .=  "<a href='https://www.yelp.com/search?find_desc=$rest_name' target='_blank'><p >$rest_name</p></a>";
+                 $htmlContent5 .=  "<div class='line'></div>";
+                 $htmlContent5 .=  "<p>$deal</p>";
+                 $htmlContent5 .=  "<ul class='stars'>";
+                   $htmlContent5 .=  "<li><i class='fas fa-star'></i></li>";
+                   $htmlContent5 .=  "<li><i class='fas fa-star'></i></li>";
+                   $htmlContent5 .=  "<li><i class='fas fa-star'></i></li>";
+                   $htmlContent5 .=  "<li><i class='fas fa-star'></i></li>";
+                   $htmlContent5 .=  "<li><i class='fas fa-star'></i></li>";
+                 $htmlContent5 .=  "</ul>";
+                 $htmlContent5 .=  "<p>$daysofweek</p>";
+               $htmlContent5 .=  "</div>";     
+             $htmlContent5 .=  "</div>";
+             $htmlContent5 .=  "<a href='#' class='popupClose'>&times;</a>";
+             $asianData[] = $htmlContent5;
             }
 
             echo "<div class='food todaysDeal'>";
@@ -507,16 +530,14 @@
                     <a href="#popupBox5">View Restaurants</a>
                   </div>
               </div>
-              <div id="popupBox5" class="popup">
-                <div class="popupContent">
-                <!--categories content
-              
-                bla bla bla
-              
-                -->
-                  <a href="#" class="popupClose">&times;</a>
+              <div id='popupBox5' class='popup'>
+                <div class='popupContent'>
+                  <?php 
+                  echo implode($barData);
+                  ?>
+                <a href="#" class="popupClose">&times;</a>
                 </div>
-              </div> 
+              </div>
               <!--end of category #5-->
             </div><!--end of category-->
         </div>
