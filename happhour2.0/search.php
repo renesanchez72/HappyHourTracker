@@ -156,6 +156,31 @@
                 echo "<a href='#' class='popupClose'>&times;</a>";
               echo "</div>";
             echo "</div>";
+            }elseif ($category == "steak") {
+              echo "<div id='popupBox2' class='popup'>";
+              echo "<div class='popupContent'>";
+                echo "<div class='food categories'>";
+                 echo "<div class='picture'>";
+                 echo "<img src='$image' alt='Restraunt Image'>";
+                  echo "</div>";
+                   echo "<div class='info'>";
+                   echo "<a href='https://www.yelp.com/search?find_desc=$rest_name' target='_blank'><p class='name'>$rest_name</p></a>";
+                    echo "<div class='line'></div>";
+                    echo "<p>$deal</p>";
+                    echo "<ul class='stars'>";
+                      echo "<li><i class='fas fa-star'></i></li>";
+                      echo "<li><i class='fas fa-star'></i></li>";
+                      echo "<li><i class='fas fa-star'></i></li>";
+                      echo "<li><i class='fas fa-star'></i></li>";
+                      echo "<li><i class='fas fa-star'></i></li>";
+                    echo "</ul>";
+                    echo "<p>$daysofweek</p>";
+                    echo "<button class='btn' onclick='fav($restaurantID,$userid);'>Favorite deal</button>";
+                  echo "</div>";     
+                echo "</div>";
+                echo "<a href='#' class='popupClose'>&times;</a>";
+              echo "</div>";
+            echo "</div>";
             }
 
             echo "<div class='food todaysDeal'>";
