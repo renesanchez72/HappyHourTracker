@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         die("Mysql error: " . $mysqli->error);
     };
     
-    $statement->bind_param("sssss",$_POST["restaurantImage"],$_POST["restaurantName"],$_POST["address"],$_POST["deal"],$_POST["dayschosen"],$_POST["deal"]);
+    $statement->bind_param("ssssss",$_POST["restaurantImage"],$_POST["restaurantName"],$_POST["address"],$_POST["deal"],$_POST["dayschosen"],$_POST["deal"]);
     
     try {
         $statement->execute();
