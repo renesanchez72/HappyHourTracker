@@ -18,4 +18,4 @@ RUN apt clean
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf 
 EXPOSE 80
 EXPOSE 443
-CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
+CMD ["./docker-entrypoint.sh"]
