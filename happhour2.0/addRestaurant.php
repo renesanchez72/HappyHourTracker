@@ -22,15 +22,15 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     
     $mysqli = require __DIR__ . "/database.php";
     
-    $sql = "INSERT INTO restaurants (image , name , address , deal , daysofweek) 
-            VALUES (?,?,?,?,?)";
+    $sql = "INSERT INTO restaurants (image , name , address , deal , daysofweek, category) 
+            VALUES (?,?,?,?,?,?)";
     $statement = $mysqli->stmt_init();
     
     if ( !$statement->prepare($sql) ) {
         die("Mysql error: " . $mysqli->error);
     };
     
-    $statement->bind_param("sssss",$_POST["restaurantImage"],$_POST["restaurantName"],$_POST["address"],$_POST["deal"],$_POST["dayschosen"]);
+    $statement->bind_param("sssss",$_POST["restaurantImage"],$_POST["restaurantName"],$_POST["address"],$_POST["deal"],$_POST["dayschosen"],$_POST["deal"]);
     
     try {
         $statement->execute();
